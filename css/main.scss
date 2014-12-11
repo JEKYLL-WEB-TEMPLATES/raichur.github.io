@@ -1,0 +1,317 @@
+// Fonts
+@font-face {
+  font-family: "DIN";
+  src: url("/css/fonts/DIN-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "DIN";
+  src: url("/css/fonts/DIN-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Freight Text";
+  src: url("/css/fonts/FreightText-MedIta.otf") format("opentype");
+  font-style: italic;
+  font-weight: medium;
+}
+@font-face {
+  font-family: "Freight Text";
+  src: url("/css/fonts/FreightText-Med.otf") format("opentype");
+  font-weight: medium;
+}
+@font-face {
+  font-family: "Freight Text";
+  src: url("/css/fonts/FreightText-Light.otf") format("opentype");
+  font-weight: lighter;
+}
+@font-face {
+  font-family: "Freight Text";
+  src: url("/css/fonts/FreightText-LightIta.otf") format("opentype");
+  font-style: italic;
+  font-weight: lighter;
+}
+
+
+// Our variables
+$base-font-family: DIN;
+$secondary-font-family: Freight Text, Georgia, Cambria;
+$base-font-size: 26.5px;
+$big-font-size:  $base-font-size * 2.4;
+$small-font-size:  $base-font-size * 0.85;
+$base-line-height: 1.5;
+$heading-line-height: .99;
+
+$spacing-unit:     33px;
+
+$text-color:       #333;
+$background-color: #fff;
+$brand-color:      #E64B3E;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    70%;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+
+
+//Using media queries with like this:
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+@include media-query(\$on-palm) {
+.wrapper {
+padding-right: \$spacing-unit / 2;
+padding-left: \$spacing-unit / 2;
+}
+}
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "_sass/_base.scss",
+        "_sass/_layout.scss",
+        "_sass/_syntax-highlighting.scss"
+;
+
+
+// Animations
+.animated {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -ms-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  animation-duration: 2s;
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-moz-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+}
+
+@-o-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -o-transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -o-transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  -moz-animation-name: fadeInUp;
+  -o-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+@-webkit-keyframes fadeInUpMeta {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 0.5;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-moz-keyframes fadeInUpMeta {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 0.5;
+    -moz-transform: translateY(0);
+  }
+}
+
+@-o-keyframes fadeInUpMeta {
+  0% {
+    opacity: 0;
+    -o-transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 0.5;
+    -o-transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUpMeta {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 0.5;
+    transform: translateY(0);
+  }
+}
+
+.fadeInUpMeta {
+  -webkit-animation-name: fadeInUp;
+  -moz-animation-name: fadeInUp;
+  -o-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-moz-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+}
+
+@-o-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -o-transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -o-transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInUp;
+  -moz-animation-name: fadeInUp;
+  -o-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}

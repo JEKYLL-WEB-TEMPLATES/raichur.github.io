@@ -1,0 +1,56 @@
+---
+layout: default
+---
+
+{% assign words = content | number_of_words %}
+{% if words <= 90 %}
+{% assign reading-time = "1m" %}
+{% elsif words < 270 %}
+{% assign reading-time = "1m" %}
+{% elsif words < 450 %}
+{% assign reading-time = "2m" %}
+{% elsif words < 630 %}
+{% assign reading-time = "3m" %}
+{% elsif words < 810 %}
+{% assign reading-time = "4m" %}
+{% elsif words < 990 %}
+{% assign reading-time = "5m" %}
+{% else %}
+{% assign reading-time = words | divided_by:180 | append:"m" %}
+{% endif %}
+
+
+<div class="post">
+
+  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+    <h1>{{ page.title }}</h1>
+  </a>
+  <p class="post-meta"><span title="{{ reading-time }} average reading time">{{ reading-time }}</span> ● <span title="{{ page.date | date: '%A, %-d %B %Y' }}">{{ page.date | date: "%b %Y" }}</span></p>
+
+  <article class="post-content">
+    {{ content }}
+  </article>
+
+</div>
+<div id="post-nav" class="hidden">
+  {% for post in site.categories.article %}
+  {% if post.url == page.url %}
+  {% assign post_index0 = forloop.index0 %}
+  {% assign post_index1 = forloop.index %}
+  {% endif %}
+  {% endfor %}
+  {% for post in site.categories.article %}
+  {% if post_index0 == forloop.index %}
+  {% assign next_post = post.url %}
+  {% endif %}
+  {% if post_index1 == forloop.index0 %}
+  {% assign prev_post = post.url %}
+  {% endif %}
+  {% endfor %}
+  {% if next_post %}
+  <a rel="next" title="Next" id="next_link" href="{{ next_post }}"></a>
+  {% endif %}
+  {% if prev_post %}
+  <a rel="previous" title="Previous" id="prev_link" href="{{ prev_post }}"></a>
+  {% endif %}
+</div>

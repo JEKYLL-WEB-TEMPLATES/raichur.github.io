@@ -1,0 +1,12 @@
+---
+title: "Tiger"
+tags: illustration
+img_dir: "/illustrations/tiger/"
+---
+
+
+
+
+![Tiger](/resources/work/illustrations/tiger/01.jpg)
+
+

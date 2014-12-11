@@ -1,0 +1,12 @@
+---
+title: "Pirillo"
+tags: illustration
+img_dir: "/illustrations/pirillo/"
+---
+
+
+
+
+![Pirillo](/resources/work/illustrations/pirillo/01.jpg)
+
+

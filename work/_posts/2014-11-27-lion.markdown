@@ -1,0 +1,12 @@
+---
+title: "Lion"
+tags: illustration
+img_dir: "/illustrations/lion/"
+---
+
+
+
+
+![Lion](/resources/work/illustrations/lion/01.jpg)
+
+

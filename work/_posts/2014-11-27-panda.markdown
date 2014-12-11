@@ -1,0 +1,12 @@
+---
+title: "Panda"
+tags: illustration
+img_dir: "/illustrations/panda/"
+---
+
+
+
+
+![Panda](/resources/work/illustrations/panda/01.jpg)
+
+

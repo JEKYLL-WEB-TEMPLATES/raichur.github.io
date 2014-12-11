@@ -1,0 +1,12 @@
+---
+title: "Steve Jobs"
+tags: illustration
+img_dir: "/illustrations/steve_jobs/"
+---
+
+
+
+
+![Steve Jobs](/resources/work/illustrations/steve_jobs/01.jpg)
+
+

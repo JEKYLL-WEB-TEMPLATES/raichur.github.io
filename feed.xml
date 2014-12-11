@@ -1,0 +1,224 @@
+<<<<<<< HEAD
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ site.title | xml_escape }}</title>
+    <description>{{ site.description | xml_escape }}</description>
+    <link>{{ site.url }}{{ site.baseurl }}/</link>
+    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
+    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+    <generator>Jekyll v{{ jekyll.version }}</generator>
+    {% for post in site.posts limit:10 %}
+      <item>
+        <title>{{ post.title | xml_escape }}</title>
+        <description>{{ post.content | xml_escape }}</description>
+        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
+        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
+        {% for tag in post.tags %}
+        <category>{{ tag | xml_escape }}</category>
+        {% endfor %}
+        {% for cat in post.categories %}
+        <category>{{ cat | xml_escape }}</category>
+        {% endfor %}
+      </item>
+    {% endfor %}
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Joshua Raichur</title>
+    <description>Joshua Raichur is a designer, developer, and autodidact.
+</description>
+    <link>http://joshuaraichur.com/</link>
+    <atom:link href="http://joshuaraichur.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 03 Dec 2014 12:25:23 +0530</pubDate>
+    <lastBuildDate>Wed, 03 Dec 2014 12:25:23 +0530</lastBuildDate>
+    <generator>Jekyll v2.5.1</generator>
+    
+      <item>
+        <title>Pacific</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/resources/work/posters/pacific/01.jpg&quot; alt=&quot;Pacific&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 28 Nov 2014 00:00:00 +0530</pubDate>
+        <link>http://joshuaraichur.com/w/pacific/</link>
+        <guid isPermaLink="true">http://joshuaraichur.com/w/pacific/</guid>
+        
+        <category>poster</category>
+        
+        
+        <category>work</category>
+        
+      </item>
+    
+      <item>
+        <title>Icy Beats</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/resources/work/posters/twist/01.jpg&quot; alt=&quot;Icy Beats&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 28 Nov 2014 00:00:00 +0530</pubDate>
+        <link>http://joshuaraichur.com/w/icy/</link>
+        <guid isPermaLink="true">http://joshuaraichur.com/w/icy/</guid>
+        
+        <category>poster</category>
+        
+        
+        <category>work</category>
+        
+      </item>
+    
+      <item>
+        <title>FOSS</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/resources/work/posters/foss/01.jpg&quot; alt=&quot;FOSS&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 28 Nov 2014 00:00:00 +0530</pubDate>
+        <link>http://joshuaraichur.com/w/foss/</link>
+        <guid isPermaLink="true">http://joshuaraichur.com/w/foss/</guid>
+        
+        <category>poster</category>
+        
+        
+        <category>work</category>
+        
+      </item>
+    
+      <item>
+        <title>Emoji</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/resources/work/illustrations/emoji/00.png&quot; alt=&quot;Smiling!&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/resources/work/illustrations/emoji/01.png&quot; alt=&quot;Smiling!&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/resources/work/illustrations/emoji/02.png&quot; alt=&quot;Smiling!&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/resources/work/illustrations/emoji/03.png&quot; alt=&quot;Alien&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/resources/work/illustrations/emoji/04.png&quot; alt=&quot;Tongue out&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/resources/work/illustrations/emoji/05.png&quot; alt=&quot;Smiling, again.&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/resources/work/illustrations/emoji/06.png&quot; alt=&quot;Blushing&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/resources/work/illustrations/emoji/07.png&quot; alt=&quot;Lovestruck?&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/resources/work/illustrations/emoji/08.png&quot; alt=&quot;Hey internet, cat!&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/resources/work/illustrations/emoji/09.png&quot; alt=&quot;Camera&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/resources/work/illustrations/emoji/10.png&quot; alt=&quot;Angel&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 28 Nov 2014 00:00:00 +0530</pubDate>
+        <link>http://joshuaraichur.com/w/emoji/</link>
+        <guid isPermaLink="true">http://joshuaraichur.com/w/emoji/</guid>
+        
+        <category>illustration</category>
+        
+        
+        <category>work</category>
+        
+      </item>
+    
+      <item>
+        <title>Creation</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/resources/work/posters/creation/01.jpg&quot; alt=&quot;Creation&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 28 Nov 2014 00:00:00 +0530</pubDate>
+        <link>http://joshuaraichur.com/w/creation/</link>
+        <guid isPermaLink="true">http://joshuaraichur.com/w/creation/</guid>
+        
+        <category>poster</category>
+        
+        
+        <category>work</category>
+        
+      </item>
+    
+      <item>
+        <title>Message in a bottle</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/resources/work/posters/bottle/01.jpg&quot; alt=&quot;Message in a bottle&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 28 Nov 2014 00:00:00 +0530</pubDate>
+        <link>http://joshuaraichur.com/w/bottle/</link>
+        <guid isPermaLink="true">http://joshuaraichur.com/w/bottle/</guid>
+        
+        <category>poster</category>
+        
+        
+        <category>work</category>
+        
+      </item>
+    
+      <item>
+        <title>Will.i.am</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/resources/work/illustrations/william/01.jpg&quot; alt=&quot;Will.i.am&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 27 Nov 2014 00:00:00 +0530</pubDate>
+        <link>http://joshuaraichur.com/w/william/</link>
+        <guid isPermaLink="true">http://joshuaraichur.com/w/william/</guid>
+        
+        <category>illustration</category>
+        
+        
+        <category>work</category>
+        
+      </item>
+    
+      <item>
+        <title>Turntables</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/resources/work/illustrations/turntables/01.jpg&quot; alt=&quot;Turntables&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 27 Nov 2014 00:00:00 +0530</pubDate>
+        <link>http://joshuaraichur.com/w/turntables/</link>
+        <guid isPermaLink="true">http://joshuaraichur.com/w/turntables/</guid>
+        
+        <category>illustration</category>
+        
+        
+        <category>work</category>
+        
+      </item>
+    
+      <item>
+        <title>Tiger</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/resources/work/illustrations/tiger/01.jpg&quot; alt=&quot;Tiger&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 27 Nov 2014 00:00:00 +0530</pubDate>
+        <link>http://joshuaraichur.com/w/tiger/</link>
+        <guid isPermaLink="true">http://joshuaraichur.com/w/tiger/</guid>
+        
+        <category>illustration</category>
+        
+        
+        <category>work</category>
+        
+      </item>
+    
+      <item>
+        <title>Sundae</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/resources/work/illustrations/sundae/01.jpg&quot; alt=&quot;Sundae&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 27 Nov 2014 00:00:00 +0530</pubDate>
+        <link>http://joshuaraichur.com/w/sundae/</link>
+        <guid isPermaLink="true">http://joshuaraichur.com/w/sundae/</guid>
+        
+        <category>illustration</category>
+        
+        
+        <category>work</category>
+        
+      </item>
+    
+>>>>>>> 44fbac088090ec9f15f04e99205d0dc4e4d0644c
+  </channel>
+</rss>

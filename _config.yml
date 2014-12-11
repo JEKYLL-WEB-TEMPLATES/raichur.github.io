@@ -1,0 +1,34 @@
+# Site settings
+title: Joshua Raichur
+email: hello@joshuaraichur.com
+description: > # this means to ignore newlines until "baseurl:"
+  Joshua Raichur is a designer, developer, and autodidact.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://joshuaraichur.com" # the base hostname & protocol for your site
+twitter_username: JoshuaRaichur
+github_username:  raichur
+googleplus_username: JoshuaRaichur
+# Build settings
+repo: 'http://github.com/raichur/raichur.github.io'
+markdown: kramdown
+exclude: ['node_modules', 'Gruntfile.js', 'npm-debug.log', 'package.json']
+# Defaults
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+      category: 'article'
+      permalink: /a/:title/
+  -
+    scope:
+      path: 'work'
+      type: 'posts'
+    values:
+      category: 'work'
+      layout: work
+      permalink: /w/:title/
+
+# Categories
+tags_dir: 'tag'

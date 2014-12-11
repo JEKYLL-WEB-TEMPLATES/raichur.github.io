@@ -1,0 +1,171 @@
+<<<<<<< HEAD
+---
+layout: null
+---
+[
+  {% for post in site.posts %}
+  {
+    "title"    : "{{ post.title | escape }}",
+    "category" : "{{ post.category }}",
+    "tags"     : "{{ post.tags | array_to_sentence_string }}",
+    "url"      : "{{ site.baseurl }}{{ post.url }}",
+    "date"     : "{{ post.date }}"
+    } {% unless forloop.last %},{% endunless %}
+    {% endfor %}
+=======
+[
+  
+  {
+    "title"    : "Pacific",
+    "category" : "work",
+    "tags"     : "poster",
+    "url"      : "/w/pacific/",
+    "date"     : "2014-11-28 00:00:00 +0530"
+    } ,
+    
+  {
+    "title"    : "Icy Beats",
+    "category" : "work",
+    "tags"     : "poster",
+    "url"      : "/w/icy/",
+    "date"     : "2014-11-28 00:00:00 +0530"
+    } ,
+    
+  {
+    "title"    : "FOSS",
+    "category" : "work",
+    "tags"     : "poster",
+    "url"      : "/w/foss/",
+    "date"     : "2014-11-28 00:00:00 +0530"
+    } ,
+    
+  {
+    "title"    : "Emoji",
+    "category" : "work",
+    "tags"     : "illustration",
+    "url"      : "/w/emoji/",
+    "date"     : "2014-11-28 00:00:00 +0530"
+    } ,
+    
+  {
+    "title"    : "Creation",
+    "category" : "work",
+    "tags"     : "poster",
+    "url"      : "/w/creation/",
+    "date"     : "2014-11-28 00:00:00 +0530"
+    } ,
+    
+  {
+    "title"    : "Message in a bottle",
+    "category" : "work",
+    "tags"     : "poster",
+    "url"      : "/w/bottle/",
+    "date"     : "2014-11-28 00:00:00 +0530"
+    } ,
+    
+  {
+    "title"    : "Will.i.am",
+    "category" : "work",
+    "tags"     : "illustration",
+    "url"      : "/w/william/",
+    "date"     : "2014-11-27 00:00:00 +0530"
+    } ,
+    
+  {
+    "title"    : "Turntables",
+    "category" : "work",
+    "tags"     : "illustration",
+    "url"      : "/w/turntables/",
+    "date"     : "2014-11-27 00:00:00 +0530"
+    } ,
+    
+  {
+    "title"    : "Tiger",
+    "category" : "work",
+    "tags"     : "illustration",
+    "url"      : "/w/tiger/",
+    "date"     : "2014-11-27 00:00:00 +0530"
+    } ,
+    
+  {
+    "title"    : "Sundae",
+    "category" : "work",
+    "tags"     : "illustration",
+    "url"      : "/w/sundae/",
+    "date"     : "2014-11-27 00:00:00 +0530"
+    } ,
+    
+  {
+    "title"    : "Steve Jobs",
+    "category" : "work",
+    "tags"     : "illustration",
+    "url"      : "/w/steve/",
+    "date"     : "2014-11-27 00:00:00 +0530"
+    } ,
+    
+  {
+    "title"    : "Skrillex",
+    "category" : "work",
+    "tags"     : "illustration",
+    "url"      : "/w/skrillex/",
+    "date"     : "2014-11-27 00:00:00 +0530"
+    } ,
+    
+  {
+    "title"    : "PSY",
+    "category" : "work",
+    "tags"     : "illustration",
+    "url"      : "/w/psy/",
+    "date"     : "2014-11-27 00:00:00 +0530"
+    } ,
+    
+  {
+    "title"    : "Pirillo",
+    "category" : "work",
+    "tags"     : "illustration",
+    "url"      : "/w/pirillo/",
+    "date"     : "2014-11-27 00:00:00 +0530"
+    } ,
+    
+  {
+    "title"    : "Panda",
+    "category" : "work",
+    "tags"     : "illustration",
+    "url"      : "/w/panda/",
+    "date"     : "2014-11-27 00:00:00 +0530"
+    } ,
+    
+  {
+    "title"    : "Lion",
+    "category" : "work",
+    "tags"     : "illustration",
+    "url"      : "/w/lion/",
+    "date"     : "2014-11-27 00:00:00 +0530"
+    } ,
+    
+  {
+    "title"    : "LeBron James",
+    "category" : "work",
+    "tags"     : "illustration",
+    "url"      : "/w/lebron/",
+    "date"     : "2014-11-27 00:00:00 +0530"
+    } ,
+    
+  {
+    "title"    : "Iceberg",
+    "category" : "work",
+    "tags"     : "illustration",
+    "url"      : "/w/iceberg/",
+    "date"     : "2014-11-27 00:00:00 +0530"
+    } ,
+    
+  {
+    "title"    : "My Manifesto",
+    "category" : "article",
+    "tags"     : "",
+    "url"      : "/a/manifesto/",
+    "date"     : "2014-11-25 00:00:00 +0530"
+    } 
+    
+>>>>>>> 44fbac088090ec9f15f04e99205d0dc4e4d0644c
+  ]
