@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Favorites"
-permalink: /favorites/
+title: "Faves"
+permalink: /faves/
 ---
 
 ## Books
@@ -20,11 +20,7 @@ I normally read 1-2 books a week. Here are a few of my favorites in chronologica
 [In The Plex: How Google Thinks, Works, and Shapes Our Lives](http://www.amazon.com/Plex-Google-Thinks-Works-Shapes-ebook/dp/B003UYUP6M)
 [Steve Jobs: The Exclusive Biography](http://www.amazon.com/Steve-Jobs-Exclusive-Walter-Isaacson-ebook/dp/B005J3IEZQ)
 
-## Web
-
-I spend a lot of my time on the internet learning new things. Here are my favorite websites, blogs, and resources.
-
-### Blogs
+## Blogs
 
 [Paul Graham's Essays](http://www.paulgraham.com/articles.html)
 [Farnam Street](http://www.farnamstreetblog.com)
