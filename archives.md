@@ -26,7 +26,7 @@ permalink: /archives/
 {% assign reading-time = words | divided_by:180 | append:"m" %}
 {% endif %}
 <h1><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
-<p class="post-meta"><span title="{{ reading-time }} average reading time">{{ reading-time }}</span> ● <span title="{{ post.date | date: '%A, %-d %B %Y' }}">{{ post.date | date: "%b %Y" }}</span></p>
+<p class="post-meta">{{ reading-time }} read ● {{ post.date | date: '%A, %-d %B %Y' }}</p>
 
 </li>
 {% endfor %}

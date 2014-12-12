@@ -25,7 +25,7 @@ layout: default
     <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
       <h1>{{ post.title }}</h1>
     </a>
-    <p class="post-meta"><span title="{{ reading-time }} average reading time">{{ reading-time }}</span> ● <span title="{{ post.date | date: '%A, %-d %B %Y' }}">{{ post.date | date: "%b %Y" }}</span></p>
+    <p class="post-meta">{{ reading-time }} read ● {{ post.date | date: '%A, %-d %B %Y' }}</p>
 
     <article class="post-content">
       {{ post.content }}
