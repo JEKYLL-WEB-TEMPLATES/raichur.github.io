@@ -20,7 +20,7 @@ defaults:
       type: 'posts'
     values:
       category: 'article'
-      permalink: /a/:title/
+      permalink: /a/:title
   -
     scope:
       path: 'work'
@@ -28,7 +28,7 @@ defaults:
     values:
       category: 'work'
       layout: work
-      permalink: /w/:title/
+      permalink: /w/:title
 
 # Categories
 tags_dir: 'tag'
