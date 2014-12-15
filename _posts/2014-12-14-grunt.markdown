@@ -230,9 +230,11 @@ watch: {
 We can take this a step further and enable the LiveReload ability which comes with the watch plugin.
 
 To get LiveReload working, we will need to:
+
 1. Install the [free LiveReload browser extension](http://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions)
 2. Click the LiveReload button in our browser to activate it.
 3. Add a few lines to the `watch` configuration in the `Gruntfile.js` file:
+
 {% highlight javascript %}
 watch: {
   options: {
