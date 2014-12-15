@@ -30,3 +30,4 @@ To be updated...
 
 ## On Health
 - Assisted suicide should be legal everywhere.
+- How you treat your body is a reflection of how much you value life.

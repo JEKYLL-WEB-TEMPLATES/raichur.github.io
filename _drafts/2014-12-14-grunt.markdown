@@ -1,0 +1,83 @@
+---
+layout: post
+title: "Using Grunt to Automate Your Front-End Development Workflow"
+---
+
+In this article we’ll learn how to use Grunt, a _task runner_, to automate vital web development tasks so we can forget about them. Grunt can do repetitive tasks involving concatenation, compilation, minification, listing, unit-testing, live-reloading, etc. It does these tasks with one script and can be shared among every person working on a project. This ensures that everyone working on the project is writing code of a consistent standard. It’s also easy to work with, so let’s get started.
+
+## Installation
+
+To get Grunt set up, we’ll need [Node.js](http://nodejs.org) installed. You don't need to know Node to use Grunt; you just need it installed. With Node installed, run this command in the terminal:
+
+{% highlight vim %}
+  npm install -g grunt-cli
+{% endhighlight %}
+
+This command puts the `grunt` command in out system path, and `-g` installs it globally on our system, allowing it to be run from any directory.
+
+## Setting up a new project
+
+To get Grunt working in our project, we will need two files:
+
+1. `package.json`
+2. `Gruntfile.js`
+
+The `package.json` file in our projects root directory enables us to track and install all our development dependencies. Add the following text into the `package.json` file.
+
+{% highlight javascript %}
+{
+  "name" : "YOUR_GRUNT_PROJECT",
+  "version" : "0.1.0",
+  "author" : "YOUR NAME",
+  "devDependencies" : {
+    "grunt" :  "~0.4.0"
+  }
+}
+{% endhighlight %}
+
+We will also need to configure Grunt to use the plugins, so create a new file in the projects root directory called `Gruntfile.js` and add these lines of code:
+
+{% highlight javascript %}
+module.exports = function(grunt){
+
+  // Configuration
+  grunt.initConfig({
+    // Read from package.json
+    pkg: grunt.file.readJSON('package.json')
+  });
+
+  // Tells Grunt what commands to run when we type “grunt” in the terminal
+  grunt.registerTask('default', []);
+};
+{% endhighlight %}
+
+The following command tells npm (a package manager for Node) to install the dependencies listed in the `package.json` file and save them in a `node_modules` folder:
+
+{% highlight vim %}
+npm install
+{% endhighlight %}
+
+### Concatenation
+We probably have multiple JavaScript files in our project. It’s a good idea to concatenate these files in production to lower the number of HTTP requests required to render the page.
+
+We need to set Grunt up to do this. Grunt has an [official concatenation plugin](https://github.com/gruntjs/grunt-contrib-concat) that we can use. We can install it by running this command from our projects root directory:
+
+{% highlight vim %}
+npm install grunt-contrib-concat --save-dev
+{% endhighlight %}
+
+This will download the required files in the `npm_modules` directory and adds `"grunt-contrib-concat": "~0.5.0"` into the `devDependencies` section of our `package.json` file.
+
+Now we need to configure Grunt to use this plugin. In the `Gruntfile.js` file, add the following lines:
+
+{% highlight javascript %}
+concat: {
+  dist: {
+    src: [
+    'js/libs/*.js', // All JS in the libs folder
+    'js/global.js'  // This specific file
+    ],
+    dest: 'js/build/production.js',
+  }
+}
+{% endhighlight %}

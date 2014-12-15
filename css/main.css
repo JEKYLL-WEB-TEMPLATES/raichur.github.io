@@ -256,6 +256,10 @@ pre > code {
   color: #424242;
 }
 
+a {
+  transition: 200ms all ease;
+}
+
 .site-nav {
   float: right;
   line-height: 56px;
@@ -679,6 +683,10 @@ footer {
   .post-content h4 {
     font-size: 18px;
   }
+}
+
+.faves a {
+  display: block;
 }
 
 /**

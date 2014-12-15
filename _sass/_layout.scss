@@ -22,7 +22,9 @@
         color: $grey-color-dark;
     }
 }
-
+a {
+  transition: 200ms all ease;
+}
 .site-nav {
     float: right;
     line-height: 56px;
@@ -398,4 +400,10 @@ footer {
             font-size: 18px;
         }
     }
+}
+
+.faves {
+  a {
+    display: block;
+  }
 }

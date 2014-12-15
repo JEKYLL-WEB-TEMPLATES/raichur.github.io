@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Lightning"
-tags: physics
 ---
 
 ## The science of lightning

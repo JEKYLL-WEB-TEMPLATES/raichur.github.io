@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "The Historical Development of Matter"
-tags: philosophy physics
 ---
 
 ## Pre-Socratic philosophy
