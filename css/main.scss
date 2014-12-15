@@ -30,11 +30,20 @@
   font-style: italic;
   font-weight: lighter;
 }
-
+@font-face {
+  font-family: "Inconsolata";
+  src: url("/css/fonts/Inconsolata-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Inconsolata";
+  src: url("/css/fonts/Inconsolata-Bold.ttf") format("truetype");
+  font-style: bold;
+}
 
 // Our variables
 $base-font-family: DIN;
 $secondary-font-family: Freight Text, Georgia, Cambria;
+$mono-font: Inconsolata;
 $base-font-size: 26.5px;
 $big-font-size:  $base-font-size * 2.4;
 $small-font-size:  $base-font-size * 0.85;
@@ -54,8 +63,8 @@ $grey-color-dark:  darken($grey-color, 25%);
 // Width of the content area
 $content-width:    70%;
 
-$on-palm:          600px;
-$on-laptop:        800px;
+$on-palm:          700px;
+$on-laptop:        900px;
 
 
 
@@ -65,12 +74,6 @@ $on-laptop:        800px;
     @media screen and (max-width: $device) {
         @content;
     }
-}
-@include media-query(\$on-palm) {
-.wrapper {
-padding-right: \$spacing-unit / 2;
-padding-left: \$spacing-unit / 2;
-}
 }
 
 

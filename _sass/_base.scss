@@ -86,9 +86,15 @@ li {
 /**
  * Headings
  */
-h1, h2, h3, h4 {
+h1, h2 {
     margin-top: $spacing-unit * 1.1;
     font-weight: 500;
+}
+h3, h4 {
+  margin-top: $spacing-unit * 1.1;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 h5, h6 {
   margin: 0;
@@ -143,28 +149,32 @@ blockquote {
  */
 pre,
 code {
-    font-size: 15px;
-    border: 1px solid $grey-color-light;
-    border-radius: 3px;
-    background-color: #eef;
+  font-family: $mono-font;
+  color: $grey-color-dark;
+  font-weight: 300;
+    background-color: $grey-color-light;
 }
 
 code {
+  border-radius: 4px;
     padding: 1px 5px;
+    overflow-x: scroll;
 }
 
 pre {
     padding: 8px 12px;
-    overflow-x: scroll;
-
     > code {
         border: 0;
         padding-right: 0;
         padding-left: 0;
     }
 }
-
-
+.highlight {
+  font-size: 18px;
+  pre code span {
+    overflow-x: scroll !important;
+  }
+}
 
 /**
  * Wrapper

@@ -1,0 +1,247 @@
+---
+layout: post
+title: "Using Grunt to Automate Your Front-End Development Workflow"
+---
+
+In this article we’ll learn how to use Grunt, a _task runner_, to automate vital web development tasks so we can forget about them. Grunt can do repetitive tasks involving concatenation, compilation, minification, listing, unit-testing, live-reloading, etc. It does these tasks with one script and can be shared among every person working on a project. This ensures that everyone working on the project is writing code of a consistent standard. It’s also easy to work with, so let’s get started.
+
+## Installation
+
+To get Grunt set up, we’ll need [Node.js](http://nodejs.org) installed. You don't need to know Node to use Grunt; you just need it installed. With Node installed, run this command in the terminal:
+
+{% highlight javascript %}
+  npm install -g grunt-cli // Try "sudo npm install -g grunt-cli" if it fails without
+{% endhighlight %}
+
+This command tells `npm` (a package manager that comes with Node) to install the grunt command-line package. This puts the `grunt` command in out system path. `-g` stands for "global" and allows this command to be run from any directory.
+
+## Setting up a new project
+
+To get Grunt working in our project, we will need two files:
+
+1. `package.json`
+2. `Gruntfile.js`
+
+The `package.json` file in our projects root directory enables us to track and install all our development dependencies. Add the following text into the `package.json` file.
+
+{% highlight javascript %}
+{
+  "name" : "YOUR_GRUNT_PROJECT",
+  "version" : "0.1.0",
+  "author" : "YOUR NAME",
+  "devDependencies" : {
+    "grunt" :  "~0.4.5"
+  }
+}
+{% endhighlight %}
+
+We will also need to configure Grunt to use the plugins, so create a new file in the projects root directory called `Gruntfile.js` and add these lines of code:
+
+{% highlight javascript %}
+module.exports = function(grunt){
+
+  // Configuration
+  grunt.initConfig({
+    // Read from package.json
+    pkg: grunt.file.readJSON('package.json')
+  });
+
+  // Tells Grunt what commands to run when we type “grunt” in the terminal
+  grunt.registerTask('default', []);
+};
+{% endhighlight %}
+
+Run the following command to install the dependencies listed in the `package.json` file and save them in a `node_modules` folder:
+
+{% highlight javascript %}
+npm install
+{% endhighlight %}
+
+Now that we have set up Grunt, all Grunt plugins can be installed by following these steps:
+
+1. Find the plugin and install it from the command line.
+2. Learn and configure it using our `Gruntfile.js` file.
+
+### Concatenate JavaScript
+
+Let's assume that our project directory looks something like this:
+
+{% highlight javascript %}
+- js
+  - plugins
+    - modernizr.js
+    - jquery.js
+    - lightbox.js
+  - main.js
+- css
+  - base.scss
+  - layout.scss
+- img
+  - cat.jpg
+  - another_cat.jpg
+  - facepalm.gif
+  - sprite.png
+- index.html
+- folders...
+{% endhighlight %}
+
+We probably have multiple JavaScript files in our project. It’s a good idea to concatenate these files in production to lower the number of HTTP requests required to render the page. We can set up Grunt to do this for us automatically. We can install the [concatenation plugin](https://github.com/gruntjs/grunt-contrib-concat) by running this command from our projects root directory:
+
+{% highlight javascript %}
+npm install grunt-contrib-concat --save-dev
+{% endhighlight %}
+
+This will download the required files in the `npm_modules` directory and adds `"grunt-contrib-concat": "~0.5.0"` into the `devDependencies` section of our `package.json` file.
+
+For the file structure above, Grunt concatenation can be configured using our `Gruntfile.js` file like this:
+
+{% highlight javascript %}
+module.exports = function(grunt){
+
+  // Configuration
+  grunt.initConfig({
+    // Read from package.json
+    pkg: grunt.file.readJSON('package.json'),
+    concat: {
+      dist: {
+        src: [
+        'js/plugins/*.js', // Specifies all of the files with the .js extension in the plugins folder
+        'js/main.js'  // The main JS file
+        ],
+        dest: 'js/build/main.js', // The final build JS file
+      }
+    }
+    });
+
+    // Tells Grunt to load the plugin we just installed
+    grunt.loadNpmTasks('grunt-contrib-concat');
+
+    // Tells Grunt what commands to run when we type “grunt” in the terminal
+    grunt.registerTask('default', ['concat']);
+};
+{% endhighlight %}
+
+
+### Minify JavaScript
+
+First we install the [uglify plugin](https://github.com/gruntjs/grunt-contrib-uglify) from the command line:
+{% highlight vim %}
+npm install grunt-contrib-uglify --save-dev
+{% endhighlight %}
+
+Then we configure it in our `Gruntfile.js` file:
+
+{% highlight javascript %}
+
+uglify: {
+  build: {
+    src: 'js/build/production.js', // Our un-minified production JS file
+    dest: 'js/build/production.min.js' // Automagically minified JS file!
+  }
+}
+{% endhighlight %}
+
+Don't forget that we need to load the task and register it under our `default` task in our `Gruntfile.js` file:
+
+{% highlight javascript %}
+grunt.loadNpmTasks('grunt-contrib-uglify');
+
+grunt.registerTask('default', ['concat', 'uglify']);
+{% endhighlight %}
+
+
+### Compile Sass
+
+If you use a preprocessor (and you should -- it's helpful), Grunt has a plugin that will automate preprocessing for us. Assuming you already have [Sass](http://sass-lang.com/) installed, we can install the [Grunt plugin](https://github.com/gruntjs/grunt-contrib-sass) using the following command:
+
+{% highlight vim %}
+npm install grunt-contrib-sass --save-dev
+{% endhighlight %}
+
+Then we load and register it:
+{% highlight javascript %}
+grunt.loadNpmTasks('grunt-contrib-sass');
+
+grunt.registerTask('default', ['concat', 'uglify', 'sass']);
+{% endhighlight %}
+
+Now we configure it:
+{% highlight javascript %}
+sass: {
+  dist: {
+    options: {
+      style: 'compressed'
+      },
+      files: {
+        'css/build/main.css': 'css/*.scss'
+      }
+    }
+  }
+{% endhighlight %}
+
+
+### Optimize images
+
+Install it:
+{% highlight vim %}
+npm install grunt-contrib-imagemin --save-dev
+{% endhighlight %}
+
+Load and register it:
+{% highlight javascript %}
+grunt.loadNpmTasks('grunt-contrib-imagemin');
+
+grunt.registerTask('default', ['concat', 'uglify', 'imagemin']);
+{% endhighlight %}
+
+Configure it:
+{% highlight javascript %}
+imagemin: {
+  dynamic: {
+    files: [{
+      expand: true,
+      cwd: 'img/',
+      src: ['**/*.{png,jpg,gif}'],
+      dest: 'img/build/'
+      }]
+    }
+  }
+{% endhighlight %}
+
+### Watch and LiveReload webpages
+
+With Grunt we can "watch" files using the [grunt-contrib-watch plugin](https://github.com/gruntjs/grunt-contrib-watch).
+You know the drill, install it, load it, and register it.
+
+Here's how to configure it:
+
+{% highlight javascript %}
+watch: {
+  scripts: {
+    files: ['js/*.js'],
+    tasks: ['concat', 'uglify'],
+    options: {
+      spawn: false,
+      },
+    }
+  }
+{% endhighlight %}
+
+We can take this a step further and enable the LiveReload ability which comes with the watch plugin.
+
+To get LiveReload working, we will need to:
+1. Install the [free LiveReload browser extension](http://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions)
+2. Click the LiveReload button in our browser to activate it.
+3. Add a few lines to the `watch` configuration in the `Gruntfile.js` file:
+{% highlight javascript %}
+watch: {
+  options: {
+    livereload: true,
+    },
+    scripts: {
+      // Rest of the code
+{% endhighlight %}
+
+### Conclusion
+
+Grunt can help us automate a lot out our projects, helping us focus on the fun stuff. There are many more plugins available [here](http://gruntjs.com/plugins). A few of my favorites that I didn't mention already are [cssmin](https://github.com/gruntjs/grunt-contrib-cssmin), [jshint](https://github.com/gruntjs/grunt-contrib-jshint), [csslint](https://github.com/gruntjs/grunt-contrib-csslint), [autoprefixer](https://github.com/nDmitry/grunt-autoprefixer), [htmlmin](https://github.com/gruntjs/grunt-contrib-htmlmin), [svgmin](https://github.com/sindresorhus/grunt-svgmin), and [copy](https://github.com/gruntjs/grunt-contrib-copy). Have fun!
