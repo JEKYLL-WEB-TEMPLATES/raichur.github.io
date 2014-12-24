@@ -69,7 +69,7 @@ body {
   line-height: 1.5;
   font-weight: 300;
   color: #333333;
-  background-color: white;
+  background-color: #fcfcfc;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 .highlight {
-  margin-bottom: 22px;
+  margin-bottom: 16.66667px;
 }
 
 /**
@@ -110,7 +110,7 @@ figcaption {
  * Lists
  */
 ul, ol {
-  margin-left: 33px;
+  margin-left: 25px;
 }
 
 li > ul,
@@ -122,12 +122,12 @@ li > ol {
  * Headings
  */
 h1, h2 {
-  margin-top: 36.3px;
+  margin-top: 27.5px;
   font-weight: 500;
 }
 
 h3, h4 {
-  margin-top: 36.3px;
+  margin-top: 27.5px;
   font-weight: 400;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -135,7 +135,7 @@ h3, h4 {
 
 h5, h6 {
   margin: 0;
-  margin-top: 22px;
+  margin-top: 16.66667px;
   line-height: 0.99;
 }
 
@@ -151,11 +151,8 @@ h1 {
  * Links
  */
 a {
-  color: #e64b3e;
+  color: #0075c9;
   text-decoration: none;
-}
-a:visited {
-  color: #bf2619;
 }
 a:hover {
   color: #333333;
@@ -171,7 +168,7 @@ a:hover {
 blockquote {
   color: #424242;
   border-left: 4px solid #828282;
-  padding-left: 16.5px;
+  padding-left: 12.5px;
   font-size: 18px;
   letter-spacing: -1px;
   font-style: italic;
@@ -217,19 +214,19 @@ pre > code {
  * Wrapper
  */
 .wrapper {
-  max-width: -webkit-calc(70% - (33px * 2));
-  max-width: calc(70% - (33px * 2));
+  max-width: -webkit-calc(70% - (25px * 2));
+  max-width: calc(70% - (25px * 2));
   margin-right: auto;
   margin-left: auto;
-  padding-right: 33px;
-  padding-left: 33px;
+  padding-right: 25px;
+  padding-left: 25px;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .wrapper {
-    max-width: -webkit-calc(70% - (33px));
-    max-width: calc(70% - (33px));
-    padding-right: 16.5px;
-    padding-left: 16.5px;
+    max-width: -webkit-calc(70% - (25px));
+    max-width: calc(70% - (25px));
+    padding-right: 12.5px;
+    padding-left: 12.5px;
   }
 }
 
@@ -259,10 +256,32 @@ pre > code {
  * Site header
  */
 .site-header {
-  border-top: 5px solid #e64b3e;
+  border-top: 5px solid #0075c9;
   border-bottom: 1px solid #e8e8e8;
   min-height: 56px;
-  position: relative;
+  background: rgba(255, 255, 255, 0.995);
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  top: 0px;
+  z-index: 5;
+  left: 0px;
+  transition: ease-in-out top .14s;
+}
+
+.search {
+  background: none;
+  border: none;
+  outline: none;
+  transition: all ease 200ms;
+  width: 100%;
+  margin-bottom: 40px;
+  opacity: .8;
+  font-size: 26.5px;
+}
+.search:focus {
+  outline: none;
+  opacity: 1;
 }
 
 .site-title {
@@ -300,7 +319,7 @@ a {
     position: absolute;
     top: 9px;
     right: 30px;
-    background-color: white;
+    background-color: #fcfcfc;
     border: 1px solid #e8e8e8;
     border-radius: 5px;
     text-align: right;
@@ -316,7 +335,7 @@ a {
   }
   .site-nav .menu-icon > svg {
     width: 18px;
-    height: 15px;
+    height: 14px;
   }
   .site-nav .menu-icon > svg path {
     fill: #424242;
@@ -339,7 +358,7 @@ a {
  * Site footer
  */
 .site-footer {
-  padding: 33px 0;
+  padding: 25px 0;
 }
 .site-footer p {
   text-align: center;
@@ -353,7 +372,7 @@ a {
  * Page content
  */
 .post {
-  padding-top: 30px;
+  padding-top: 50px;
 }
 
 .post-title, .post-link {
@@ -417,15 +436,14 @@ footer {
 }
 .post-list h1 {
   margin: 0;
-  margin-bottom: -20px;
 }
 .post-list > li {
-  margin-bottom: 33px;
+  margin-bottom: 25px;
 }
 
 .post-meta {
-  opacity: 0.5;
-  margin-top: 25px;
+  opacity: 1;
+  margin-top: 5px;
   font-family: Freight Text, Georgia, Cambria;
   font-size: 22.525px;
   font-style: italic;
@@ -440,9 +458,6 @@ footer {
   text-transform: capitalize;
   font-weight: bold;
 }
-.post-meta:hover {
-  opacity: 1;
-}
 
 .post-link {
   display: block;
@@ -456,6 +471,9 @@ footer {
 /**
  * Posts
  */
+.work {
+  padding-top: 20px;
+}
 .work input.ff-selector-type-all:checked ~ label.ff-label-type-all,
 .work input.ff-selector-type-1:checked ~ label.ff-label-type-1,
 .work input.ff-selector-type-2:checked ~ label.ff-label-type-2,
@@ -470,25 +488,22 @@ footer {
   cursor: pointer;
   margin-right: 20px;
 }
-.work .ff-items {
-  position: relative;
-  margin: 0px auto;
-  padding-top: 20px;
-}
-.work .ff-items a {
+.work a {
+  border-radius: 5px;
   width: 100%;
   height: 100%;
 }
-.work .ff-items a span {
+.work a span {
+  border-radius: 5px;
   display: block;
   font-style: italic;
   color: #fff;
   font-weight: bold;
   padding: 20px;
   position: absolute;
-  bottom: 10px;
+  top: 0;
   left: 10px;
-  width: 120px;
+  width: 14vw;
   text-align: center;
   -webkit-transition: all 0.3s ease-in;
   -moz-transition: all 0.3s ease-in;
@@ -496,42 +511,42 @@ footer {
   -ms-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
-.work .ff-items li {
+.work li {
+  border-radius: 5px;
   margin: 10px;
   float: left;
-  height: 200px;
-  width: 200px;
+  height: 14vw;
+  width: 14vw;
   list-style-type: none;
-  width: 200px;
   -webkit-transform: scale(1, 1);
   -moz-transform: scale(1, 1);
   -o-transform: scale(1, 1);
   -ms-transform: scale(1, 1);
   transform: scale(1, 1);
 }
-.work .ff-items li h1 {
+.work li h1 {
   opacity: 0;
   z-index: 4;
-  color: white;
+  color: #fcfcfc;
   font-family: DIN;
   position: absolute;
   font-weight: 300;
   margin-left: 30px;
-  font-size: 22.525px !important;
+  font-size: 20.2725px !important;
 }
-.work .ff-items li h1 p {
+.work li h1 p {
   font-family: DIN;
   font-weight: bold;
-  font-size: 14.64125px;
+  font-size: 13.515px;
   margin-bottom: 10px;
   margin-top: 20px;
   text-transform: uppercase;
 }
-.work .ff-items li span {
+.work li span {
   transition: 200ms all ease;
   float: left;
-  height: 200px;
-  width: 200px;
+  height: 14vw;
+  width: 14vw;
   padding: 0;
   margin: 0;
   margin-left: -10px;
@@ -539,23 +554,44 @@ footer {
   position: absolute;
   opacity: 0;
   z-index: 3;
-  background: #424242;
+  background: #0075c9;
 }
-.work .ff-items li img {
+.work li img {
+  height: 14vw;
+  width: 14vw;
+  border-radius: 5px;
   transition: 200ms all ease;
   position: absolute;
   float: left;
   display: inline-block;
 }
-.work .ff-items li:hover span {
+.work li:hover span {
   opacity: .9;
 }
-.work .ff-items li:hover h1 {
+.work li:hover h1 {
   opacity: 1;
 }
 
+@media screen and (max-width: 900px) {
+  .work a span, .work li, .work span, .work img {
+    height: 19vw !important;
+    width: 19vw !important;
+  }
+}
+@media screen and (max-width: 700px) {
+  .work a span, .work li, .work span, .work img {
+    height: 25vw !important;
+    width: 25vw !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .work a span, .work li, .work span, .work img {
+    height: 35vw !important;
+    width: 35vw !important;
+  }
+}
 .post-header {
-  margin-bottom: 33px;
+  margin-bottom: 25px;
 }
 
 .post-title {
@@ -563,7 +599,7 @@ footer {
   letter-spacing: -1px;
   line-height: 1;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .post-title {
     font-size: 36px;
   }
@@ -589,7 +625,7 @@ footer {
 .post-content h2 {
   font-size: 36px;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .post-content h2 {
     font-size: 32px;
   }
@@ -601,7 +637,7 @@ footer {
 .post-content h3 {
   font-size: 28px;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .post-content h3 {
     font-size: 22px;
   }
@@ -609,7 +645,7 @@ footer {
 .post-content h4 {
   font-size: 25px;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .post-content h4 {
     font-size: 18px;
   }

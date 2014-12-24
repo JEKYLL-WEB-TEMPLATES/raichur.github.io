@@ -5,8 +5,9 @@ permalink: /archives/
 ---
 
 <div class="home">
-
-<ul class="post-list">
+<div id="users">
+<input class="search" placeholder="Search" autofocus/>
+<ul class="post-list list">
 {% for post in site.categories.article %}
 <li>
 {% assign words = post.content | number_of_words %}

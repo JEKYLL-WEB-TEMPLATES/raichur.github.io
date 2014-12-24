@@ -1,7 +1,10 @@
 ---
-layout: post
+layout: page
 title:  "My Manifesto"
+permalink: "/manifesto/"
 ---
+
+# Manifesto
 
 Never stop learning.
 

@@ -4,7 +4,7 @@ title: "About"
 permalink: /about/
 ---
 
-#### Hi, I'm Joshua Raichur. I'm a designer, developer, and insatiable learner at large.
+## Hi, I'm Joshua Raichur. I'm a designer, developer, and insatiable learner at large.
 
 I love learning things, building things, and solving problems. I'm passionate about technology and design and how the two intersect, and I specialize in the web and iOS.
 

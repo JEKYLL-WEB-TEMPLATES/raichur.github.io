@@ -50,11 +50,11 @@ $small-font-size:  $base-font-size * 0.85;
 $base-line-height: 1.5;
 $heading-line-height: .99;
 
-$spacing-unit:     33px;
+$spacing-unit:     25px;
 
 $text-color:       #333;
-$background-color: #fff;
-$brand-color:      #E64B3E;
+$background-color: #fcfcfc;
+$brand-color:      #0075c9;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -64,7 +64,8 @@ $grey-color-dark:  darken($grey-color, 25%);
 $content-width:    70%;
 
 $on-palm:          700px;
-$on-laptop:        900px;
+$on-tablet:        900px;
+$on-laptop:        1000px;
 
 
 

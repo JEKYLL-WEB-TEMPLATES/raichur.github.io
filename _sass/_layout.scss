@@ -5,11 +5,29 @@
     border-top: 5px solid $brand-color;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
-
-    // Positioning context for the mobile navigation icon
-    position: relative;
+    background: rgba(255,255,255,.995);
+    position: fixed;
+    width: 100%;
+    text-align:center;
+    top: 0px;
+    z-index: 5;
+    left: 0px;
+    transition: ease-in-out top .14s;
 }
-
+.search {
+  background: none;
+  border: none;
+  outline: none;
+  transition: all ease 200ms;
+  width: 100%;
+  margin-bottom: 40px;
+  opacity: .8;
+  font-size: $base-font-size;
+  &:focus {
+    outline: none;
+    opacity: 1;
+  }
+}
 .site-title {
     font-size: 26px;
     line-height: 56px;
@@ -63,7 +81,7 @@ a {
 
             > svg {
                 width: 18px;
-                height: 15px;
+                height: 14px;
 
                 path {
                     fill: $grey-color-dark;
@@ -108,7 +126,7 @@ a {
  * Page content
  */
  .post {
-   padding-top: 30px;
+   padding-top: 50px;
  }
  .post-title, .post-link {
    -webkit-animation: fadeInUp 200ms; /* Safari, Chrome and Opera > 12.1 */
@@ -149,7 +167,6 @@ footer {
     list-style: none;
     h1 {
       margin: 0;
-      margin-bottom: -20px;
     }
     > li {
         margin-bottom: $spacing-unit;
@@ -157,9 +174,8 @@ footer {
 }
 
 .post-meta {
-  // padding-bottom: 30px;
-  opacity: 0.5;
-  margin-top: 25px;
+  opacity: 1;
+  margin-top: 5px;
   font-family: $secondary-font-family;
     font-size: $small-font-size;
     font-style: italic;
@@ -172,9 +188,6 @@ footer {
       transition: 200ms all ease;
       text-transform: capitalize;
       font-weight: bold;
-    }
-    &:hover {
-      opacity: 1;
     }
 }
 .post-link {
@@ -207,25 +220,24 @@ footer {
      cursor: pointer;
      margin-right: 20px;
    }
-   .ff-items{
-     position: relative;
-     margin: 0px auto;
      padding-top: 20px;
-   }
-   .ff-items a{
+
+   a{
+     border-radius: 5px;
      width: 100%;
      height: 100%;
    }
-   .ff-items a span{
+   a span{
+     border-radius: 5px;
      display: block;
      font-style: italic;
      color: #fff;
      font-weight: bold;
      padding: 20px;
      position: absolute;
-     bottom: 10px;
+     top:0;
      left: 10px;
-     width: 120px;
+     width: 14vw;
      text-align: center;
      -webkit-transition: all 0.3s ease-in;
      -moz-transition: all 0.3s ease-in;
@@ -234,13 +246,13 @@ footer {
      transition: all 0.3s ease-in;
    }
 
-   .ff-items li{
+   li{
+     border-radius: 5px;
      margin: 10px;
      float: left;
-     height: 200px;
-     width: 200px;
+     height: 14vw;
+     width: 14vw;
      list-style-type: none;
-     width: 200px;
      -webkit-transform: scale(1,1);
      -moz-transform: scale(1,1);
      -o-transform: scale(1,1);
@@ -250,7 +262,7 @@ footer {
        p {
          font-family: $base-font-family;
          font-weight: bold;
-         font-size: $small-font-size * 0.65;
+         font-size: $small-font-size * 0.6;
          margin-bottom: 10px;
          margin-top: 20px;
          text-transform: uppercase;
@@ -263,13 +275,13 @@ footer {
 
        font-weight: 300;
        margin-left: 30px;
-       font-size: $small-font-size !important;
+       font-size: $small-font-size * .9 !important;
      }
      span {
        transition: 200ms all ease;
        float: left;
-       height: 200px;
-       width: 200px;
+       height: 14vw;
+       width: 14vw;
        padding: 0;
        margin: 0;
        margin-left: -10px;
@@ -277,9 +289,12 @@ footer {
        position: absolute;
        opacity: 0;
        z-index: 3;
-       background: $grey-color-dark;
+       background: $brand-color;
      }
      img {
+       height: 14vw;
+       width: 14vw;
+       border-radius: 5px;
        transition: 200ms all ease;
        position: absolute;
        float: left;
@@ -291,6 +306,24 @@ footer {
      &:hover h1 {
        opacity: 1;
      }
+   }
+ }
+ @include media-query($on-tablet) {
+   .work a span, .work li, .work span, .work img {
+     height: 19vw !important;
+     width: 19vw !important;
+   }
+ }
+ @include media-query($on-palm) {
+   .work a span, .work li, .work span, .work img {
+     height: 25vw !important;
+     width: 25vw !important;
+   }
+ }
+ @include media-query($on-palm - 100px) {
+   .work a span, .work li, .work span, .work img {
+     height: 35vw !important;
+     width: 35vw !important;
    }
  }
 .post-header {

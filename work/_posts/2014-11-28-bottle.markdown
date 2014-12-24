@@ -1,5 +1,5 @@
 ---
-title: "Message in a bottle"
+title: "Message"
 tags: poster
 img_dir: "/posters/bottle/"
 ---
@@ -8,5 +8,3 @@ img_dir: "/posters/bottle/"
 
 
 ![Message in a bottle](/resources/work/posters/bottle/01.jpg)
-
-
