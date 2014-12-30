@@ -229,8 +229,8 @@ watch: {
     files: ['js/*.js'],
     tasks: ['concat', 'uglify'],
     options: {
-      spawn: false,
-      },
+      spawn: false
+      }
     }
   }
 {% endhighlight %}
