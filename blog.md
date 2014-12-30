@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Archives
-permalink: /archives/
+title: Blog
+permalink: /blog/
 ---
 
 <div class="home">

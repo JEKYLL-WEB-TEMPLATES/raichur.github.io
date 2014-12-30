@@ -1,7 +1,5 @@
 ---
 layout: page
-title: "About"
-permalink: /about/
 ---
 
 ## Hi, I'm Joshua Raichur. I'm a designer, developer, and insatiable learner at large.
