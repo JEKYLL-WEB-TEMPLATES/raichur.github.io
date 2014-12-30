@@ -248,12 +248,3 @@ if(document.getElementsByClassName('search') > -1) {
     var input = document.getElementsByClassName("search").focus();
   }
 }
-
-// Nav
-window.onscroll = function() {
-  if(window.scrollY > 0) {
-    document.getElementsByClassName('site-header').setAttribute("class", "height55");
-  } else {
-    document.getElementsByClassName('site-header').setAttribute("class", "height65");
-  }
-}

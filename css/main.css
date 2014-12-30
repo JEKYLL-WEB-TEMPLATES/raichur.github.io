@@ -288,14 +288,6 @@ a {
   transition: 200ms all ease;
 }
 
-nav.height55 {
-  min-height: 55px;
-}
-
-nav.height65 {
-  min-height: 65px;
-}
-
 #nav {
   background: #0075c9;
 }
