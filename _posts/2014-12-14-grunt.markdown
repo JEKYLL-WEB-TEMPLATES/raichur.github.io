@@ -28,7 +28,7 @@ The `package.json` file in our projects root directory enables us to track and i
 {
   "name" : "YOUR_GRUNT_PROJECT",
   "version" : "0.1.0",
-  "author" : "YOUR NAME",
+  "author" : "YOUR_NAME",
   "devDependencies" : {
     "grunt" :  "~0.4.5"
   }
@@ -135,8 +135,8 @@ Then we configure it in our `Gruntfile.js` file:
 
 uglify: {
   build: {
-    src: 'js/build/production.js', // Our un-minified production JS file
-    dest: 'js/build/production.min.js' // Automagically minified JS file!
+    src: 'js/build/main.js', // Our un-minified production JS file
+    dest: 'js/build/main.min.js' // Automagically minified JS file!
   }
 }
 {% endhighlight %}
