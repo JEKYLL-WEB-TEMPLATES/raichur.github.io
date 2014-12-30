@@ -132,7 +132,15 @@ npm install grunt-contrib-uglify --save-dev
 Then we configure it in our `Gruntfile.js` file:
 
 {% highlight javascript %}
-
+concat: {
+  dist: {
+    src: [
+    'js/plugins/*.js', // Specifies all of the files with the .js extension in the plugins folder
+    'js/main.js'  // The main JS file
+    ],
+    dest: 'js/build/main.js', // The final build JS file
+  }
+},
 uglify: {
   build: {
     src: 'js/build/main.js', // Our un-minified production JS file
