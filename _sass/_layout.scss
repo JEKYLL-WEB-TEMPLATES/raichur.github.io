@@ -47,7 +47,7 @@ a {
     float: right;
     line-height: 55px;
     font-size: 1.3rem;
-    letter-spacing: 1.5;
+    letter-spacing: 1.8;
     text-transform: uppercase;
     color: white;
 
@@ -342,7 +342,6 @@ footer {
 
 .post-title {
     font-size: 42px;
-    letter-spacing: -1px;
     line-height: 1;
 
     @include media-query($on-laptop) {
@@ -360,14 +359,13 @@ footer {
       font-weight: bold;
     }
     p {
-      letter-spacing: 0.01rem;
       font-family: $secondary-font-family;
       font-size: $small-font-size;
     }
 
     h2 {
         font-size: 36px;
-        line-height: .96;
+        line-height: .98;
         @include media-query($on-laptop) {
             font-size: 32px;
         }

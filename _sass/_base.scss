@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-    margin-bottom: $spacing-unit / 1.5;
+    margin-bottom: $spacing-unit;
 }
 
 
@@ -87,7 +87,7 @@ li {
  * Headings
  */
 h1, h2 {
-    margin-top: $spacing-unit * 1.1;
+    margin-top: $spacing-unit * 1.2;
     font-weight: 500;
 }
 h3, h4 {
@@ -131,7 +131,6 @@ blockquote {
     border-left: 4px solid $grey-color;
     padding-left: $spacing-unit / 2;
     font-size: 18px;
-    letter-spacing: -1px;
     font-style: italic;
 
     > :last-child {

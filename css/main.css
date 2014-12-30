@@ -1,34 +1,5 @@
-@font-face {
-  font-family: "DIN";
-  src: url("/css/fonts/DIN-Regular.otf") format("opentype");
-}
-@font-face {
-  font-family: "DIN";
-  src: url("/css/fonts/DIN-Bold.ttf") format("truetype");
-  font-weight: bold;
-}
-@font-face {
-  font-family: "Freight Text";
-  src: url("/css/fonts/FreightText-MedIta.otf") format("opentype");
-  font-style: italic;
-  font-weight: medium;
-}
-@font-face {
-  font-family: "Freight Text";
-  src: url("/css/fonts/FreightText-Med.otf") format("opentype");
-  font-weight: medium;
-}
-@font-face {
-  font-family: "Freight Text";
-  src: url("/css/fonts/FreightText-Light.otf") format("opentype");
-  font-weight: lighter;
-}
-@font-face {
-  font-family: "Freight Text";
-  src: url("/css/fonts/FreightText-LightIta.otf") format("opentype");
-  font-style: italic;
-  font-weight: lighter;
-}
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,200);
+@import url(http://fonts.googleapis.com/css?family=Merriweather:700,700italic,400,400italic);
 @font-face {
   font-family: "Inconsolata";
   src: url("/css/fonts/Inconsolata-Regular.ttf") format("truetype");
@@ -56,8 +27,8 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font-family: DIN;
-  font-size: 26.5px;
+  font-family: Roboto;
+  font-size: 26px;
   line-height: 1.5;
   font-weight: 300;
   color: #333;
@@ -76,7 +47,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 .highlight {
-  margin-bottom: 16.66667px;
+  margin-bottom: 25px;
 }
 
 /**
@@ -95,7 +66,7 @@ figure > img {
 }
 
 figcaption {
-  font-size: 22.525px;
+  font-size: 20.8px;
 }
 
 /**
@@ -114,7 +85,7 @@ li > ol {
  * Headings
  */
 h1, h2 {
-  margin-top: 27.5px;
+  margin-top: 30px;
   font-weight: 500;
 }
 
@@ -136,7 +107,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 63.6px;
+  font-size: 62.4px;
 }
 
 /**
@@ -162,7 +133,6 @@ blockquote {
   border-left: 4px solid #828282;
   padding-left: 12.5px;
   font-size: 18px;
-  letter-spacing: -1px;
   font-style: italic;
 }
 blockquote > :last-child {
@@ -267,7 +237,7 @@ pre > code {
   width: 100%;
   margin-bottom: 40px;
   opacity: .8;
-  font-size: 26.5px;
+  font-size: 26px;
 }
 .search:focus {
   outline: none;
@@ -296,7 +266,7 @@ a {
   float: right;
   line-height: 55px;
   font-size: 1.3rem;
-  letter-spacing: 1.5;
+  letter-spacing: 1.8;
   text-transform: uppercase;
   color: white;
 }
@@ -307,7 +277,7 @@ a {
   opacity: .8;
   color: white;
   line-height: 1.5;
-  font-family: DIN;
+  font-family: Roboto;
 }
 .site-nav .page-link:hover {
   opacity: 1;
@@ -366,8 +336,8 @@ a {
 .site-footer p {
   text-align: center;
   color: #828282;
-  font-family: Freight Text, Georgia, Cambria;
-  font-size: 26.5px;
+  font-family: Merriweather, Georgia, Cambria;
+  font-size: 26px;
   font-style: italic;
 }
 
@@ -433,7 +403,7 @@ footer {
 }
 
 .post-list {
-  font-family: DIN !important;
+  font-family: Roboto !important;
   margin-left: 0;
   list-style: none;
 }
@@ -447,8 +417,8 @@ footer {
 .post-meta {
   opacity: 1;
   margin-top: 5px;
-  font-family: Freight Text, Georgia, Cambria;
-  font-size: 22.525px;
+  font-family: Merriweather, Georgia, Cambria;
+  font-size: 20.8px;
   font-style: italic;
   color: #828282;
   transition: 300ms all ease;
@@ -531,16 +501,16 @@ footer {
   opacity: 0;
   z-index: 4;
   color: #fcfcfc;
-  font-family: DIN;
+  font-family: Roboto;
   position: absolute;
   font-weight: 300;
   margin-left: 30px;
-  font-size: 20.2725px !important;
+  font-size: 18.72px !important;
 }
 .work li h1 p {
-  font-family: DIN;
+  font-family: Roboto;
   font-weight: bold;
-  font-size: 13.515px;
+  font-size: 12.48px;
   margin-bottom: 10px;
   margin-top: 20px;
   text-transform: uppercase;
@@ -599,7 +569,6 @@ footer {
 
 .post-title {
   font-size: 42px;
-  letter-spacing: -1px;
   line-height: 1;
 }
 @media screen and (max-width: 1000px) {
@@ -609,8 +578,8 @@ footer {
 }
 
 .reading-time {
-  font-size: 21.39875px;
-  font-family: DIN;
+  font-size: 19.76px;
+  font-family: Roboto;
 }
 
 .post-content {
@@ -621,13 +590,12 @@ footer {
   font-weight: bold;
 }
 .post-content p {
-  letter-spacing: 0.01rem;
-  font-family: Freight Text, Georgia, Cambria;
-  font-size: 22.525px;
+  font-family: Merriweather, Georgia, Cambria;
+  font-size: 20.8px;
 }
 .post-content h2 {
   font-size: 36px;
-  line-height: .96;
+  line-height: .98;
 }
 @media screen and (max-width: 1000px) {
   .post-content h2 {
@@ -635,8 +603,8 @@ footer {
   }
 }
 .post-content ul, .post-content ol {
-  font-family: Freight Text, Georgia, Cambria;
-  font-size: 22.525px;
+  font-family: Merriweather, Georgia, Cambria;
+  font-size: 20.8px;
 }
 .post-content h3 {
   font-size: 28px;
@@ -665,7 +633,7 @@ footer {
   }
 
   h1 {
-    font-size: 36.888px !important;
+    font-size: 36.192px !important;
   }
 }
 /**
