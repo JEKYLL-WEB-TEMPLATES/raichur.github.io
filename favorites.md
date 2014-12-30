@@ -5,7 +5,7 @@ permalink: /faves/
 ---
 
 <div class="faves" markdown="1">
-Here are my favorite books, blogs, MOOC & video sites, and podcasts. All of these are listed in random order (refresh for proof).
+Here are my favorite books, blogs, MOOC & video sites, and podcasts. The order is random.
 
 ## Books
 I normally read 1-2 books a week. Here are a few of my favorites.

@@ -2,9 +2,7 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $brand-color;
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
+    min-height: 55px;
     background: rgba(255,255,255,.995);
     position: fixed;
     width: 100%;
@@ -30,8 +28,7 @@
 }
 .site-title {
     font-size: 26px;
-    line-height: 56px;
-    letter-spacing: -1px;
+    line-height: 50px;
     margin-bottom: 0;
     float: left;
 
@@ -43,30 +40,49 @@
 a {
   transition: 200ms all ease;
 }
+nav.height55{
+  min-height: 55px;
+}
+nav.height65{
+  min-height: 65px;
+}
+#nav {
+  background: $brand-color;
+}
 .site-nav {
     float: right;
-    line-height: 56px;
+    line-height: 55px;
+    font-size: 1.3rem;
+    letter-spacing: 1.5;
+    text-transform: uppercase;
+    color: white;
 
     .menu-icon {
         display: none;
     }
 
     .page-link {
-        color: $text-color;
+      opacity: .8;
+        color: white;
         line-height: $base-line-height;
         font-family: $base-font-family;
         // Gaps between nav items, but not on the first one
+        &:hover {
+          opacity: 1;
+        }
         &:not(:first-child) {
             margin-left: 20px;
         }
+    }
+    .active {
+      opacity: 1;
     }
 
     @include media-query($on-palm) {
         position: absolute;
         top: 9px;
         right: 30px;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
+        background-color: $brand-color;
         border-radius: 5px;
         text-align: right;
 
@@ -84,7 +100,7 @@ a {
                 height: 14px;
 
                 path {
-                    fill: $grey-color-dark;
+                    fill: white;
                 }
             }
         }
@@ -345,7 +361,7 @@ footer {
 }
 .post-content {
   margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     a {
       font-weight: bold;
     }
@@ -357,7 +373,7 @@ footer {
 
     h2 {
         font-size: 36px;
-
+        line-height: .96;
         @include media-query($on-laptop) {
             font-size: 32px;
         }
