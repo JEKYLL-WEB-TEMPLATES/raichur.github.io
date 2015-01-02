@@ -48,7 +48,7 @@
     {% if page.title %}<h1>{{ page.title }}</h1>{% else %}<h1>Hi, I'm Joshua Raichur</h1>{% endif %}
     {% if post.url %}</a>{% endif %}
   {% if page.sub %}<p>{{ page.sub }}</p>{% endif %}
-  {% if page.path contains '_posts' %}<p>{{ reading-time }} read ● {{ page.date | date: '%A, %-d %B %Y' }}</p>{% endif %}
+  {% if page.category == 'article' %}<p>{{ reading-time }} read ● {{ page.date | date: '%A, %-d %B %Y' }}</p>{% endif %}
 </div>
 
 <div id="particles-js"></div>
