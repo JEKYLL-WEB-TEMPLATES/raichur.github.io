@@ -50,7 +50,7 @@ $background-color: #f4f4f4;
 
 $grey-color:       #171D25;
 $grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 2%);
+$grey-color-dark:  darken($grey-color, 5%);
 $brand-color:      $grey-color;
 // Width of the content area
 $content-width:    70%;
@@ -209,7 +209,7 @@ $on-laptop:        1000px;
   }
 
   100% {
-    opacity: 0.5;
+    opacity: 0.7;
     -webkit-transform: translateY(0);
   }
 }
@@ -221,7 +221,7 @@ $on-laptop:        1000px;
   }
 
   100% {
-    opacity: 0.5;
+    opacity: 0.7;
     -moz-transform: translateY(0);
   }
 }
@@ -233,7 +233,7 @@ $on-laptop:        1000px;
   }
 
   100% {
-    opacity: 0.5;
+    opacity: 0.7;
     -o-transform: translateY(0);
   }
 }
@@ -245,7 +245,7 @@ $on-laptop:        1000px;
   }
 
   100% {
-    opacity: 0.5;
+    opacity: 0.7;
     transform: translateY(0);
   }
 }

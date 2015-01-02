@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Work
-permalink: /work/
+title: Lab
+sub: "My creative outlet"
+permalink: /lab/
 ---
 <div id="users">
   <input class="search" placeholder="Search" autofocus/>

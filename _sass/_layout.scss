@@ -118,9 +118,11 @@ a {
     p {
       text-align: center;
       color: $grey-color;
-      font-family: $secondary-font-family;
+      font-family: $base-font-family;
       font-size: $base-font-size;
-      font-style: italic;
+      opacity: .5;
+      letter-spacing: 6px;
+      text-transform: uppercase;
     }
 }
 
@@ -130,23 +132,24 @@ a {
  * Page content
  */
  .post {
-   padding-top: 50px;
+   padding-top: 30px;
  }
  .post-title, .post-link {
-   -webkit-animation: fadeInUp 200ms; /* Safari, Chrome and Opera > 12.1 */
-   -moz-animation: fadeInUp 200ms; /* Firefox < 16 */
-   -ms-animation: fadeInUp 200ms; /* Internet Explorer */
-   -o-animation: fadeInUp 200ms; /* Opera < 12.1 */
-   animation: fadeInUp 200ms;
+   -webkit-animation: fadeInUp 300ms; /* Safari, Chrome and Opera > 12.1 */
+   -moz-animation: fadeInUp 300ms; /* Firefox < 16 */
+   -ms-animation: fadeInUp 300ms; /* Internet Explorer */
+   -o-animation: fadeInUp 300ms; /* Opera < 12.1 */
+   animation: fadeInUp 300ms;
  }
- .post-meta {
-   -webkit-animation: fadeInUpMeta 200ms; /* Safari, Chrome and Opera > 12.1 */
-   -moz-animation: fadeInUpMeta 200ms; /* Firefox < 16 */
-   -ms-animation: fadeInUpMeta 200ms; /* Internet Explorer */
-   -o-animation: fadeInUpMeta 200ms; /* Opera < 12.1 */
-   animation: fadeInUpMeta 200ms;
+ footer, #top-header-text p {
+   -webkit-animation: fadeInUpMeta 500ms; /* Safari, Chrome and Opera > 12.1 */
+   -moz-animation: fadeInUpMeta 500ms; /* Firefox < 16 */
+   -ms-animation: fadeInUpMeta 500ms; /* Internet Explorer */
+   -o-animation: fadeInUpMeta 500ms; /* Opera < 12.1 */
+   animation: fadeInUpMeta 500ms;
+   animation-delay: 1s;
  }
-.post-content, #top-header-text {
+.post-content, #top-header-text h1 {
   animation-delay: 300ms;
   -webkit-animation: fadeInUp 300ms; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadeInUp 300ms; /* Firefox < 16 */
@@ -154,14 +157,7 @@ a {
   -o-animation: fadeInUp 300ms; /* Opera < 12.1 */
   animation: fadeInUp 300ms;
 }
-footer{
-  -webkit-animation: fadeIn .7s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadeIn .7s; /* Firefox < 16 */
-  -ms-animation: fadeIn .7s; /* Internet Explorer */
-  -o-animation: fadeIn .7s; /* Opera < 12.1 */
-  animation: fadeIn .7s;
-  animation-delay: 1s;
-}
+
 .page-heading {
     font-size: 20px;
 }

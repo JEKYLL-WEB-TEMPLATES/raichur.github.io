@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Blog
+sub: "Raw thought"
 permalink: /blog/
 ---
 

@@ -1,11 +1,11 @@
 ---
 layout: page
 title: "Faves"
+sub: "My favorite things"
 permalink: /faves/
 ---
 
 <div class="faves" markdown="1">
-Here are my favorite books, blogs, MOOC & video sites, and podcasts. The order is random.
 
 ## Books
 I normally read 1-2 books a week. Here are a few of my favorites.
