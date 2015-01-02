@@ -27,7 +27,7 @@ body {
     -webkit-text-size-adjust: 100%;
 }
 ::selection {
-  background: $grey-color-light;
+  background: darken($background-color, 20%);
 }
 
 

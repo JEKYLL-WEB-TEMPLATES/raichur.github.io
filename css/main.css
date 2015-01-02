@@ -58,7 +58,7 @@ body {
 }
 
 ::selection {
-  background: #6780a1;
+  background: #c1c1c1;
 }
 
 /**
@@ -347,15 +347,17 @@ a {
  * Site footer
  */
 .site-footer {
+  background: #0d1115;
   padding-top: 40px;
   padding-bottom: 40px;
+  opacity: .8;
 }
 .site-footer p {
   text-align: center;
   color: #f4f4f4;
   font-family: DIN;
   font-size: 30px;
-  opacity: .5;
+  opacity: 1;
   letter-spacing: 6px;
   text-transform: uppercase;
 }
@@ -365,6 +367,7 @@ a {
  */
 .page-content {
   background: #f4f4f4;
+  padding-bottom: 30px;
 }
 
 .post {
