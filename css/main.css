@@ -1,5 +1,26 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:500,200);
-@import url(http://fonts.googleapis.com/css?family=Merriweather:700,700italic,400,400italic);
+@font-face {
+  font-family: "DIN";
+  src: url("/css/fonts/DIN-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Freight Text";
+  src: url("/css/fonts/FreightText-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "Freight Text";
+  src: url("/css/fonts/FreightText-LightIta.otf") format("opentype");
+  font-style: italic;
+}
+@font-face {
+  font-family: "Freight Text";
+  src: url("/css/fonts/FreightText-Med.otf") format("opentype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Freight Text";
+  src: url("/css/fonts/FreightText-MedIta.otf") format("opentype");
+  font-weight: bold;
+}
 @font-face {
   font-family: "Inconsolata";
   src: url("/css/fonts/Inconsolata-Regular.ttf") format("truetype");
@@ -27,17 +48,17 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font-family: Roboto;
-  font-size: 26px;
+  font-family: DIN;
+  font-size: 30px;
   line-height: 1.5;
-  font-weight: 300;
+  font-weight: 200;
   color: #333;
   background-color: #fcfcfc;
   -webkit-text-size-adjust: 100%;
 }
 
 ::selection {
-  background: #e8e8e8;
+  background: #6780a1;
 }
 
 /**
@@ -66,7 +87,7 @@ figure > img {
 }
 
 figcaption {
-  font-size: 20.8px;
+  font-size: 24px;
 }
 
 /**
@@ -86,12 +107,12 @@ li > ol {
  */
 h1, h2 {
   margin-top: 30px;
-  font-weight: 500;
+  font-weight: 100;
 }
 
 h3, h4 {
   margin-top: 27.5px;
-  font-weight: 400;
+  font-weight: 100;
   letter-spacing: 3px;
   text-transform: uppercase;
 }
@@ -102,19 +123,19 @@ h5, h6 {
   line-height: 0.99;
 }
 
-h1, h2, h3, h4 {
-  font-weight: bold;
+h1 {
+  font-size: 60px;
 }
 
-h1 {
-  font-size: 62.4px;
+h2 {
+  font-size: 48px;
 }
 
 /**
  * Links
  */
 a {
-  color: #E74944;
+  color: #14B6F4;
   text-decoration: none;
 }
 a:hover {
@@ -129,8 +150,8 @@ a:hover {
  * Blockquotes
  */
 blockquote {
-  color: #424242;
-  border-left: 4px solid #828282;
+  color: #13181f;
+  border-left: 4px solid #171D25;
   padding-left: 12.5px;
   font-size: 18px;
   font-style: italic;
@@ -145,9 +166,9 @@ blockquote > :last-child {
 pre,
 code {
   font-family: Inconsolata;
-  color: #424242;
+  color: #13181f;
   font-weight: 300;
-  background-color: #e8e8e8;
+  background-color: #6780a1;
 }
 
 code {
@@ -211,7 +232,7 @@ pre > code {
   vertical-align: middle;
 }
 .icon > svg path {
-  fill: #828282;
+  fill: #171D25;
 }
 
 /**
@@ -219,8 +240,7 @@ pre > code {
  */
 .site-header {
   min-height: 55px;
-  background: rgba(255, 255, 255, 0.995);
-  position: fixed;
+  position: absolute;
   width: 100%;
   text-align: center;
   top: 0px;
@@ -237,7 +257,7 @@ pre > code {
   width: 100%;
   margin-bottom: 40px;
   opacity: .8;
-  font-size: 26px;
+  font-size: 30px;
 }
 .search:focus {
   outline: none;
@@ -250,16 +270,12 @@ pre > code {
   margin-bottom: 0;
   float: left;
 }
-.site-title, .site-title:visited {
-  color: #424242;
+.site-title:visited {
+  color: #13181f;
 }
 
 a {
   transition: 200ms all ease;
-}
-
-#nav {
-  background: #E74944;
 }
 
 .site-nav {
@@ -277,7 +293,7 @@ a {
   opacity: .8;
   color: white;
   line-height: 1.5;
-  font-family: Roboto;
+  font-family: DIN;
 }
 .site-nav .page-link:hover {
   opacity: 1;
@@ -293,7 +309,7 @@ a {
     position: absolute;
     top: 9px;
     right: 30px;
-    background-color: #E74944;
+    background-color: #14B6F4;
     border-radius: 5px;
     text-align: right;
   }
@@ -335,9 +351,9 @@ a {
 }
 .site-footer p {
   text-align: center;
-  color: #828282;
-  font-family: Merriweather, Georgia, Cambria;
-  font-size: 26px;
+  color: #171D25;
+  font-family: Freight Text, Georgia, Cambria;
+  font-size: 30px;
   font-style: italic;
 }
 
@@ -385,17 +401,16 @@ a {
   animation: fadeInUp 300ms;
 }
 
-footer {
-  -webkit-animation: fadeIn 2s;
+footer, header, #particles-js {
+  -webkit-animation: fadeIn .3s;
   /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadeIn 2s;
+  -moz-animation: fadeIn .3s;
   /* Firefox < 16 */
-  -ms-animation: fadeIn 2s;
+  -ms-animation: fadeIn .3s;
   /* Internet Explorer */
-  -o-animation: fadeIn 2s;
+  -o-animation: fadeIn .3s;
   /* Opera < 12.1 */
-  animation: fadeIn 2s;
-  animation-delay: 4s;
+  animation: fadeIn .3s;
 }
 
 .page-heading {
@@ -403,7 +418,7 @@ footer {
 }
 
 .post-list {
-  font-family: Roboto !important;
+  font-family: DIN !important;
   margin-left: 0;
   list-style: none;
 }
@@ -417,10 +432,10 @@ footer {
 .post-meta {
   opacity: 1;
   margin-top: 5px;
-  font-family: Merriweather, Georgia, Cambria;
-  font-size: 20.8px;
+  font-family: Freight Text, Georgia, Cambria;
+  font-size: 24px;
   font-style: italic;
-  color: #828282;
+  color: #171D25;
   transition: 300ms all ease;
 }
 .post-meta span {
@@ -501,16 +516,16 @@ footer {
   opacity: 0;
   z-index: 4;
   color: #fcfcfc;
-  font-family: Roboto;
+  font-family: DIN;
   position: absolute;
   font-weight: 300;
   margin-left: 30px;
-  font-size: 18.72px !important;
+  font-size: 21.6px !important;
 }
 .work li h1 p {
-  font-family: Roboto;
+  font-family: DIN;
   font-weight: bold;
-  font-size: 12.48px;
+  font-size: 14.4px;
   margin-bottom: 10px;
   margin-top: 20px;
   text-transform: uppercase;
@@ -527,7 +542,7 @@ footer {
   position: absolute;
   opacity: 0;
   z-index: 3;
-  background: #E74944;
+  background: #14B6F4;
 }
 .work li img {
   height: 14vw;
@@ -578,33 +593,33 @@ footer {
 }
 
 .reading-time {
-  font-size: 19.76px;
-  font-family: Roboto;
+  font-size: 22.8px;
+  font-family: DIN;
 }
 
 .post-content {
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 .post-content a {
   font-weight: bold;
 }
 .post-content p {
-  font-family: Merriweather, Georgia, Cambria;
-  font-size: 20.8px;
+  font-family: Freight Text, Georgia, Cambria;
+  font-weight: 100;
+  font-size: 24px;
 }
 .post-content h2 {
-  font-size: 36px;
-  line-height: .98;
+  line-height: 1.3;
 }
 @media screen and (max-width: 1000px) {
   .post-content h2 {
-    font-size: 32px;
+    font-size: 35px;
   }
 }
 .post-content ul, .post-content ol {
-  font-family: Merriweather, Georgia, Cambria;
-  font-size: 20.8px;
+  font-family: Freight Text, Georgia, Cambria;
+  font-size: 24px;
 }
 .post-content h3 {
   font-size: 28px;
@@ -633,9 +648,37 @@ footer {
   }
 
   h1 {
-    font-size: 36.192px !important;
+    font-size: 34.8px !important;
   }
 }
+#particles-js {
+  height: 400px;
+  background: #13181f;
+}
+
+h1, p {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  position: absolute;
+  color: white;
+}
+
+#header-text h1 {
+  margin-left: 18%;
+  margin-top: 120px;
+}
+#header-text p {
+  margin-left: 18%;
+  margin-top: 200px;
+}
+
 /**
  * Syntax highlighting styles
  */

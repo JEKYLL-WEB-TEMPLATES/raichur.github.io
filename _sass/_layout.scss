@@ -3,8 +3,7 @@
  */
 .site-header {
     min-height: 55px;
-    background: rgba(255,255,255,.995);
-    position: fixed;
+    position: absolute;
     width: 100%;
     text-align:center;
     top: 0px;
@@ -31,8 +30,6 @@
     line-height: 50px;
     margin-bottom: 0;
     float: left;
-
-    &,
     &:visited {
         color: $grey-color-dark;
     }
@@ -40,9 +37,7 @@
 a {
   transition: 200ms all ease;
 }
-#nav {
-  background: $brand-color;
-}
+
 .site-nav {
     float: right;
     line-height: 55px;
@@ -50,7 +45,6 @@ a {
     letter-spacing: 1.8;
     text-transform: uppercase;
     color: white;
-
     .menu-icon {
         display: none;
     }
@@ -160,13 +154,12 @@ a {
   -o-animation: fadeInUp 300ms; /* Opera < 12.1 */
   animation: fadeInUp 300ms;
 }
-footer {
-  -webkit-animation: fadeIn 2s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadeIn 2s; /* Firefox < 16 */
-  -ms-animation: fadeIn 2s; /* Internet Explorer */
-  -o-animation: fadeIn 2s; /* Opera < 12.1 */
-  animation: fadeIn 2s;
-  animation-delay: 4s;
+footer, header, #particles-js {
+  -webkit-animation: fadeIn .3s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeIn .3s; /* Firefox < 16 */
+  -ms-animation: fadeIn .3s; /* Internet Explorer */
+  -o-animation: fadeIn .3s; /* Opera < 12.1 */
+  animation: fadeIn .3s;
 }
 .page-heading {
     font-size: 20px;
@@ -353,21 +346,21 @@ footer {
   font-family: $base-font-family;
 }
 .post-content {
-  margin-top: 50px;
+  margin-top: 30px;
     margin-bottom: 30px;
     a {
       font-weight: bold;
     }
     p {
       font-family: $secondary-font-family;
+      font-weight: 100;
       font-size: $small-font-size;
     }
 
     h2 {
-        font-size: 36px;
-        line-height: .98;
+        line-height: 1.3;
         @include media-query($on-laptop) {
-            font-size: 32px;
+            font-size: 35px;
         }
     }
     ul, ol {
@@ -402,5 +395,33 @@ footer {
   }
   h1 {
     font-size: $big-font-size * 0.58 !important;
+  }
+}
+
+#particles-js{
+  height: 400px;
+  background: $grey-color-dark;
+}
+h1, p {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  position: absolute;
+  color: white;
+}
+#header-text {
+  h1 {
+    margin-left: 18%;
+    margin-top: 120px;
+  }
+  p {
+    margin-left: 18%;
+    margin-top: 200px;
   }
 }

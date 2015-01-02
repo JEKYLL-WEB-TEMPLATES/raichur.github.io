@@ -1,9 +1,26 @@
 // Fonts
-@import url(http://fonts.googleapis.com/css?family=Merriweather:700,700italic,400,400italic);
-
 @font-face {
   font-family: "DIN";
-  src: url("/css/fonts/DIN-Light.ttf") format("truetype");
+  src: url("/css/fonts/DIN-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Freight Text";
+  src: url("/css/fonts/FreightText-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "Freight Text";
+  src: url("/css/fonts/FreightText-LightIta.otf") format("opentype");
+  font-style: italic;
+}
+@font-face {
+  font-family: "Freight Text";
+  src: url("/css/fonts/FreightText-Med.otf") format("opentype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Freight Text";
+  src: url("/css/fonts/FreightText-MedIta.otf") format("opentype");
+  font-weight: bold;
 }
 @font-face {
   font-family: "Inconsolata";
@@ -17,10 +34,10 @@
 
 // Our variables
 $base-font-family: DIN;
-$secondary-font-family: Merriweather, Georgia, Cambria;
+$secondary-font-family: Freight Text, Georgia, Cambria;
 $mono-font: Inconsolata;
-$base-font-size: 26px;
-$big-font-size:  $base-font-size * 2.4;
+$base-font-size: 30px;
+$big-font-size:  $base-font-size * 2;
 $small-font-size:  $base-font-size * 0.8;
 $base-line-height: 1.5;
 $heading-line-height: .99;
@@ -29,11 +46,11 @@ $spacing-unit:     25px;
 
 $text-color:       #333;
 $background-color: #fcfcfc;
-$brand-color:      #E74944;
+$brand-color:      #14B6F4;
 
-$grey-color:       #828282;
+$grey-color:       #171D25;
 $grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color-dark:  darken($grey-color, 2%);
 
 // Width of the content area
 $content-width:    70%;
