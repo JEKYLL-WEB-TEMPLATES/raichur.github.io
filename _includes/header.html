@@ -45,7 +45,7 @@
 
 <div id="top-header-text">
   {% if post.url %}<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{% endif %}
-    <h1>{{ page.title }}</h1>
+    {% if page.title %}<h1>{{ page.title }}</h1>{% else %}<h1>Hi, I'm Joshua Raichur</h1>{% endif %}
     {% if post.url %}</a>{% endif %}
   {% if page.sub %}<p>{{ page.sub }}</p>{% endif %}
   {% if page.path contains '_posts' %}<p>{{ reading-time }} read ● {{ page.date | date: '%A, %-d %B %Y' }}</p>{% endif %}

@@ -1,6 +1,5 @@
 ---
 layout: page
-title: "Hi, I'm Joshua Raichur"
 sub: "I'm a designer, developer, and insatiable learner at large."
 ---
 

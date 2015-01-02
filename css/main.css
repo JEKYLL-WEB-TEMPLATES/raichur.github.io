@@ -378,16 +378,16 @@ a {
   animation: fadeInUp 300ms;
 }
 
-footer, #top-header-text p {
-  -webkit-animation: fadeInUpMeta 500ms;
+footer, #top-header-text p, .post-meta {
+  -webkit-animation: fadeInUpMeta 350ms;
   /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadeInUpMeta 500ms;
+  -moz-animation: fadeInUpMeta 350ms;
   /* Firefox < 16 */
-  -ms-animation: fadeInUpMeta 500ms;
+  -ms-animation: fadeInUpMeta 350ms;
   /* Internet Explorer */
-  -o-animation: fadeInUpMeta 500ms;
+  -o-animation: fadeInUpMeta 350ms;
   /* Opera < 12.1 */
-  animation: fadeInUpMeta 500ms;
+  animation: fadeInUpMeta 350ms;
   animation-delay: 1s;
 }
 
@@ -421,7 +421,7 @@ footer, #top-header-text p {
 }
 
 .post-meta {
-  opacity: 1;
+  opacity: .6;
   margin-top: 5px;
   font-family: Freight Text, Georgia, Cambria;
   font-size: 24px;

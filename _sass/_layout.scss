@@ -141,12 +141,12 @@ a {
    -o-animation: fadeInUp 300ms; /* Opera < 12.1 */
    animation: fadeInUp 300ms;
  }
- footer, #top-header-text p {
-   -webkit-animation: fadeInUpMeta 500ms; /* Safari, Chrome and Opera > 12.1 */
-   -moz-animation: fadeInUpMeta 500ms; /* Firefox < 16 */
-   -ms-animation: fadeInUpMeta 500ms; /* Internet Explorer */
-   -o-animation: fadeInUpMeta 500ms; /* Opera < 12.1 */
-   animation: fadeInUpMeta 500ms;
+ footer, #top-header-text p, .post-meta {
+   -webkit-animation: fadeInUpMeta 350ms; /* Safari, Chrome and Opera > 12.1 */
+   -moz-animation: fadeInUpMeta 350ms; /* Firefox < 16 */
+   -ms-animation: fadeInUpMeta 350ms; /* Internet Explorer */
+   -o-animation: fadeInUpMeta 350ms; /* Opera < 12.1 */
+   animation: fadeInUpMeta 350ms;
    animation-delay: 1s;
  }
 .post-content, #top-header-text h1 {
@@ -174,7 +174,7 @@ a {
 }
 
 .post-meta {
-  opacity: 1;
+  opacity: .5;
   margin-top: 5px;
   font-family: $secondary-font-family;
     font-size: $small-font-size;
