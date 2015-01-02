@@ -53,7 +53,7 @@ body {
   line-height: 1.5;
   font-weight: 200;
   color: #333;
-  background-color: #fcfcfc;
+  background-color: #f4f4f4;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -135,7 +135,7 @@ h2 {
  * Links
  */
 a {
-  color: #14B6F4;
+  color: #171D25;
   text-decoration: none;
 }
 a:hover {
@@ -309,7 +309,7 @@ a {
     position: absolute;
     top: 9px;
     right: 30px;
-    background-color: #14B6F4;
+    background-color: #171D25;
     border-radius: 5px;
     text-align: right;
   }
@@ -388,7 +388,7 @@ a {
   animation: fadeInUpMeta 200ms;
 }
 
-.post-content {
+.post-content, #top-header-text {
   animation-delay: 300ms;
   -webkit-animation: fadeInUp 300ms;
   /* Safari, Chrome and Opera > 12.1 */
@@ -401,16 +401,17 @@ a {
   animation: fadeInUp 300ms;
 }
 
-footer, header, #particles-js {
-  -webkit-animation: fadeIn .3s;
+footer {
+  -webkit-animation: fadeIn .7s;
   /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadeIn .3s;
+  -moz-animation: fadeIn .7s;
   /* Firefox < 16 */
-  -ms-animation: fadeIn .3s;
+  -ms-animation: fadeIn .7s;
   /* Internet Explorer */
-  -o-animation: fadeIn .3s;
+  -o-animation: fadeIn .7s;
   /* Opera < 12.1 */
-  animation: fadeIn .3s;
+  animation: fadeIn .7s;
+  animation-delay: 1s;
 }
 
 .page-heading {
@@ -515,7 +516,7 @@ footer, header, #particles-js {
 .work li h1 {
   opacity: 0;
   z-index: 4;
-  color: #fcfcfc;
+  color: #f4f4f4;
   font-family: DIN;
   position: absolute;
   font-weight: 300;
@@ -542,7 +543,7 @@ footer, header, #particles-js {
   position: absolute;
   opacity: 0;
   z-index: 3;
-  background: #14B6F4;
+  background: #171D25;
 }
 .work li img {
   height: 14vw;
@@ -656,7 +657,7 @@ footer, header, #particles-js {
   background: #13181f;
 }
 
-h1, p {
+#top-header-text h1, #top-header-text p {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -669,12 +670,12 @@ h1, p {
   position: absolute;
   color: white;
 }
-
-#header-text h1 {
+#top-header-text h1 {
   margin-left: 18%;
   margin-top: 120px;
 }
-#header-text p {
+#top-header-text p {
+  opacity: .7;
   margin-left: 18%;
   margin-top: 200px;
 }

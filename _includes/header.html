@@ -15,8 +15,8 @@
 
       <div class="trigger">
         <a class="page-link{% if page.url contains "blog" %} active{% endif %}" href="/blog">Blog</a>
-<a class="page-link{% if page.url contains "work" %} active{% endif %}" href="/work">Work</a>
-          <a class="page-link{% if page.url contains "faves" %} active{% endif %}" href="/faves">Faves</a>
+        <a class="page-link{% if page.url contains "work" %} active{% endif %}" href="/work">Work</a>
+        <a class="page-link{% if page.url contains "faves" %} active{% endif %}" href="/faves">Faves</a>
       </div>
     </nav>
 
@@ -24,9 +24,31 @@
 
 </header>
 
-<div id="header-text">
-  <h1>Hi, I'm Joshua Raichur.</h1>
-  <p>I'm a designer, developer, and insatiable learner at large.</p>
+{% if page.path contains '_posts' %}
+{% assign words = content | number_of_words %}
+{% if words <= 90 %}
+{% assign reading-time = "1m" %}
+{% elsif words < 270 %}
+{% assign reading-time = "1m" %}
+{% elsif words < 450 %}
+{% assign reading-time = "2m" %}
+{% elsif words < 630 %}
+{% assign reading-time = "3m" %}
+{% elsif words < 810 %}
+{% assign reading-time = "4m" %}
+{% elsif words < 990 %}
+{% assign reading-time = "5m" %}
+{% else %}
+{% assign reading-time = words | divided_by:180 | append:"m" %}
+{% endif %}
+{% endif %}
+
+<div id="top-header-text">
+  {% if post.url %}<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{% endif %}
+    <h1>{{ page.title }}</h1>
+    {% if post.url %}</a>{% endif %}
+  {% if page.sub %}<p>{{ page.sub }}</p>{% endif %}
+  {% if page.path contains '_posts' %}<p>{{ reading-time }} read ● {{ page.date | date: '%A, %-d %B %Y' }}</p>{% endif %}
 </div>
 
 <div id="particles-js"></div>

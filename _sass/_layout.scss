@@ -146,7 +146,7 @@ a {
    -o-animation: fadeInUpMeta 200ms; /* Opera < 12.1 */
    animation: fadeInUpMeta 200ms;
  }
-.post-content {
+.post-content, #top-header-text {
   animation-delay: 300ms;
   -webkit-animation: fadeInUp 300ms; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadeInUp 300ms; /* Firefox < 16 */
@@ -154,12 +154,13 @@ a {
   -o-animation: fadeInUp 300ms; /* Opera < 12.1 */
   animation: fadeInUp 300ms;
 }
-footer, header, #particles-js {
-  -webkit-animation: fadeIn .3s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadeIn .3s; /* Firefox < 16 */
-  -ms-animation: fadeIn .3s; /* Internet Explorer */
-  -o-animation: fadeIn .3s; /* Opera < 12.1 */
-  animation: fadeIn .3s;
+footer{
+  -webkit-animation: fadeIn .7s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeIn .7s; /* Firefox < 16 */
+  -ms-animation: fadeIn .7s; /* Internet Explorer */
+  -o-animation: fadeIn .7s; /* Opera < 12.1 */
+  animation: fadeIn .7s;
+  animation-delay: 1s;
 }
 .page-heading {
     font-size: 20px;
@@ -402,25 +403,27 @@ footer, header, #particles-js {
   height: 400px;
   background: $grey-color-dark;
 }
-h1, p {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  pointer-events: none;
-  position: absolute;
-  color: white;
-}
-#header-text {
+
+#top-header-text {
+  h1, p {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+    position: absolute;
+    color: white;
+  }
   h1 {
     margin-left: 18%;
     margin-top: 120px;
   }
   p {
+    opacity: .7;
     margin-left: 18%;
     margin-top: 200px;
   }

@@ -4,8 +4,6 @@ title:  "My Manifesto"
 permalink: "/manifesto/"
 ---
 
-# Manifesto
-
 Never stop learning.
 
 Change the world.

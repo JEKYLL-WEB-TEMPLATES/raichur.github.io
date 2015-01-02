@@ -45,13 +45,13 @@ $heading-line-height: .99;
 $spacing-unit:     25px;
 
 $text-color:       #333;
-$background-color: #fcfcfc;
-$brand-color:      #14B6F4;
+$background-color: #f4f4f4;
+
 
 $grey-color:       #171D25;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 2%);
-
+$brand-color:      $grey-color;
 // Width of the content area
 $content-width:    70%;
 
