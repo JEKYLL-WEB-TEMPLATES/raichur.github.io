@@ -167,6 +167,7 @@ a {
     list-style: none;
     h1 {
       margin: 0;
+      a {font-weight: normal; }
     }
     > li {
         margin-bottom: $spacing-unit;
