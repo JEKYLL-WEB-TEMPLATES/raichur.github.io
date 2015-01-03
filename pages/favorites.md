@@ -10,6 +10,8 @@ permalink: /faves/
 ## Books
 I normally read 1-2 books a week. Here are a few of my favorites.
 
+- [The Social Animal](http://www.amazon.com/Social-Animal-Sources-Character-Achievement/dp/0812979370)
+- [The Art of Worldly Wisdom](http://www.amazon.com/Worldly-Wisdom-Unabridged-Start-Publishing-ebook/dp/B00BDJH78K)
 - [How Google Works](http://www.amazon.com/How-Google-Works-Eric-Schmidt-ebook/dp/B00J379F3O)
 - [What If?: Serious Scientific Answers to Absurd Hypothetical Questions](http://www.amazon.com/What-If-Scientific-Hypothetical-Questions-ebook/dp/B00J379DC2)
 - [Mindless Eating: Why We Eat More Than We Think](http://www.amazon.com/Mindless-Eating-More-Than-Think/dp/0553384481)
@@ -70,10 +72,15 @@ I normally read 1-2 books a week. Here are a few of my favorites.
 
 ## Podcasts
 
+- [Intelligence Squared](https://itunes.apple.com/us/podcast/intelligence-squared/id708371900?mt=2)
+- [Debug](https://itunes.apple.com/us/podcast/debug/id578812394?mt=2)
+- [Iterate](https://itunes.apple.com/us/podcast/iterate/id447063932?mt=2)
+- [Serial by WBEZ](https://itunes.apple.com/us/podcast/serial/id917918570?mt=2)
 - [The Tim Ferriss Show](https://itunes.apple.com/us/podcast/the-tim-ferriss-show/id863897795?mt=2)
 - [Radiolab from WNYC](https://itunes.apple.com/us/podcast/radiolab-from-wnyc/id152249110?mt=2)
 - [This Developer's Life](https://itunes.apple.com/us/podcast/this-developers-life/id389727545?mt=2)
 - [TEDTalks](https://www.ted.com/talks)
+- [The Rocketship Podcast](https://itunes.apple.com/us/podcast/the-rocketship-podcast/id808014240?mt=2)
 - [HBR IdeaCast](https://itunes.apple.com/in/podcast/hbr-ideacast/id152022135?mt=2)
 - [BrainStuff](https://itunes.apple.com/us/podcast/brainstuff/id260335249?mt=2)
 - [This Is Your Life with Michael Hyatt](https://itunes.apple.com/us/podcast/this-is-your-life-michael/id502414581?mt=2)
