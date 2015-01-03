@@ -320,6 +320,9 @@ a {
    }
  }
  @include media-query($on-palm) {
+   .site-footer p {
+     font-size: 1.8rem !important;
+   }
    .work a span, .work li, .work span, .work img {
      height: 250px !important;
      width: 250px !important;
@@ -403,13 +406,13 @@ a {
     max-width: 95%;
   }
   h1 {
-    font-size: $big-font-size * 0.58 !important;
+    font-size: $big-font-size * 0.78 !important;
   }
 }
 @include media-query($on-palm) {
   #top-header-text {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
   }
 }
 
