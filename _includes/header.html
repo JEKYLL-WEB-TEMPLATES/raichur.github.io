@@ -15,7 +15,7 @@
 
       <div class="trigger">
         <a class="page-link{% if page.url contains "blog" %} active{% endif %}" href="/blog">Blog</a>
-        <a class="page-link{% if page.url contains "lab" %} active{% endif %}" href="/lab">Lab</a>
+        <!--<a class="page-link{% if page.url contains "lab" %} active{% endif %}" href="/lab">Lab</a>-->
         <a class="page-link{% if page.url contains "faves" %} active{% endif %}" href="/faves">Faves</a>
       </div>
     </nav>
@@ -27,19 +27,19 @@
 {% if page.path contains '_posts' %}
 {% assign words = content | number_of_words %}
 {% if words <= 90 %}
-{% assign reading-time = "1m" %}
+{% assign reading-time = "1 minute" %}
 {% elsif words < 270 %}
-{% assign reading-time = "1m" %}
+{% assign reading-time = "1 minute" %}
 {% elsif words < 450 %}
-{% assign reading-time = "2m" %}
+{% assign reading-time = "2 minute" %}
 {% elsif words < 630 %}
-{% assign reading-time = "3m" %}
+{% assign reading-time = "3 minute" %}
 {% elsif words < 810 %}
-{% assign reading-time = "4m" %}
+{% assign reading-time = "4 minute" %}
 {% elsif words < 990 %}
-{% assign reading-time = "5m" %}
+{% assign reading-time = "5 minute" %}
 {% else %}
-{% assign reading-time = words | divided_by:180 | append:"m" %}
+{% assign reading-time = words | divided_by:180 | append:" minute" %}
 {% endif %}
 {% endif %}
 
