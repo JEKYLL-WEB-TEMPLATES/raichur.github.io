@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 .highlight {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 /**
@@ -94,7 +94,7 @@ figcaption {
  * Lists
  */
 ul, ol {
-  margin-left: 25px;
+  margin-left: 30px;
 }
 
 li > ul,
@@ -106,12 +106,12 @@ li > ol {
  * Headings
  */
 h1, h2 {
-  margin-top: 30px;
+  margin-top: 36px;
   font-weight: 100;
 }
 
 h3, h4 {
-  margin-top: 27.5px;
+  margin-top: 33px;
   font-weight: 100;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -119,7 +119,7 @@ h3, h4 {
 
 h5, h6 {
   margin: 0;
-  margin-top: 16.66667px;
+  margin-top: 20px;
   line-height: 0.99;
 }
 
@@ -152,7 +152,7 @@ a:hover {
 blockquote {
   color: #0d1115;
   border-left: 4px solid #171D25;
-  padding-left: 12.5px;
+  padding-left: 15px;
   font-size: 18px;
   font-style: italic;
 }
@@ -197,19 +197,19 @@ pre > code {
  * Wrapper
  */
 .wrapper {
-  max-width: -webkit-calc(70% - (25px * 2));
-  max-width: calc(70% - (25px * 2));
+  max-width: -webkit-calc(70% - (30px * 2));
+  max-width: calc(70% - (30px * 2));
   margin-right: auto;
   margin-left: auto;
-  padding-right: 25px;
-  padding-left: 25px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 @media screen and (max-width: 1000px) {
   .wrapper {
-    max-width: -webkit-calc(70% - (25px));
-    max-width: calc(70% - (25px));
-    padding-right: 12.5px;
-    padding-left: 12.5px;
+    max-width: -webkit-calc(70% - (30px));
+    max-width: calc(70% - (30px));
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 
@@ -428,7 +428,7 @@ footer, #top-header-text p, .post-meta {
   font-weight: normal;
 }
 .post-list > li {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .post-meta {
@@ -582,7 +582,7 @@ footer, #top-header-text p, .post-meta {
   }
 }
 .post-header {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .post-title {
