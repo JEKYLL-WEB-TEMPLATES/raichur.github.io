@@ -248,3 +248,5 @@ if(document.getElementsByClassName('search') > -1) {
     var input = document.getElementsByClassName("search").focus();
   }
 }
+
+// TODO: Github

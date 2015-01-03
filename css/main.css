@@ -609,6 +609,7 @@ footer, #top-header-text p, .post-meta {
 .post-content p {
   font-family: Freight Text, Georgia, Cambria;
   font-weight: 100;
+  letter-spacing: .1rem;
   font-size: 24px;
 }
 .post-content h2 {
@@ -651,6 +652,12 @@ footer, #top-header-text p, .post-meta {
 
   h1 {
     font-size: 34.8px !important;
+  }
+}
+@media screen and (max-width: 700px) {
+  #top-header-text {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 #particles-js {

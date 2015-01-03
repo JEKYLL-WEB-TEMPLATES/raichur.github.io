@@ -359,6 +359,7 @@ a {
     p {
       font-family: $secondary-font-family;
       font-weight: 100;
+      letter-spacing: .1rem;
       font-size: $small-font-size;
     }
 
@@ -400,6 +401,12 @@ a {
   }
   h1 {
     font-size: $big-font-size * 0.58 !important;
+  }
+}
+@include media-query($on-palm) {
+  #top-header-text {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
