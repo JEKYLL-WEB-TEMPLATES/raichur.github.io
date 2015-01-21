@@ -6,3 +6,8 @@ future: true
 exclude: [README.md, Rakefile, node_modules]
 permalink: /:title
 highlighter: pygments
+
+# Social
+github_username: "raichur"
+twitter_username: "joshuaraichur"
+dribbble_username: "geek"
