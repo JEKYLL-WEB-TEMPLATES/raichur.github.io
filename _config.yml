@@ -5,4 +5,4 @@ url: "http://joshuaraichur.com"
 future: true
 exclude: [README.md, Rakefile, node_modules]
 permalink: /:title
-pygments: true
+highlighter: pygments

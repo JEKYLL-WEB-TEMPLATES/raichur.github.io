@@ -1,25 +1,8 @@
 {
-  "name": "nkd",
-  "description": "Barebones scaffolding for developing a jekyll site.",
-  "version": "1.0.1",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/mrmrs/nkd.git"
-  },
-  "bugs": {
-    "url": "http://github.com/mrmrs/nkd/issues",
-    "email": "hi@mrmrs.cc"
-  },
-  "homepage": "http://nkd.cc",
-  "keywords": [
-    "jekyll",
-    "ruby",
-    "static site generator",
-    "html5",
-    "css",
-    "sass",
-    "template"
-  ],
+  "name": "joshua-raichur",
+  "description": "Joshua Raichur's website.",
+  "version": "4.0.0",
+  "homepage": "http://joshuaraichur.com",
   "devDependencies": {
     "browser-sync": "^1.1.1",
     "gulp": "~3.5.5",
@@ -39,40 +22,6 @@
     "imagemin-pngcrush": "^1.0.0",
     "jshint-stylish": "~0.1.5"
   },
-  "contributors": [
-    {
-      "name": "Jake Champion",
-      "email": "me@jakechampion.name"
-    },
-    {
-      "name": "Dave C. Copeland",
-      "email": "davetron5000@gmail.com"
-    },
-    {
-      "name": "Doug March",
-      "email": "dougmarch@gmail.com"
-    },
-    {
-      "name": "Chris Blanch",
-      "url": "http://chrisblanch.com"
-    },
-    {
-      "name": "David Potsiadlo",
-      "email": "davidpots@gmail.com"
-    },
-    {
-      "name": "Huy Hong",
-      "email": "me@huyhong.com"
-    },
-    {
-      "name": "Kyle MacDonald",
-      "email": "macdonaldky@gmail.com"
-    },
-    {
-      "name": "Adam Morse",
-      "email": "hi@mrmrs.cc"
-    }
-  ],
   "license": "MIT",
   "scripts": {
     "start": "gulp"

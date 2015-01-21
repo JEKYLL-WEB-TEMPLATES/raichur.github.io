@@ -37,11 +37,11 @@ gulp.task('shorthand', shell.task([
 ]));
 
 gulp.task('minify-css', function(){
-gulp.src('./css/nkd.css') // set this to the file(s) you want to minify.
+gulp.src('./css/main.css') // set this to the file(s) you want to minify.
     .pipe(minifyCSS())
     .pipe(size({gzip: false, showFiles: true, title:'minified css'}))
     .pipe(size({gzip: true, showFiles: true, title:'minified css'}))
-    .pipe(rename('nkd.min.css'))
+    .pipe(rename('main.min.css'))
     .pipe(gulp.dest('./css/'));
 });
 
@@ -81,7 +81,7 @@ gulp.task('csslint', function(){
 
 // Task that compiles scss files down to good old css
 gulp.task('pre-process', function(){
-  gulp.src('./_sass/nkd.scss')
+  gulp.src('./_sass/main.scss')
       .pipe(watch(function(files) {
         return files.pipe(sass())
           .pipe(size({gzip: false, showFiles: true, title:'without vendor prefixes'}))
@@ -93,7 +93,7 @@ gulp.task('pre-process', function(){
           .pipe(minifyCSS())
           .pipe(size({gzip: false, showFiles: true, title:'minified css'}))
           .pipe(size({gzip: true, showFiles: true, title:'minified css'}))
-          .pipe(rename('nkd.min.css'))
+          .pipe(rename('main.min.css'))
           .pipe(browserSync.reload({stream:true}));
       }));
 });
