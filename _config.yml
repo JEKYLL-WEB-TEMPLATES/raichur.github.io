@@ -3,9 +3,12 @@ description: "Joshua Raichur likes to make things."
 author: "Joshua Raichur"
 url: "http://joshuaraichur.com"
 future: true
-exclude: [README.md, Rakefile, node_modules]
 permalink: /:title
 highlighter: pygments
+
+# Includes and exculdes
+exclude: [README.md, Rakefile, node_modules]
+include: [_pages]
 
 # Social
 github_username: "raichur"

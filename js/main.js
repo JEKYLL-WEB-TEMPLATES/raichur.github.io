@@ -27,18 +27,25 @@ $(function() {
 
       function outputPageContent() {
         $.each(repositories, function(index) {
-          output += '<li><a href="' + repositories[index].html_url + '" target="_blank">';
-          output += '<h3>' + repositories[index].name + '</h3>';
-          if (repositories[index].description) { output += '<p>' + repositories[index].description + '</p>'; }
-          if (repositories[index].language) { output += '<p style="color: ' + repo_colors[repositories[index].language] + '">' + repositories[index].language + '</p>'; }
-          output += '<time class="timeago" datetime="' + repositories[index].updated_at + '">' + repositories[index].updated_at + '</time>';
-          output += '</a></li>';
+          output += '<li>';
+          output += '<a href="' + repositories[index].html_url + '" target="_blank"><h3 class="name">' + repositories[index].name + '</h3></a>';
+          if (repositories[index].description) { output += '<p class="description">' + repositories[index].description + '</p>'; }
+          if (repositories[index].homepage) { output += '<a href="' + repositories[index].homepage + '">Live</a>'; }
+          if (repositories[index].language) { output += '<p class="language" style="color: ' + repo_colors[repositories[index].language] + '">' + repositories[index].language + '</p>'; }
+          output += '<time class="date" datetime="' + repositories[index].updated_at + '">' + repositories[index].updated_at + '</time>';
+          output += '</li>';
         });
-        $('#githubData').html(output);
+        $('#codelist').html(output);
       }
   });
 });
 
 $(document).ajaxComplete(function() {
-  $('.timeago').timeago();
+  var codelistoptions = {
+    valueNames: ['name', 'language', 'date', 'description'],
+    plugins: [ ListFuzzySearch() ]
+  };
+  var codelist = new List('code', codelistoptions);
+  codelist.sort('date', { order: "desc"});
+  $('time').timeago();
 });

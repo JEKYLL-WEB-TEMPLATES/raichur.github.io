@@ -2,18 +2,31 @@
 layout: default
 ---
 
-<footer style="padding: 1em;">
-{% if site.posts %}
-  <h2>A list of all the posts</h2>
-  <ul>
-    {% for post in site.posts %}
-      <li>
-        <a href="{{ post.url }}" title="{{post.title}}">
-          {{ post.title }}
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
-{% endif %}
+<div id="code">
 
-<div id="githubData"></div>
+  <input class="search" placeholder="Search" />
+  <button class="sort" data-sort="name">
+    Sort by name
+  </button>
+  <button class="sort" data-sort="language">
+    Sort by language
+  </button>
+  <button class="sort" data-sort="date">
+    Sort by date
+  </button>
+
+  {% if site.posts %}
+  <ul>
+  {% for post in site.posts %}
+  <li>
+    <a href="{{ post.url }}" title="{{post.title}}">
+      {{ post.title }}
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+{% endif %}
+    <ul class="list" id="codelist">
+    </ul>
+
+</div>
