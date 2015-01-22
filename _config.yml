@@ -10,6 +10,24 @@ highlighter: pygments
 exclude: [README.md, Rakefile, node_modules]
 include: [_pages]
 
+# Defaults
+defaults:
+  -
+    values:
+      layout: "default"
+  -
+    scope:
+      path: "_posts"
+    values:
+      layout: "post"
+      permalink: /a/:title
+  -
+    scope:
+      path: "_pages"
+    values:
+      layout: "page"
+
+
 # Social
 github_username: "raichur"
 twitter_username: "joshuaraichur"

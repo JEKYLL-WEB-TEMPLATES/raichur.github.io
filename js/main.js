@@ -1,18 +1,15 @@
----
----
+function getGithubData(){
+  var reqURI = 'https://api.github.com/users/raichur',
+  repoURI = 'https://api.github.com/users/raichur/repos';
 
-function requestJSON(url, callback) {
-  $.ajax({
-    url: url,
-    complete: function(xhr) {
-      callback.call(null, xhr.responseJSON);
-    }
-  });
-}
-
-$(function() {
-  var reqURI = 'https://api.github.com/users/' + '{{ site.github_username }}',
-    repoURI = 'https://api.github.com/users/' + '{{ site.github_username }}' + '/repos';
+  function requestJSON(url, callback) {
+    $.ajax({
+      url: url,
+      complete: function(xhr) {
+        callback.call(null, xhr.responseJSON);
+      }
+    });
+  }
 
   requestJSON(reqURI, function(github_JSON) {
       var repositories, output = '', repo_colors = {};
@@ -38,14 +35,17 @@ $(function() {
         $('#codelist').html(output);
       }
   });
-});
+}
 
-$(document).ajaxComplete(function() {
-  var codelistoptions = {
-    valueNames: ['name', 'language', 'date', 'description'],
-    plugins: [ ListFuzzySearch() ]
-  };
-  var codelist = new List('code', codelistoptions);
-  codelist.sort('date', { order: "desc"});
-  $('time').timeago();
-});
+if($('body').hasClass('code')){
+  getGithubData();
+  $(document).ajaxComplete(function() {
+      var codelistoptions = {
+        valueNames: ['name', 'language', 'date', 'description'],
+        plugins: [ ListFuzzySearch() ]
+      };
+      var codelist = new List('code', codelistoptions);
+      codelist.sort('date', { order: "desc"});
+      $('time').timeago();
+  });
+}

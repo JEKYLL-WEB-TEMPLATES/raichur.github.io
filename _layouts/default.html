@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   {% include _head.html %}
-  <body>
+  <body{% if page.id %} class="{{page.id}}"{% endif %}>
     {% include _nav.html %}
-    {{ content }}
+    <main id="content">
+      {{ content }}
+    </main>
   </body>
   {% include _scripts.html %}
 </html>
