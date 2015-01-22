@@ -52,16 +52,23 @@ if($('body').hasClass('code')){
 
 if($('body').hasClass('pixels')){
   $.jribbble.getShotsByPlayerId('geek', function (playerShots) {
-    var html = [];
-
+    var html = [], date;
     $.each(playerShots.shots, function (i, shot) {
-      html.push('<li><h3>' + shot.title + '</h3>');
-      html.push('<h4>by ' + shot.player.name + '</h4><a href="' + shot.url + '">');
+      date = new Date(shot.created_at).toISOString();
+      html.push('<li><h3 class="name">' + shot.title + '</h3>');
       html.push('<img src="' + shot.image_teaser_url + '" ');
-      html.push('alt="' + shot.title + '"></a></li>');
+      html.push('alt="' + shot.title + '">');
+      html.push('<time class="date" datetime="' + date + '">' + date + '</time></a></li>');
     });
 
     $('#pixelslist').html(html.join(''));
   }, {page: 1, per_page: 20});
-
+  $(document).ajaxComplete(function() {
+    var pixelslistoptions = {
+      valueNames: ['name', 'date']
+    };
+    var pixelslist = new List('pixels', pixelslistoptions);
+    pixelslist.sort('date', { order: "desc"});
+    $('time').timeago();
+  });
 }
