@@ -82,8 +82,11 @@ if($('body').hasClass('light')){
   var feed = new Instafeed({
     get: 'user',
     target: 'lightlist',
+    resolution: 'low_resolution',
     userId: 1508254017,
+    limit: 30,
     accessToken: '1508254017.467ede5.4d8570b3606645bfa2859e1d1c54f8f1',
+    template: '<li><a href="{{link}}"><img src="{{image}}" /></a><p>{{caption}}</p><p>Likes: {{likes}} comments: {{comments}}</p></li>',
     after: function() {
       // disable button if no more results to load
       if (!this.hasNext()) {

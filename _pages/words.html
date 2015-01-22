@@ -5,6 +5,14 @@ description: "Thoughts, ideas, opinions."
 id: words
 ---
 
+<div id="{{page.id}}">
+  <input class="search" placeholder="Search" />
+  <button class="sort" data-sort="name">
+    Sort by name
+  </button>
+  <ul class="list" id="{{page.id}}list">
+  </ul>
+</div>
 {% if site.posts %}
 <ul>
   {% for post in site.posts %}

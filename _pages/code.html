@@ -3,5 +3,19 @@ title: 'Code'
 permalink: /code/
 description: "My digital experiments."
 id: code
-main_page: true
 ---
+
+<div id="{{page.id}}">
+  <input class="search" placeholder="Search" />
+  <button class="sort" data-sort="name">
+    Sort by name
+  </button>
+  <button class="sort" data-sort="language">
+    Sort by language
+  </button>
+  <button class="sort" data-sort="date">
+    Sort by date
+  </button>
+  <ul class="list" id="{{page.id}}list">
+  </ul>
+</div>
