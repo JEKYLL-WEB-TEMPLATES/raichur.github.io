@@ -1,3 +1,54 @@
 ---
 layout: default
 ---
+
+<div id="words">
+  <input class="search" placeholder="Search" />
+  <button class="sort" data-sort="name">
+    Sort by name
+  </button>
+  <ul class="list" id="wordslist">
+    {% if site.posts %}
+    {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}" title="{{post.title}}">
+        <h1 class="name">{{ post.title }}</h1>
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_xmlschema }}</time>
+      </a>
+    </li>
+    {% endfor %}
+    {% endif %}
+  </ul>
+</div>
+
+<div id="code">
+  <input class="search" placeholder="Search" />
+  <button class="sort" data-sort="name">
+    Sort by name
+  </button>
+  <button class="sort" data-sort="language">
+    Sort by language
+  </button>
+  <button class="sort" data-sort="date">
+    Sort by date
+  </button>
+  <ul class="list" id="codelist">
+  </ul>
+</div>
+
+<div id="pixels">
+  <input class="search" placeholder="Search" />
+  <button class="sort" data-sort="name">
+    Sort by name
+  </button>
+  <button class="sort" data-sort="date">
+    Sort by date
+  </button>
+  <ul class="list" id="pixelslist">
+  </ul>
+</div>
+
+<div id="light">
+  <ul class="list" id="lightlist">
+  </ul>
+</div>

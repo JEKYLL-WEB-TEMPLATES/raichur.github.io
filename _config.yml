@@ -8,7 +8,6 @@ highlighter: pygments
 
 # Includes and exculdes
 exclude: [README.md, Rakefile, node_modules]
-include: [_pages]
 
 # Defaults
 defaults:
