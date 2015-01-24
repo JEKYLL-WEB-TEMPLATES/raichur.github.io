@@ -1,0 +1,26 @@
+<button class="codefilter">Code</button>
+<button class="wordsfilter">Words</button>
+<button class="pixelsfilter">Pixels</button>
+<button class="lightfilter">Light</button>
+
+<ul class="list" id="wordslist">
+  {% if site.posts %}
+  {% for post in site.posts %}
+  <li>
+    <a href="{{ post.url }}" title="{{post.title}}">
+      <h1 class="name">{{ post.title }}</h1>
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_xmlschema }}</time>
+    </a>
+  </li>
+  {% endfor %}
+  {% endif %}
+</ul>
+
+<ul class="list" id="codelist">
+</ul>
+
+<ul class="list" id="pixelslist">
+</ul>
+
+<ul class="list" id="lightlist">
+</ul>
