@@ -9,7 +9,7 @@ function getDribbbleData(){
 
       html.push('<li class="col col-1-3"><h2 class="name">' + title + '</h2>');
       html.push('<img src="' + image + '" alt="' + title + '"/>');
-      html.push('<time datetime="' + date + '">' + date + '</time></a></li>');
+      html.push('<time class="date" datetime="' + date + '">' + date + '</time></a></li>');
     });
 
     $('#pixelslist').html(html.join(''));
@@ -77,10 +77,10 @@ function getGithubData(){
         homepage = repositories[index].homepage;
 
         html.push('<li class="col col-1-3"><a href="' + url + '"><h2 class="name">' + title + '</h2></a>');
-        if(description) { html.push('<p>' + description + '</p>'); }
+        if(description) { html.push('<p class="description">' + description + '</p>'); }
         if(homepage) { html.push('<a href="' + homepage + '">Live</a>'); }
-        if(language) { html.push('<p style="color: ' + repo_colors[language] + '">' + language + '</p>'); }
-        html.push('<time datetime="' + date + '">' + date + '</time></li>');
+        if(language) { html.push('<p class="language" style="color: ' + repo_colors[language] + '">' + language + '</p>'); }
+        html.push('<time class="date" datetime="' + date + '">' + date + '</time></li>');
       });
       $('#codelist').html(html.join(''));
     }
@@ -89,9 +89,35 @@ function getGithubData(){
 
 // Getting the data from services when the page loads
 function start(){
-  if($('section').hasClass('code')) { getGithubData(); }
-  if($('section').hasClass('pixels')) { getDribbbleData(); }
+  if($('section').hasClass('code')) {
+    getGithubData();
+    $(document).ajaxComplete(function(){
+      var codelistoptions = {
+        valueNames: ['name', 'language', 'date', 'description'],
+        plugins: [ ListFuzzySearch() ]
+      };
+      var codelist = new List('code', codelistoptions);
+      codelist.sort('date', { order: "desc"});
+    });
+  }
+  if($('section').hasClass('pixels')) {
+    getDribbbleData();
+    $(document).ajaxComplete(function(){
+      $('time').timeago();
+      var pixelslistoptions = {
+        valueNames: ['name', 'date']
+      };
+      var pixelslist = new List('pixels', pixelslistoptions);
+      pixelslist.sort('date', { order: "desc"});
+    });
+  }
   if($('section').hasClass('light')) { getInstagramData(); }
+  if($('section').hasClass('words')) {
+    var wordslistoptions = {
+      valueNames: ['name', 'date']
+    };
+    var wordslist = new List('words', wordslistoptions);
+  }
   $('abbr').timeago();
   $('time').timeago();
   $(".social").switcher();
@@ -100,10 +126,27 @@ function start(){
   });
 }
 
+if($('#greeting').length !== 0){
+  var time = new Date();
+  var hours = time.getHours();
+
+  if (hours>=5&&hours<=12){
+    $('#greeting').html('Good morning!'); // Morn
+  }
+  else if (hours>=13&&hours<=17) {
+    $('#greeting').html('Good afternoon.'); // Afternoon
+  }
+  else if (hours>=18&&hours<=20) {
+    $('#greeting').html('Good evening.'); // Evening
+  }
+}
+
+
 $(function(){
   start();
-  $('.navigation').velocity('transition.slideDownIn', {stagger: 200});
+  $('.navigation').fadeIn();
   $('.header .large, .header .head-para h2, .header .head-para h3').velocity('transition.slideDownIn', {duration: 380, stagger: 100});
+  $('section').velocity('transition.fadeIn');
 });
 
 jQuery(document).ready(function($) {
@@ -119,6 +162,8 @@ jQuery(document).ready(function($) {
       $('.content').html($(data).find('.content'));
       //_gaq.push(['_trackPageview', State.url]);
       start();
+      $('.header .large, .header .head-para h2, .header .head-para h3').velocity('transition.slideDownIn', {duration: 380, stagger: 100});
+      $('.content').fadeIn();
     });
   });
 });

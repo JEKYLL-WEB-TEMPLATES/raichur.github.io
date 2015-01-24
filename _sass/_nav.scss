@@ -3,9 +3,10 @@ NAVIGATION
 ========================================================================== */
 
 .navigation {
+  margin: 50px auto;
   text-align: center;
   display:table;
-  margin: 50px auto;
+  transition: all ease .3s;
   li {
     display:table-cell;
     font-size: $font-size-5;
