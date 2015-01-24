@@ -31,10 +31,10 @@ function getInstagramData(){
       $('.instafeed.time').each(function(){
         this.setAttribute('datetime', (new Date(this.innerHTML*1000)).toISOString());
       });
-
       if (!this.hasNext()) {
         loadButton.setAttribute('disabled', 'disabled');
       }
+        $('time').timeago();
     },
   });
   loadButton.addEventListener('click', function() {
@@ -77,10 +77,10 @@ function getGithubData(){
         homepage = repositories[index].homepage;
 
         html.push('<li class="col col-1-3"><a href="' + url + '"><h2 class="name">' + title + '</h2></a>');
+        html.push('<time class="date" datetime="' + date + '">' + date + '</time></li>');
         if(description) { html.push('<p class="description">' + description + '</p>'); }
         if(homepage) { html.push('<a href="' + homepage + '">Live</a>'); }
         if(language) { html.push('<p class="language" style="color: ' + repo_colors[language] + '">' + language + '</p>'); }
-        html.push('<time class="date" datetime="' + date + '">' + date + '</time></li>');
       });
       $('#codelist').html(html.join(''));
     }
@@ -103,7 +103,6 @@ function start(){
   if($('section').hasClass('pixels')) {
     getDribbbleData();
     $(document).ajaxComplete(function(){
-      $('time').timeago();
       var pixelslistoptions = {
         valueNames: ['name', 'date']
       };
@@ -111,15 +110,15 @@ function start(){
       pixelslist.sort('date', { order: "desc"});
     });
   }
-  if($('section').hasClass('light')) { getInstagramData(); }
+  if($('section').hasClass('light')) {
+    getInstagramData();
+  }
   if($('section').hasClass('words')) {
     var wordslistoptions = {
       valueNames: ['name', 'date']
     };
     var wordslist = new List('words', wordslistoptions);
   }
-  $('abbr').timeago();
-  $('time').timeago();
   $(".social").switcher();
   $(document).ajaxComplete(function() {
     $('time').timeago();
@@ -129,7 +128,6 @@ function start(){
 if($('#greeting').length !== 0){
   var time = new Date();
   var hours = time.getHours();
-
   if (hours>=5&&hours<=12){
     $('#greeting').html('Good morning!'); // Morn
   }

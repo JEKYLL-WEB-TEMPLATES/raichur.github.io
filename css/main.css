@@ -375,7 +375,8 @@ NAVIGATION
   margin: auto; }
 
 .content {
-  overflow: hidden; }
+  overflow: hidden;
+  margin: auto; }
   .content .col {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -386,8 +387,7 @@ NAVIGATION
     .content .col h3 {
       margin: 0; }
   .content .col-1-3 {
-    width: -webkit-calc(100%/2);
-    width: calc(100%/2); }
+    width: 45%; }
     .content .col-1-3 h1 {
       font-size: 40px; }
     .content .col-1-3 p {
@@ -403,6 +403,8 @@ NAVIGATION
     .content .list li {
       padding: 20px;
       background: #F8F8F8; }
+      .content .list li time {
+        float: right; }
 
 .header .head-para {
   margin: auto;
