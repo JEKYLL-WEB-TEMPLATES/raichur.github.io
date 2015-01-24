@@ -77,10 +77,10 @@ function getGithubData(){
         homepage = repositories[index].homepage;
 
         html.push('<li class="col col-1-3"><a href="' + url + '"><h2 class="name">' + title + '</h2></a>');
-        html.push('<time class="date" datetime="' + date + '">' + date + '</time></li>');
         if(description) { html.push('<p class="description">' + description + '</p>'); }
         if(homepage) { html.push('<a href="' + homepage + '">Live</a>'); }
         if(language) { html.push('<p class="language" style="color: ' + repo_colors[language] + '">' + language + '</p>'); }
+        html.push('<time class="date" datetime="' + date + '">' + date + '</time></li>');
       });
       $('#codelist').html(html.join(''));
     }

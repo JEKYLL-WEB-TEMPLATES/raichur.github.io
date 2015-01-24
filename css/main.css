@@ -404,7 +404,8 @@ NAVIGATION
       padding: 20px;
       background: #F8F8F8; }
       .content .list li time {
-        float: right; }
+        float: right;
+        display: inline-block; }
 
 .header .head-para {
   margin: auto;
