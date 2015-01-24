@@ -4,6 +4,7 @@
 /* Large Breakpoint */
 /* Medium Breakpoint */
 /* Colors */
+/* Content Width */
 /* ==========================================================================
    QUERIES
 
@@ -55,6 +56,10 @@ html {
   -ms-text-size-adjust: 100%;
   /* 2 */ }
 
+* {
+  margin: 0;
+  padding: 0; }
+
 /**
  * Remove default margin.
  */
@@ -70,9 +75,6 @@ body {
 /**
  * Address `outline` inconsistency between Chrome and other browsers.
  */
-a:focus {
-  outline: thin dotted; }
-
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
@@ -312,17 +314,18 @@ table {
 NAVIGATION
 ========================================================================== */
 .navigation {
-  width: 100%;
-  background: #281719;
-  position: fixed;
-  margin: 0;
-  padding: 0;
-  top: 0; }
+  text-align: center;
+  display: table;
+  margin: 50px auto; }
   .navigation li {
+    display: table-cell;
+    font-size: 22px;
+    font-weight: bold;
+    list-style: none;
     padding: 10px;
-    float: left; }
-  .navigation a {
-    color: #F8F8F8; }
+    vertical-align: middle; }
+  .navigation .logo {
+    font-size: 40px; }
 
 /* ==========================================================================
    GRID
@@ -335,58 +338,110 @@ NAVIGATION
   overflow: hidden; }
   .content .col {
     float: left; }
+    .content .col h3 {
+      margin: 0; }
   .content .col-1-3 {
-    width: -webkit-calc(100%/2);
-    width: calc(100%/2); }
+    width: -webkit-calc((100%/2)-40px);
+    width: calc((100%/2)-40px); }
+    .content .col-1-3 p {
+      white-space: pre-line; }
   .content .list {
     list-style: none;
     padding: 0;
     margin: 0; }
     .content .list li {
-      padding: 10px;
+      padding: 20px;
       background: #F8F8F8; }
+
+.header .head-para {
+  margin: auto;
+  width: 60%; }
+  .header .head-para h3 {
+    font-weight: normal; }
+
+.section {
+  margin-top: 60px; }
 
 /* ==========================================================================
    TYPE
    ========================================================================== */
 @font-face {
-  font-family: 'Clear Sans';
-  src: url('/css/font/clearsans-light-webfont.eot');
-  src: url('/css/font/clearsans-light-webfont.eot?#iefix') format('embedded-opentype'), url('/css/font/clearsans-light-webfont.woff') format('woff'), url('/css/font/clearsans-light-webfont.ttf') format('truetype'), url('/css/font/clearsans-light-webfont.svg#webfont') format('svg');
+  font-family: 'Theinhardt';
+  src: url('/css/font/Theinhardt Light.otf') format('opentype');
   font-weight: normal; }
 
 @font-face {
-  font-family: 'Clear Sans';
-  src: url('/css/font/clearsans-medium-webfont.eot');
-  src: url('/css/font/clearsans-medium-webfont.eot?#iefix') format('embedded-opentype'), url('/css/font/clearsans-medium-webfont.woff') format('woff'), url('/css/font/clearsans-medium-webfont.ttf') format('truetype'), url('/css/font/clearsans-medium-webfont.svg#webfont') format('svg');
+  font-family: 'Theinhardt';
+  src: url('/css/font/Theinhardt Light Italic.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Theinhardt';
+  src: url('/css/font/Theinhardt Medium.otf') format('opentype');
   font-weight: bold; }
+
+@font-face {
+  font-family: 'Theinhardt';
+  src: url('/css/font/Theinhardt Medium Italic.otf') format('opentype');
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Freight Text';
+  src: url('/css/font/FreightText-Light.otf') format('opentype');
+  font-weight: normal; }
+
+@font-face {
+  font-family: 'Freight Text';
+  src: url('/css/font/FreightText-LightIta.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Freight Text';
+  src: url('/css/font/FreightText-Med.otf') format('opentype');
+  font-weight: bold; }
+
+@font-face {
+  font-family: 'Freight Text';
+  src: url('/css/font/FreightText-MedIta.otf') format('opentype');
+  font-weight: bold;
+  font-style: italic; }
 
 /* Headers
    ========================================================================== */
 .h1 {
-  font-size: 64px; }
+  font-size: 68px; }
 
 .h2 {
-  font-size: 48px; }
+  font-size: 50px; }
 
 .h3 {
-  font-size: 32px; }
+  font-size: 40px; }
 
 .h4 {
-  font-size: 20px; }
+  font-size: 28px; }
 
 .h5 {
-  font-size: 16px; }
+  font-size: 22px; }
+
+.large {
+  font-size: 180px;
+  text-align: center;
+  margin: 20px; }
 
 /* Copy
    ========================================================================== */
 * {
-  font-family: Clear Sans, sans-serif; }
+  font-family: Theinhardt, sans-serif; }
 
 article {
-  font-family: georgia, serif; }
+  font-family: Freight Text, georgia, serif;
+  font-size: 28px; }
 
 a {
+  color: #e64944;
   text-decoration: none; }
 
 /* Casing

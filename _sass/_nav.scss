@@ -3,16 +3,18 @@ NAVIGATION
 ========================================================================== */
 
 .navigation {
-  width: 100%;
-  background: $color-theme-dark;
-  margin: auto;
-  padding: 0;
-  top: 0;
+  text-align: center;
+  display:table;
+  margin: 50px auto;
   li {
+    display:table-cell;
+    font-size: $font-size-5;
+    font-weight: bold;
+    list-style: none;
     padding: 10px;
-    float: left;
+    vertical-align: middle;
   }
-  a {
-    color: $color-text-light;
+  .logo {
+    font-size: $font-size-3;
   }
 }

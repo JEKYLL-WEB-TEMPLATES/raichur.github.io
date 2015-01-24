@@ -7,7 +7,7 @@ function getDribbbleData(){
       title = shot.title;
       image = shot.image_teaser_url;
 
-      html.push('<li class="col col-1-3"><h3 class="name">' + title + '</h3>');
+      html.push('<li class="col col-1-3"><h2 class="name">' + title + '</h2>');
       html.push('<img src="' + image + '" alt="' + title + '"/>');
       html.push('<time datetime="' + date + '">' + date + '</time></a></li>');
     });
@@ -76,30 +76,14 @@ function getGithubData(){
         description = repositories[index].description;
         homepage = repositories[index].homepage;
 
-        html.push('<li class="col col-1-3"><a href="' + url + '"><h3 class="name">' + title + '</h3></a>');
+        html.push('<li class="col col-1-3"><a href="' + url + '"><h2 class="name">' + title + '</h2></a>');
         if(description) { html.push('<p>' + description + '</p>'); }
         if(homepage) { html.push('<a href="' + homepage + '">Live</a>'); }
         if(language) { html.push('<p style="color: ' + repo_colors[language] + '">' + language + '</p>'); }
         html.push('<time datetime="' + date + '">' + date + '</time></li>');
-
       });
       $('#codelist').html(html.join(''));
     }
-  });
-}
-
-// Filter list function: Filters the list by id
-function filterList(filter){
-  filter.forEach(function(filter){
-    $('.' + filter + 'filter').click(function(e){
-      e.preventDefault();
-      if(filter == 'all'){
-        $('ul').fadeIn();
-      } else {
-        $('#' + filter + 'list').fadeIn();
-        $('ul[id!=' + filter + 'list]').fadeOut();
-      }
-    });
   });
 }
 
@@ -111,32 +95,30 @@ function start(){
   $('abbr').timeago();
   $('time').timeago();
   $(".social").switcher();
-  filterList(['all', 'code', 'light', 'words', 'pixels']);
+  $(document).ajaxComplete(function() {
+    $('time').timeago();
+  });
 }
 
-$(function(){start();});
-
-$(document).ajaxComplete(function() {
-  $('time').timeago();
+$(function(){
+  start();
+  $('.navigation').velocity('transition.slideDownIn', {stagger: 200});
+  $('.header .large, .header .head-para h2, .header .head-para h3').velocity('transition.slideDownIn', {duration: 380, stagger: 100});
 });
 
 jQuery(document).ready(function($) {
-
   var siteUrl = 'http://'+(document.location.hostname||document.location.host);
-
   $(document).delegate('a[href^="/"],a[href^="'+siteUrl+'"]', "click", function(e) {
     e.preventDefault();
     History.pushState({}, "", this.pathname);
   });
-
   History.Adapter.bind(window, 'statechange', function(){
     var State = History.getState();
     $.get(State.url, function(data){
       document.title = $(data).find("title").text();
-      $('.content').html($(data).find('.content')).velocity("transition.slideUpIn");
+      $('.content').html($(data).find('.content'));
       //_gaq.push(['_trackPageview', State.url]);
       start();
     });
   });
-
 });

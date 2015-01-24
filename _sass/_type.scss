@@ -2,27 +2,53 @@
    TYPE
    ========================================================================== */
 
- @font-face{
-   font-family: 'Clear Sans';
-   src: url('/css/font/clearsans-light-webfont.eot');
-   src: url('/css/font/clearsans-light-webfont.eot?#iefix') format('embedded-opentype'),
-   url('/css/font/clearsans-light-webfont.woff') format('woff'),
-   url('/css/font/clearsans-light-webfont.ttf') format('truetype'),
-   url('/css/font/clearsans-light-webfont.svg#webfont') format('svg');
-   font-weight: normal;
- }
- @font-face{
-   font-family: 'Clear Sans';
-   src: url('/css/font/clearsans-medium-webfont.eot');
-   src: url('/css/font/clearsans-medium-webfont.eot?#iefix') format('embedded-opentype'),
-   url('/css/font/clearsans-medium-webfont.woff') format('woff'),
-   url('/css/font/clearsans-medium-webfont.ttf') format('truetype'),
-   url('/css/font/clearsans-medium-webfont.svg#webfont') format('svg');
-   font-weight: bold;
- }
+@font-face {
+  font-family: 'Theinhardt';
+  src: url('/css/font/Theinhardt Light.otf') format('opentype');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Theinhardt';
+  src: url('/css/font/Theinhardt Light Italic.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Theinhardt';
+  src: url('/css/font/Theinhardt Medium.otf') format('opentype');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Theinhardt';
+  src: url('/css/font/Theinhardt Medium Italic.otf') format('opentype');
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+ font-family: 'Freight Text';
+ src: url('/css/font/FreightText-Light.otf') format('opentype');
+ font-weight: normal;
+}
+@font-face {
+ font-family: 'Freight Text';
+ src: url('/css/font/FreightText-LightIta.otf') format('opentype');
+ font-weight: normal;
+ font-style: italic;
+}
+@font-face {
+ font-family: 'Freight Text';
+ src: url('/css/font/FreightText-Med.otf') format('opentype');
+ font-weight: bold;
+}
+@font-face {
+ font-family: 'Freight Text';
+ src: url('/css/font/FreightText-MedIta.otf') format('opentype');
+ font-weight: bold;
+ font-style: italic;
+}
 
-@mixin serif      { font-family: georgia, serif; }
-@mixin sans-serif { font-family: Clear Sans, sans-serif; }
+@mixin serif      { font-family: Freight Text, georgia, serif; }
+@mixin sans-serif { font-family: Theinhardt, sans-serif; }
 
 /* Headers
    ========================================================================== */
@@ -32,7 +58,11 @@
 .h3 { font-size: $font-size-3; }
 .h4 { font-size: $font-size-4; }
 .h5 { font-size: $font-size-5; }
-
+.large {
+  font-size: $font-size-05*1.8;
+  text-align: center;
+  margin: 20px;
+}
 
 /* Copy
    ========================================================================== */
@@ -42,9 +72,11 @@
 }
 article {
   @include serif;
-}
-a {
-  text-decoration: none;
+  font-size: $font-size-4;
+  a {
+    color: $color-theme;
+    text-decoration: none;
+  }
 }
 
 /* Casing
