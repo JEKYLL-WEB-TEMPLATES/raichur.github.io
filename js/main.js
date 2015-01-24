@@ -1,12 +1,14 @@
 // Get Data functions
 function getDribbbleData(){
   $.jribbble.getShotsByPlayerId('geek', function (playerShots) {
-    var html = [], date;
+    var html = [], date, title, image;
     $.each(playerShots.shots, function (i, shot) {
       date = new Date(shot.created_at).toISOString();
-      html.push('<li><h3 class="name">' + shot.title + '</h3>');
-      html.push('<img src="' + shot.image_teaser_url + '" ');
-      html.push('alt="' + shot.title + '">');
+      title = shot.title;
+      image = shot.image_teaser_url;
+
+      html.push('<li><h3 class="name">' + title + '</h3>');
+      html.push('<img src="' + image + '" alt="' + title + '"/>');
       html.push('<time datetime="' + date + '">' + date + '</time></a></li>');
     });
 
@@ -24,8 +26,12 @@ function getInstagramData(){
     userId: 1508254017,
     limit: 20,
     accessToken: '1508254017.467ede5.4d8570b3606645bfa2859e1d1c54f8f1',
-    template: '<li><a href="{{link}}"><img src="{{image}}" /></a><p class="name">{{caption}}</p><p><3 {{likes}}</p></li>',
+    template: '<li><a href="{{link}}"><img src="{{image}}" /></a><p class="name">{{caption}}</p><time class="instafeed time" datetime="{{model.created_at}}">{{model.created_time}}</time></li>',
     after: function() {
+      $('.instafeed.time').each(function(){
+        this.setAttribute('datetime', (new Date(this.innerHTML*1000)).toISOString());
+      });
+
       if (!this.hasNext()) {
         loadButton.setAttribute('disabled', 'disabled');
       }
@@ -60,25 +66,39 @@ function getGithubData(){
     });
 
     function outputPageContent() {
+      var html = [], date, title, url, language = false, description = false, homepage = false;
       $.each(repositories, function(index) {
-        output += '<li>';
-        output += '<a href="' + repositories[index].html_url + '" target="_blank"><h3 class="name">' + repositories[index].name + '</h3></a>';
-        if (repositories[index].description) { output += '<p>' + repositories[index].description + '</p>'; }
-        if (repositories[index].homepage) { output += '<a href="' + repositories[index].homepage + '">Live</a>'; }
-        if (repositories[index].language) { output += '<p style="color: ' + repo_colors[repositories[index].language] + '">' + repositories[index].language + '</p>'; }
-        output += '<time datetime="' + repositories[index].updated_at + '">' + repositories[index].updated_at + '</time>';
-        output += '</li>';
+
+        date = repositories[index].updated_at;
+        title = repositories[index].name;
+        url = repositories[index].html_url;
+        language = repositories[index].language;
+        description = repositories[index].description;
+        homepage = repositories[index].homepage;
+
+        html.push('<li><a href="' + url + '"><h3 class="name">' + title + '</h3></a>');
+        if(description) { html.push('<p>' + description + '</p>'); }
+        if(homepage) { html.push('<a href="' + homepage + '">Live</a>'); }
+        if(language) { html.push('<p style="color: ' + repo_colors[language] + '">' + language + '</p>'); }
+        html.push('<time datetime="' + date + '">' + date + '</time></li>');
+
       });
-      $('#codelist').html(output);
+      $('#codelist').html(html.join(''));
     }
   });
 }
 
+// Filter list function: Filters the list by id
 function filterList(filter){
   filter.forEach(function(filter){
-    $('.' + filter + 'filter').click(function(){
-      $('#' + filter + 'list').fadeIn();
-      $('ul[id!=' + filter + 'list]').fadeOut();
+    $('.' + filter + 'filter').click(function(e){
+      e.preventDefault();
+      if(filter == 'all'){
+        $('ul').fadeIn();
+      } else {
+        $('#' + filter + 'list').fadeIn();
+        $('ul[id!=' + filter + 'list]').fadeOut();
+      }
     });
   });
 }
@@ -91,7 +111,7 @@ $(function(){
   $('abbr').timeago();
   $('time').timeago();
   $(".social").switcher();
-  filterList(['code', 'light', 'words', 'pixels']);
+  filterList(['all', 'code', 'light', 'words', 'pixels']);
 });
 
 $(document).ajaxComplete(function() {
