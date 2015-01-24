@@ -133,7 +133,7 @@ jQuery(document).ready(function($) {
     var State = History.getState();
     $.get(State.url, function(data){
       document.title = $(data).find("title").text();
-      $('.content').html($(data).find('.content'));
+      $('.content').html($(data).find('.content')).velocity("transition.slideUpIn");
       //_gaq.push(['_trackPageview', State.url]);
       start();
     });
