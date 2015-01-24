@@ -112,7 +112,7 @@ gulp.task('production', function(){
 */
 gulp.task('default', ['pre-process', 'minify-css', 'bs-reload', 'browser-sync', 'shorthand'], function(){
   gulp.start('pre-process', 'csslint');
-  gulp.src(['./index.html', './_layouts/*.html', './_posts/*.{markdown,md}'])
+  gulp.src(['./index.html', './_includes/*.html', './_posts/*.{markdown,md}'])
       .pipe(jekyll({
           source: './',
           destination: './_site/',

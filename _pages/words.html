@@ -1,0 +1,17 @@
+---
+title: Words
+permalink: /words/
+id: words
+---
+<ul class="list" id="wordslist">
+  {% if site.posts %}
+  {% for post in site.posts %}
+  <li class="col col-1-3">
+    <a href="{{ post.url }}" title="{{post.title}}">
+      <h3 class="name">{{ post.title }}</h3>
+    </a>
+    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_xmlschema }}</time>
+  </li>
+  {% endfor %}
+  {% endif %}
+</ul>

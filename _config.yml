@@ -8,6 +8,7 @@ highlighter: pygments
 
 # Includes and exculdes
 exclude: [README.md, Rakefile, node_modules]
+include: [_pages]
 
 # Defaults
 defaults:
@@ -19,8 +20,11 @@ defaults:
       path: "_posts"
     values:
       layout: "post"
-      is_post: true
-
+  -
+    scope:
+      path: "_pages"
+    values:
+      layout: "page"
 
 # Social
 github_username: "raichur"

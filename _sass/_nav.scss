@@ -3,6 +3,17 @@ NAVIGATION
 ========================================================================== */
 
 .navigation {
-  background: $color-theme;
-  color: $color-text-light;
+  width: 100%;
+  background: $color-theme-dark;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  li {
+    padding: 10px;
+    float: left;
+  }
+  a {
+    color: $color-text-light;
+  }
 }

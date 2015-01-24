@@ -2,14 +2,27 @@
    TYPE
    ========================================================================== */
 
-.serif      { font-family: georgia, serif; }
-.sans-serif {
-  font-family:
-    Avenir, "Avenir Next",
-    Helvetica,
-    Arial,
-    sans-serif;
-}
+ @font-face{
+   font-family: 'Clear Sans';
+   src: url('/css/font/clearsans-light-webfont.eot');
+   src: url('/css/font/clearsans-light-webfont.eot?#iefix') format('embedded-opentype'),
+   url('/css/font/clearsans-light-webfont.woff') format('woff'),
+   url('/css/font/clearsans-light-webfont.ttf') format('truetype'),
+   url('/css/font/clearsans-light-webfont.svg#webfont') format('svg');
+   font-weight: normal;
+ }
+ @font-face{
+   font-family: 'Clear Sans';
+   src: url('/css/font/clearsans-medium-webfont.eot');
+   src: url('/css/font/clearsans-medium-webfont.eot?#iefix') format('embedded-opentype'),
+   url('/css/font/clearsans-medium-webfont.woff') format('woff'),
+   url('/css/font/clearsans-medium-webfont.ttf') format('truetype'),
+   url('/css/font/clearsans-medium-webfont.svg#webfont') format('svg');
+   font-weight: bold;
+ }
+
+@mixin serif      { font-family: georgia, serif; }
+@mixin sans-serif { font-family: Clear Sans, sans-serif; }
 
 /* Headers
    ========================================================================== */
@@ -24,10 +37,15 @@
 /* Copy
    ========================================================================== */
 
-.intro {  font-size: $font-size-3; }
-.copy {   font-size: $font-size-4; }
-
-
+* {
+  @include sans-serif;
+}
+article {
+  @include serif;
+}
+a {
+  text-decoration: none;
+}
 
 /* Casing
    ========================================================================== */

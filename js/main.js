@@ -104,16 +104,39 @@ function filterList(filter){
 }
 
 // Getting the data from services when the page loads
-$(function(){
-  getGithubData();
-  getInstagramData();
-  getDribbbleData();
+function start(){
+  if($('section').hasClass('code')) { getGithubData(); }
+  if($('section').hasClass('pixels')) { getDribbbleData(); }
+  if($('section').hasClass('light')) { getInstagramData(); }
   $('abbr').timeago();
   $('time').timeago();
   $(".social").switcher();
   filterList(['all', 'code', 'light', 'words', 'pixels']);
-});
+}
+
+$(function(){start();});
 
 $(document).ajaxComplete(function() {
   $('time').timeago();
+});
+
+jQuery(document).ready(function($) {
+
+  var siteUrl = 'http://'+(document.location.hostname||document.location.host);
+
+  $(document).delegate('a[href^="/"],a[href^="'+siteUrl+'"]', "click", function(e) {
+    e.preventDefault();
+    History.pushState({}, "", this.pathname);
+  });
+
+  History.Adapter.bind(window, 'statechange', function(){
+    var State = History.getState();
+    $.get(State.url, function(data){
+      document.title = $(data).find("title").text();
+      $('.content').html($(data).find('.content'));
+      //_gaq.push(['_trackPageview', State.url]);
+      start();
+    });
+  });
+
 });
