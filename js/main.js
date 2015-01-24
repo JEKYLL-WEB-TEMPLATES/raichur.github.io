@@ -7,7 +7,7 @@ function getDribbbleData(){
       title = shot.title;
       image = shot.image_teaser_url;
 
-      html.push('<li><h3 class="name">' + title + '</h3>');
+      html.push('<li class="col col-1-3"><h3 class="name">' + title + '</h3>');
       html.push('<img src="' + image + '" alt="' + title + '"/>');
       html.push('<time datetime="' + date + '">' + date + '</time></a></li>');
     });
@@ -26,7 +26,7 @@ function getInstagramData(){
     userId: 1508254017,
     limit: 20,
     accessToken: '1508254017.467ede5.4d8570b3606645bfa2859e1d1c54f8f1',
-    template: '<li><a href="{{link}}"><img src="{{image}}" /></a><p class="name">{{caption}}</p><time class="instafeed time" datetime="{{model.created_at}}">{{model.created_time}}</time></li>',
+    template: '<li class="col col-1-3"><a href="{{link}}"><img src="{{image}}" /></a><p class="name">{{caption}}</p><time class="instafeed time" datetime="{{model.created_at}}">{{model.created_time}}</time></li>',
     after: function() {
       $('.instafeed.time').each(function(){
         this.setAttribute('datetime', (new Date(this.innerHTML*1000)).toISOString());
@@ -76,7 +76,7 @@ function getGithubData(){
         description = repositories[index].description;
         homepage = repositories[index].homepage;
 
-        html.push('<li><a href="' + url + '"><h3 class="name">' + title + '</h3></a>');
+        html.push('<li class="col col-1-3"><a href="' + url + '"><h3 class="name">' + title + '</h3></a>');
         if(description) { html.push('<p>' + description + '</p>'); }
         if(homepage) { html.push('<a href="' + homepage + '">Live</a>'); }
         if(language) { html.push('<p style="color: ' + repo_colors[language] + '">' + language + '</p>'); }

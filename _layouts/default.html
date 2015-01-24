@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   {% include _head.html %}
-  <body{% if page.id %} class="{{page.id}}"{% endif %}>
-    {% include _nav.html %}
-    <main id="content">
-      {{ content }}
-    </main>
+  <body>
+    <div class="page-wrap">
+      {% include _nav.html %}
+      <main class="content">
+        {{ content }}
+      </main>
+    </div>
   </body>
   {% include _scripts.html %}
 </html>

@@ -1,8 +1,11 @@
 <nav class="navigation">
   <a href="/">Josh</a>
+  {% if page.path contains '_posts' %}
+  {% else %}
   <a href="#" class="allfilter">All</a>
   <a href="#" class="codefilter">Code</a>
   <a href="#" class="wordsfilter">Words</a>
   <a href="#" class="pixelsfilter">Pixels</a>
   <a href="#" class="lightfilter">Light</a>
+  {% endif %}
 </nav>
