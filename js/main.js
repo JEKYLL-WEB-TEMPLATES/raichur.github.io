@@ -5,9 +5,9 @@ function getDribbbleData(){
     $.each(playerShots.shots, function (i, shot) {
       date = new Date(shot.created_at).toISOString();
       title = shot.title;
-      image = shot.image_teaser_url;
+      image = shot.image_url;
 
-      html.push('<li class="col col-1-3"><h2 class="name">' + title + '</h2>');
+      html.push('<li class="col col-1-2"><h3 class="name">' + title + '</h3>');
       html.push('<img src="' + image + '" alt="' + title + '"/>');
       html.push('<time class="date" datetime="' + date + '">' + date + '</time></a></li>');
     });
@@ -26,7 +26,7 @@ function getInstagramData(){
     userId: 1508254017,
     limit: 20,
     accessToken: '1508254017.467ede5.4d8570b3606645bfa2859e1d1c54f8f1',
-    template: '<li class="col col-1-3"><a href="{{link}}"><img src="{{image}}" /></a><p class="name">{{caption}}</p><time class="instafeed time" datetime="{{model.created_at}}">{{model.created_time}}</time></li>',
+    template: '<li class="col col-1-2"><a href="{{link}}"><img src="{{image}}" /></a><p class="name">{{caption}}</p><time class="instafeed time" datetime="{{model.created_at}}">{{model.created_time}}</time></li>',
     after: function() {
       $('.instafeed.time').each(function(){
         this.setAttribute('datetime', (new Date(this.innerHTML*1000)).toISOString());
@@ -76,7 +76,7 @@ function getGithubData(){
         description = repositories[index].description;
         homepage = repositories[index].homepage;
 
-        html.push('<li class="col col-1-3"><a href="' + url + '"><h2 class="name">' + title + '</h2></a>');
+        html.push('<li class="col col-1-2"><a href="' + url + '"><h2 class="name">' + title + '</h2></a>');
         if(description) { html.push('<p class="description">' + description + '</p>'); }
         if(homepage) { html.push('<a href="' + homepage + '">Live</a>'); }
         if(language) { html.push('<p class="language" style="color: ' + repo_colors[language] + '">' + language + '</p>'); }
@@ -125,20 +125,6 @@ function start(){
   });
 }
 
-if($('#greeting').length !== 0){
-  var time = new Date();
-  var hours = time.getHours();
-  if (hours>=5&&hours<=12){
-    $('#greeting').html('Good morning!'); // Morn
-  }
-  else if (hours>=13&&hours<=17) {
-    $('#greeting').html('Good afternoon.'); // Afternoon
-  }
-  else if (hours>=18&&hours<=20) {
-    $('#greeting').html('Good evening.'); // Evening
-  }
-}
-
 
 $(function(){
   start();
@@ -157,7 +143,7 @@ jQuery(document).ready(function($) {
     var State = History.getState();
     $.get(State.url, function(data){
       document.title = $(data).find("title").text();
-      $('.content').html($(data).find('.content'));
+      $('.content').html($(data).find('.content').html());
       //_gaq.push(['_trackPageview', State.url]);
       start();
       $('.header .large, .header .head-para h2, .header .head-para h3').velocity('transition.slideDownIn', {duration: 380, stagger: 100});

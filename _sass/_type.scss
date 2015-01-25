@@ -2,7 +2,22 @@
    TYPE
    ========================================================================== */
 
-   @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500);
+
+@font-face {
+ font-family: 'Nimbus Sans';
+ src: url('/css/font/NimbusSans-Reg.ttf') format('truetype');
+ font-weight: normal;
+}
+@font-face {
+  font-family: 'Nimbus Sans';
+  src: url('/css/font/NimbusSans-Light.ttf') format('truetype');
+  font-weight: lighter;
+}
+@font-face {
+  font-family: 'Nimbus Sans';
+  src: url('/css/font/NimbusSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
 @font-face {
  font-family: 'Freight Text';
  src: url('/css/font/FreightText-Light.otf') format('opentype');
@@ -27,31 +42,36 @@
 }
 
 @mixin serif      { font-family: Freight Text, georgia, serif; }
-@mixin sans-serif { font-family: Roboto, sans-serif; }
+@mixin sans-serif { font-family: Nimbus Sans, sans-serif; }
 
 /* Headers
    ========================================================================== */
 
 .h1 {
+  color: $color-dark-grey;
   font-size: $font-size-1;
 }
 .h2 {
+  color: $color-dark-grey;
   font-size: $font-size-2;
 }
 .h3 {
+  color: $color-light-grey;
   font-size: $font-size-3;
 }
 .h4 {
+  color: $color-light-grey;
   font-size: $font-size-4;
 }
 .h5 {
+  color: $color-light-grey;
   font-size: $font-size-5;
 }
 .large {
   font-size: $font-size-05;
-  text-align: center;
-  margin: 20px;
-  font-weight: 300;
+  color: $color-dark-grey;
+  margin-bottom: 100px;
+  font-weight: 700;
 }
 
 /* Copy

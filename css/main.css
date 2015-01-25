@@ -1,4 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500);
 /* ==========================================================================
    VARIABLES
    ========================================================================== */
@@ -6,42 +5,6 @@
 /* Medium Breakpoint */
 /* Colors */
 /* Content Width */
-/* Animations */
-@-webkit-keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0); }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none; } }
-
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    -ms-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0); }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-    -ms-transform: none;
-    transform: none; } }
-
-.hidden {
-  opacity: 0; }
-
-.visible {
-  opacity: 1;
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp;
-  -webkit-animation-duration: 0.4s;
-  -webkit-animation-timing-function: ease;
-  -webkit-animation-fill-mode: both; }
-
 /* ==========================================================================
    QUERIES
 
@@ -352,26 +315,24 @@ table {
 NAVIGATION
 ========================================================================== */
 .navigation {
-  margin: 50px auto;
-  text-align: center;
-  display: table;
+  margin: 100px auto;
   -webkit-transition: all ease 0.3s;
   transition: all ease 0.3s; }
   .navigation li {
-    display: table-cell;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
     list-style: none;
     padding: 10px;
-    vertical-align: middle; }
+    float: right; }
   .navigation .logo {
-    font-size: 40px; }
+    float: left;
+    font-size: 26px; }
 
 /* ==========================================================================
    GRID
    ========================================================================== */
 .page-wrap {
-  width: 80%;
+  width: 65%;
   margin: auto; }
 
 .content {
@@ -386,11 +347,14 @@ NAVIGATION
     margin: 10px; }
     .content .col h3 {
       margin: 0; }
-  .content .col-1-3 {
+    .content .col img {
+      width: 100%;
+      height: auto; }
+  .content .col-1-2 {
     width: 45%; }
-    .content .col-1-3 h1 {
-      font-size: 40px; }
-    .content .col-1-3 p {
+    .content .col-1-2 h1 {
+      font-size: 26px; }
+    .content .col-1-2 p {
       white-space: pre-line; }
   .content .col-1-1 {
     width: 100%; }
@@ -401,21 +365,29 @@ NAVIGATION
     padding: 0;
     margin: 0; }
     .content .list li {
-      padding: 20px;
-      background: #F8F8F8; }
+      padding: 20px; }
       .content .list li time {
-        float: right;
-        display: inline-block; }
+        float: right; }
 
-.header .head-para {
-  margin: auto;
-  width: 60%; }
-  .header .head-para h3 {
-    font-weight: normal; }
+.header {
+  margin-top: 60px;
+  margin-bottom: 160px;
+  width: 100%; }
+  .header .head-para {
+    color: #686868;
+    margin: auto; }
+    .header .head-para h3 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 26px; }
+    .header .head-para h2 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 42px; }
 
 .post {
   margin: auto;
-  width: 60%;
+  width: 90%;
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
   margin-top: 60px;
@@ -424,6 +396,21 @@ NAVIGATION
 /* ==========================================================================
    TYPE
    ========================================================================== */
+@font-face {
+  font-family: 'Nimbus Sans';
+  src: url('/css/font/NimbusSans-Reg.ttf') format('truetype');
+  font-weight: normal; }
+
+@font-face {
+  font-family: 'Nimbus Sans';
+  src: url('/css/font/NimbusSans-Light.ttf') format('truetype');
+  font-weight: lighter; }
+
+@font-face {
+  font-family: 'Nimbus Sans';
+  src: url('/css/font/NimbusSans-Bold.ttf') format('truetype');
+  font-weight: bold; }
+
 @font-face {
   font-family: 'Freight Text';
   src: url('/css/font/FreightText-Light.otf') format('opentype');
@@ -449,34 +436,39 @@ NAVIGATION
 /* Headers
    ========================================================================== */
 .h1 {
-  font-size: 68px; }
+  color: #343434;
+  font-size: 64px; }
 
 .h2 {
-  font-size: 50px; }
+  color: #343434;
+  font-size: 42px; }
 
 .h3 {
-  font-size: 40px; }
+  color: #686868;
+  font-size: 26px; }
 
 .h4 {
-  font-size: 28px; }
-
-.h5 {
+  color: #686868;
   font-size: 22px; }
 
+.h5 {
+  color: #686868;
+  font-size: 18px; }
+
 .large {
-  font-size: 100px;
-  text-align: center;
-  margin: 20px;
-  font-weight: 300; }
+  font-size: 110px;
+  color: #343434;
+  margin-bottom: 100px;
+  font-weight: 700; }
 
 /* Copy
    ========================================================================== */
 * {
-  font-family: Roboto, sans-serif; }
+  font-family: Nimbus Sans, sans-serif; }
 
 article, .post {
   font-family: Freight Text, georgia, serif;
-  font-size: 22px; }
+  font-size: 18px; }
 
 a {
   color: #e64944;

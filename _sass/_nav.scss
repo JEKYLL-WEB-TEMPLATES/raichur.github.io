@@ -3,19 +3,17 @@ NAVIGATION
 ========================================================================== */
 
 .navigation {
-  margin: 50px auto;
-  text-align: center;
-  display:table;
+  margin: 100px auto;
   transition: all ease .3s;
   li {
-    display:table-cell;
     font-size: $font-size-5;
     font-weight: bold;
     list-style: none;
     padding: 10px;
-    vertical-align: middle;
+    text-align: right;
   }
   .logo {
+    text-align: left;
     font-size: $font-size-3;
   }
 }
