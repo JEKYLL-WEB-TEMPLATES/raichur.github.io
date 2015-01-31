@@ -1,26 +1,11 @@
 // Gets Dribbble data using the Jribbble wrapper and
-function getDribbbleData(){
-  $.jribbble.getShotsByPlayerId('geek', function (playerShots) {
-    var html = [], date, title, image;
-    $.each(playerShots.shots, function (i, shot) {
-      date = new Date(shot.created_at).toISOString();
-      title = shot.title;
-      image = shot.image_teaser_url;
 
-      html.push('<li><h2 class="name">' + title + '</h2>');
-      html.push('<img src="' + image + '" alt="' + title + '"/>');
-      html.push('<time class="date" datetime="' + date + '">' + date + '</time></a></li>');
-    });
-
-    $('#list').append(html.join(''));
-  }, {page: 1, per_page: 5});
-}
 
 function getInstagramData(){
   var feed = new Instafeed({
     get: 'user',
     target: 'list',
-    resolution: 'thumbnail',
+    resolution: 'low_resolution',
     userId: 1508254017,
     limit: 5,
     accessToken: '1508254017.467ede5.4d8570b3606645bfa2859e1d1c54f8f1',
@@ -79,7 +64,6 @@ function getGithubData(){
 // Getting the data from services when the page loads
 function start(){
     getGithubData();
-    getDribbbleData();
     getInstagramData();
   $(".social").switcher();
   $(document).ajaxComplete(function() {
