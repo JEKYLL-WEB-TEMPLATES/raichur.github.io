@@ -1,29 +1,20 @@
-{% include head.html %}
-<body>
+<!DOCTYPE html>
+<html>
 
-  <div id="container">
-    <header>
+  {% include head.html %}
 
-    </header>
-    <div id="main" role="main">
-      {{ content }}
+  <body>
+
+    {% include header.html %}
+
+    <div class="page-content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
     </div>
-    <footer>        
-      <h3>Site Pages</h3>
-      <ul>
-        <li><a href="/" rel="home">Home</a></li>
-        <li><a href="/about">About</a></li>
-      </ul>
-      <h3>Blog Posts</h3>          
-      <ul>
-        {% for post in site.posts %}
-          <li{% if page.url == post.url %} class="active"{% endif %}><a href="{{ post.url }}">{{ post.title }}</a></li>
-        {% endfor %}
-      </ul>
-    </footer>
-  </div> <!--! end of #container -->
-{% include scripts.html %}	        
-{% include analytics.html %}
-{% include chromeframe.html %}
-</body>
+
+    {% include footer.html %}
+
+  </body>
+
 </html>
