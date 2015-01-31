@@ -4,8 +4,7 @@ email: hello@joshuaraichur.com
 description: Joshua Raichur's website.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://joshuaraichur.com" # the base hostname & protocol for your site
-twitter_username: JoshuaRaichur
-github_username:  raichur
 
 # Build settings
 markdown: kramdown
+permalink: /:title/
