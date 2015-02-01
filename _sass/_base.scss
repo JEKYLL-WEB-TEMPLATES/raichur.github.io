@@ -24,19 +24,6 @@ body {
 }
 
 
-
-/**
- * Set `margin-bottom` to maintain vertical rhythm
- */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
-%vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
-}
-
-
-
 /**
  * Images
  */
@@ -63,11 +50,8 @@ figcaption {
 /**
  * Lists
  */
-ul, ol {
-    margin-left: $spacing-unit;
-}
-
 li {
+    list-style: none;
     > ul,
     > ol {
          margin-bottom: 0;
@@ -98,7 +82,6 @@ a {
 
     &:hover {
         color: $text-color;
-        text-decoration: underline;
     }
 }
 

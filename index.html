@@ -3,15 +3,18 @@ layout: default
 ---
 
 <div class="home">
-  <ul id="list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+  <div class="wrapper">
+    <ul id="list">
+      {% for post in site.posts %}
+        <li>
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_xmlschema }}</time>
+          <h2>
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+          <p>{{ post.subtitle }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+    <a href="#" id="load-more">Load more</a>
+  </div>
 </div>

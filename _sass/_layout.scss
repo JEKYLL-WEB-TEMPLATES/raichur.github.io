@@ -1,0 +1,39 @@
+.title {
+  width: 100%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  .title-head {
+    h1 {
+      text-transform: uppercase;
+    }
+    &:hover {
+      span {
+        opacity: 1;
+      }
+    }
+    span {
+      transition: all ease 0.2s;
+      opacity: 0;
+    }
+  }
+  .about {
+    margin-top: 10px;
+  }
+  .about-text {
+    display: none;
+    transition: all ease 0.3s;
+  }
+}
+
+.wrapper {
+  header {
+    margin-bottom: 30px;
+  }
+  article {
+    margin-bottom: 80px;
+  }
+}
+
+.home {
+  margin-bottom: 80px;
+}
