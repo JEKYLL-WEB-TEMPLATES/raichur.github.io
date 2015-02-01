@@ -2,8 +2,30 @@
 ---
 @charset "utf-8";
 
-// Our variables
+// Fonts
+@font-face {
+  font-family: "Freight Text";
+  src: url("/css/fonts/FreightText-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "Freight Text";
+  src: url("/css/fonts/FreightText-LightIta.otf") format("opentype");
+  font-style: italic;
+}
+@font-face {
+  font-family: "Freight Text";
+  src: url("/css/fonts/FreightText-Med.otf") format("opentype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Freight Text";
+  src: url("/css/fonts/FreightText-MedIta.otf") format("opentype");
+  font-weight: bold;
+}
+
+// Variables
 $base-font-family: Helvetica, Arial, sans-serif;
+$serif-font-family: Freight Text, Georgia, Cambria, serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
