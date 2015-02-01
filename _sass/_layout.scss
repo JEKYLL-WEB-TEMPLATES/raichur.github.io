@@ -13,7 +13,7 @@
       }
     }
     span {
-      transition: all ease 0.2s;
+      transition: all ease 0.5s;
       opacity: 0;
     }
   }
@@ -42,11 +42,21 @@
   margin-bottom: 50px;
 }
 
+.title {
+  height: 350px;
+}
+
+.post {
+  .large {
+    font-size: 5rem;
+  }
+}
+
 #particles {
+  height: 350px;
   width: 100%;
-  height: 280px;
-  top: 0;
   z-index: -1;
   position: absolute;
+  top: 0;
   background: $text-color;
 }

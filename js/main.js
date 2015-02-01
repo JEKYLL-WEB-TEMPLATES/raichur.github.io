@@ -107,10 +107,10 @@ if(desktop.matches) {
           opacity: 0.3,
           size: 0.1,
           size_random: true,
-          nb: 100,
+          nb: 150,
           line_linked: {
               enable_auto: true,
-              distance: 290,
+              distance: 320,
               color: '#fff',
               opacity: 0.4,
               width: 1,
@@ -126,7 +126,7 @@ if(desktop.matches) {
                 }
               },
               interactivity: {
-                  enable: false,
+                  enable: true,
                   mouse: {
                       distance: 150
                     },
