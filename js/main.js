@@ -1,6 +1,3 @@
-// Gets Dribbble data using the Jribbble wrapper and
-
-
 function getInstagramData(){
   var feed = new Instafeed({
     get: 'user',
@@ -63,16 +60,19 @@ function getGithubData(){
 
 // Getting the data from services when the page loads
 function start(){
-    getGithubData();
-    getInstagramData();
-  $(".social").switcher();
-  $(document).ajaxComplete(function() {
-    $('time').timeago();
-  });
+    if('.home'){
+      getGithubData();
+      getInstagramData();
+      $(document).ajaxComplete(function() {
+        $('time').timeago();
+      });
+    }
 }
 
 $(function(){
-  start();
+  if('.home'){
+    start();
+  }
 });
 
 var siteUrl = 'http://'+(document.location.hostname||document.location.host);
@@ -84,7 +84,7 @@ History.Adapter.bind(window, 'statechange', function(){
   var State = History.getState();
   $.get(State.url, function(data){
     document.title = $(data).find("title").text();
-    $('main').html($(data).find('main'));
+    $('#content').html($(data).find('#content'));
     //_gaq.push(['_trackPageview', State.url]);
     start();
   });
