@@ -75,19 +75,11 @@ function getGithubData(){
   });
 }
 
-function aboutToggle(){
-  $('.about').click(function(e){
-    e.preventDefault();
-    $('.about-text').fadeToggle();
-  });
-}
-
 // Getting the data from services when the page loads
 function start(){
     getGithubData();
     getDribbbleData();
     getInstagramData();
-    aboutToggle();
 }
 
 $(function(){
@@ -105,3 +97,81 @@ $(function(){
     });
 });
 });
+
+var desktop = window.matchMedia('all and (min-width: 700px)');
+if(desktop.matches) {
+  setInterval(particlesJS('particles', {
+      particles: {
+          color: '#fff',
+          shape: 'circle', // "circle", "edge" or "triangle"
+          opacity: 0.3,
+          size: 0.1,
+          size_random: true,
+          nb: 100,
+          line_linked: {
+              enable_auto: true,
+              distance: 290,
+              color: '#fff',
+              opacity: 0.4,
+              width: 1,
+              condensed_mode: {
+                  enable: false,
+                  rotateX: 600,
+                  rotateY: 600
+                }
+              },
+              anim: {
+                  enable: true,
+                  speed: 0.5
+                }
+              },
+              interactivity: {
+                  enable: false,
+                  mouse: {
+                      distance: 150
+                    },
+                    detect_on: 'canvas', // "canvas" or "window"
+                    mode: 'grab',
+                    line_linked: {
+                        opacity: 0.5
+                      },
+                      events: {
+                          onclick: {
+                              enable: true,
+                              mode: 'push', // "push" or "remove" (particles)
+                              nb: 4
+                            }
+                          }
+                        },
+                        /* Retina Display Support */
+                        retina_detect: true
+                      }), 1000);
+}
+
+// Set the name of the hidden property and the change event for visibility
+var hidden, visibilityChange;
+if (typeof document.hidden !== "undefined") { // Opera 12.10 and Firefox 18 and later support
+  hidden = "hidden";
+  visibilityChange = "visibilitychange";
+} else if (typeof document.mozHidden !== "undefined") {
+  hidden = "mozHidden";
+  visibilityChange = "mozvisibilitychange";
+} else if (typeof document.msHidden !== "undefined") {
+  hidden = "msHidden";
+  visibilityChange = "msvisibilitychange";
+} else if (typeof document.webkitHidden !== "undefined") {
+  hidden = "webkitHidden";
+  visibilityChange = "webkitvisibilitychange";
+}
+
+var title = document.title;
+
+// If the page is hidden, pause the video;
+// if the page is shown, play the video
+function handleVisibilityChange() {
+  if (document[hidden]) {
+    document.title = 'To read: ' + title;
+  } else {
+    document.title = title;
+  }
+}
