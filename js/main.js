@@ -107,7 +107,7 @@ if(desktop.matches) {
           opacity: 0.3,
           size: 0.1,
           size_random: true,
-          nb: 150,
+          nb: 50,
           line_linked: {
               enable_auto: true,
               distance: 320,

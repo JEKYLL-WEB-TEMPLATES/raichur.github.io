@@ -1,8 +1,8 @@
 .title {
   color: white;
   width: 100%;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   .title-head {
     h1 {
       text-transform: uppercase;
@@ -28,6 +28,7 @@
 
 .wrapper {
   header {
+    margin-top: 30px;
     margin-bottom: 30px;
   }
   article {
@@ -37,23 +38,20 @@
   }
 }
 
-.home, .post {
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
 .title {
-  height: 350px;
+  height: 200px;
 }
 
 .post {
+  margin-top: 40px;
+  margin-bottom: 40px;
   .large {
     font-size: 5rem;
   }
 }
 
 #particles {
-  height: 350px;
+  height: 200px;
   width: 100%;
   z-index: -1;
   position: absolute;
