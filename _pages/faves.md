@@ -7,6 +7,7 @@ permalink: '/faves/'
 ## Books
 I normally read 1-2 books a week. Here are a few of my favorites.
 
+- [Einstein: His Life and Universe](http://www.amazon.com/Einstein-Life-Universe-Walter-Isaacson-ebook/dp/B007F5SFWS)
 - [The Social Animal](http://www.amazon.com/Social-Animal-Sources-Character-Achievement/dp/0812979370)
 - [The Art of Worldly Wisdom](http://www.amazon.com/Worldly-Wisdom-Unabridged-Start-Publishing-ebook/dp/B00BDJH78K)
 - [How Google Works](http://www.amazon.com/How-Google-Works-Eric-Schmidt-ebook/dp/B00J379F3O)
