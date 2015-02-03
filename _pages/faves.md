@@ -4,6 +4,8 @@ title: 'Faves'
 permalink: '/faves/'
 ---
 
+<div class="faves" markdown="1">
+
 ## Books
 I normally read 1-2 books a week. Here are a few of my favorites.
 
@@ -86,3 +88,6 @@ I normally read 1-2 books a week. Here are a few of my favorites.
 - [Stuff You Should Know](https://itunes.apple.com/us/podcast/stuff-you-should-know/id278981407?mt=2)
 - [Fw:Thinking](https://itunes.apple.com/us/podcast/fw-thinking/id604177167?mt=2)
 - [TechStuff](https://itunes.apple.com/us/podcast/techstuff/id282795787?mt=2)
+
+
+</div>
