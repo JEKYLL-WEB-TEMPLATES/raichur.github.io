@@ -71,8 +71,8 @@
 
 #list {
   time {
-    &::first-letter {
-      text-transform: uppercase;
+    &:first-letter {
+      text-transform: capitalize;
     }
     font-size: $smaller-font-size;
   }

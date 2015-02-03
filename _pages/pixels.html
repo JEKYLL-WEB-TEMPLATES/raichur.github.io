@@ -1,12 +1,12 @@
 ---
 layout: default
-title: 'Words'
-permalink: '/words/'
+title: 'Pixels'
+permalink: '/pixels/'
 ---
 
 <ul id="list">
   {% for post in site.posts %}
-    {% if post.type == "words" %}
+    {% if post.type == "pixels" %}
     <li class="{{ post.type }}">
       <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_xmlschema }}</time>
       <h2>
