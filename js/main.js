@@ -75,17 +75,18 @@ function getGithubData(){
         html.push('<a href="' + url + '"><h2 class="name">' + title + '</h2></a>');
         if(description) { html.push('<p>' + lang_text + description + '</p>'); }
       });
-      $('#list').append(html.join(''));
+      $('.code').append(html.join(''));
     }
   });
 }
 
 // Getting the data from services when the page loads
 function start(){
-    // getGithubData();
+    if($('.code').length) {getGithubData();}
     // getDribbbleData();
     // getInstagramData();
 }
+
 
 $(function(){
   start();
@@ -133,7 +134,7 @@ if(desktop.matches) {
                 }
               },
               interactivity: {
-                  enable: true,
+                  enable: false,
                   mouse: {
                       distance: 150
                     },
@@ -182,3 +183,17 @@ function handleVisibilityChange() {
     document.title = title;
   }
 }
+
+if(document.getElementById("next_link")) {
+  shortcut.add("Left",function() {
+    window.open(document.getElementById("next_link").getAttribute('href'),'_self',false);
+  });
+}
+if(document.getElementById("prev_link")) {
+  shortcut.add("Right",function() {
+    window.open(document.getElementById("prev_link").getAttribute('href'),'_self',false);
+  });
+}
+shortcut.add("Shift+Up", function() {
+  window.open('/','_self',false);
+});

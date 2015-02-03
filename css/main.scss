@@ -10,20 +10,20 @@
 }
 @font-face {
   font-family: 'Source Sans Pro';
-  src: url('/css/fonts/SourceSansPro-LightIta.otf');
+  src: url('/css/fonts/SourceSansPro-LightIt.otf');
   font-style: italic;
 }
-/* @font-face {
+@font-face {
   font-family: 'Source Sans Pro';
-  src: url('/css/fonts/SourceSansPro-Bold.otf');
+  src: url('/css/fonts/SourceSansPro-Semibold.otf');
   font-weight: bold;
 }
 @font-face {
   font-family: 'Source Sans Pro';
-  src: url('/css/fonts/SourceSansPro-BoldIta.otf');
+  src: url('/css/fonts/SourceSansPro-SemiboldIt.otf');
   font-weight: bold;
   font-style: italic;
-} */
+}
 
 // Variables
 $base-font-family: Source Sans Pro, Avenir Next, Helvetica Neue, Helvetica, Arial, sans-serif;
