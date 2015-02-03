@@ -56,19 +56,24 @@ function getGithubData(){
     });
 
     function outputPageContent() {
-      var html = [], date, title, url, language = false, description = false;
+      var html = [], date, title, url, language = '', description = false, lang_text = '';
       $.each(repositories, function(index) {
 
         date = repositories[index].updated_at;
         title = repositories[index].name;
         url = repositories[index].html_url;
-        language = repositories[index].language;
+         if(repositories[index].language) {
+           language = repositories[index].language;
+           lang_text = '<span style="color: ' + repo_colors[language] + '">' + language + '</span> ';
+         } else {
+           language = '';
+           lang_text = '';
+         }
         description = repositories[index].description;
 
-        html.push('<li><time datetime="' + date + '">' + date + '</time>');
+        html.push('<li><time datetime="' + date +'">' + date + '</time>');
         html.push('<a href="' + url + '"><h2 class="name">' + title + '</h2></a>');
-        if(description) { html.push('<p>' + description + '</p>'); }
-        if(language) { html.push('<p class="language" style="color: ' + repo_colors[language] + '">' + language + '</p></li>'); }
+        if(description) { html.push('<p>' + lang_text + description + '</p>'); }
       });
       $('#list').append(html.join(''));
     }
@@ -77,13 +82,14 @@ function getGithubData(){
 
 // Getting the data from services when the page loads
 function start(){
-    getGithubData();
+    // getGithubData();
     // getDribbbleData();
     // getInstagramData();
 }
 
 $(function(){
   start();
+  $('time').timeago();
   $(document).ajaxComplete(function() {
     $("img").lazyload({effect : "fadeIn"});
     $('time').timeago();
@@ -113,7 +119,7 @@ if(desktop.matches) {
               enable_auto: true,
               distance: 320,
               color: '#c6c6c6',
-              opacity: 0.6,
+              opacity: 0.52,
               width: 1,
               condensed_mode: {
                   enable: false,
@@ -123,7 +129,7 @@ if(desktop.matches) {
               },
               anim: {
                   enable: true,
-                  speed: 0.5
+                  speed: 0.4
                 }
               },
               interactivity: {
@@ -140,7 +146,7 @@ if(desktop.matches) {
                           onclick: {
                               enable: true,
                               mode: 'push', // "push" or "remove" (particles)
-                              nb: 4
+                              nb: 1
                             }
                           }
                         },

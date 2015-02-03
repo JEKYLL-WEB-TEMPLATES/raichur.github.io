@@ -21,7 +21,12 @@ body {
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
 }
-
+.large {
+  font-size: 5rem;
+  line-height: 5.5rem;
+  letter-spacing: -.15rem;
+  margin-bottom: 15px;
+}
 
 /**
  * Images
@@ -41,7 +46,7 @@ figure > img {
 }
 
 figcaption {
-    font-size: $small-font-size;
+    font-size: $base-font-size;
 }
 
 
