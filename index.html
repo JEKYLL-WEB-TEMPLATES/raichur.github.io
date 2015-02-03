@@ -6,7 +6,7 @@ layout: default
   <div class="wrapper">
     <ul id="list">
       {% for post in site.posts %}
-        <li>
+        <li class="{{ post.type }}">
           <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_xmlschema }}</time>
           <h2>
             <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>

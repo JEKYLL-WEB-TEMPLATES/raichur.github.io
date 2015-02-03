@@ -4,7 +4,7 @@ function getDribbbleData(){
     $.each(playerShots.shots, function (i, shot) {
       date = new Date(shot.created_at).toISOString();
       title = shot.title;
-      image = shot.image_teaser_url;
+      image = shot.image_url;
       html.push('<li><time datetime="' + date + '">' + date + '</time></a>');
       html.push('<h2 class="name">' + title + '</h2>');
       html.push('<img src="' + image + '" alt="' + title + '"/></li>');
@@ -18,7 +18,7 @@ function getInstagramData(){
   var feed = new Instafeed({
     get: 'user',
     target: 'list',
-    resolution: 'low_resolution',
+    resolution: 'standard_resolution',
     userId: 1508254017,
     limit: 10,
     accessToken: '1508254017.467ede5.4d8570b3606645bfa2859e1d1c54f8f1',
@@ -78,8 +78,8 @@ function getGithubData(){
 // Getting the data from services when the page loads
 function start(){
     getGithubData();
-    getDribbbleData();
-    getInstagramData();
+    // getDribbbleData();
+    // getInstagramData();
 }
 
 $(function(){
@@ -87,14 +87,15 @@ $(function(){
   $(document).ajaxComplete(function() {
     $("img").lazyload({effect : "fadeIn"});
     $('time').timeago();
-    var size_li = $("#list li").size(), list_num = 5;
-    $('#list li').hide();
-    $('#list li:lt('+list_num+')').show();
-    $('#load-more').click(function (e) {
-      e.preventDefault();
-         list_num = (list_num + list_num <= size_li) ? list_num + list_num : size_li;
-        $('#list li:lt('+list_num+')').show();
-    });
+    // var size_li = $("#list li").size(), list_num = 5;
+    // $('#list li').hide();
+    // $('#list li:lt('+list_num+')').show();
+    // $('#load-more').click(function (e) {
+    //   e.preventDefault();
+    //      list_num = (list_num + list_num <= size_li) ? list_num + list_num : size_li;
+    //     $('#list li:lt('+list_num+')').show();
+    // });
+
 });
 });
 
@@ -102,17 +103,17 @@ var desktop = window.matchMedia('all and (min-width: 700px)');
 if(desktop.matches) {
   setInterval(particlesJS('particles', {
       particles: {
-          color: '#fff',
+          color: '#c6c6c6',
           shape: 'circle', // "circle", "edge" or "triangle"
           opacity: 0.3,
           size: 0.1,
           size_random: true,
-          nb: 50,
+          nb: 70,
           line_linked: {
               enable_auto: true,
               distance: 320,
-              color: '#fff',
-              opacity: 0.4,
+              color: '#c6c6c6',
+              opacity: 0.5,
               width: 1,
               condensed_mode: {
                   enable: false,

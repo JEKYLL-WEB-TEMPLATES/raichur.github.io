@@ -3,31 +3,32 @@
 @charset "utf-8";
 
 // Fonts
+
 @font-face {
-  font-family: "Freight Text";
-  src: url("/css/fonts/FreightText-Light.otf") format("opentype");
+  font-family: 'Source Sans Pro';
+  src: url('/css/fonts/SourceSansPro-Light.otf');
 }
 @font-face {
-  font-family: "Freight Text";
-  src: url("/css/fonts/FreightText-LightIta.otf") format("opentype");
+  font-family: 'Source Sans Pro';
+  src: url('/css/fonts/SourceSansPro-LightIta.otf');
   font-style: italic;
 }
-@font-face {
-  font-family: "Freight Text";
-  src: url("/css/fonts/FreightText-Med.otf") format("opentype");
+/* @font-face {
+  font-family: 'Source Sans Pro';
+  src: url('/css/fonts/SourceSansPro-Bold.otf');
   font-weight: bold;
 }
 @font-face {
-  font-family: "Freight Text";
-  src: url("/css/fonts/FreightText-MedIta.otf") format("opentype");
+  font-family: 'Source Sans Pro';
+  src: url('/css/fonts/SourceSansPro-BoldIta.otf');
   font-weight: bold;
-}
+  font-style: italic;
+} */
 
 // Variables
-$base-font-family: Avenir Next, Helvetica Neue, Helvetica, Arial, sans-serif;
-$serif-font-family: Freight Text, Georgia, Cambria, serif;
-$base-font-size:   24px;
-$small-font-size:  $base-font-size * 0.875;
+$base-font-family: Source Sans Pro, Avenir Next, Helvetica Neue, Helvetica, Arial, sans-serif;
+$base-font-size:   26px;
+$small-font-size:  $base-font-size * 0.975;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
@@ -41,9 +42,9 @@ $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:    70%;
+$content-width:    55%;
 $on-palm:          90%;
-$on-laptop:        70%;
+$on-laptop:        55%;
 
 @mixin media-query($device) {
     @media screen and (max-width: $device) {
