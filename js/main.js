@@ -113,7 +113,7 @@ if(desktop.matches) {
               enable_auto: true,
               distance: 320,
               color: '#c6c6c6',
-              opacity: 0.5,
+              opacity: 0.6,
               width: 1,
               condensed_mode: {
                   enable: false,

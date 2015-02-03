@@ -6,6 +6,7 @@
     h1 {
       text-transform: uppercase;
       letter-spacing: .5rem;
+      display: inline;
     }
     &:hover {
       span {
@@ -29,6 +30,10 @@
 .wrapper {
   header {
     margin-bottom: 80px;
+    h1 {
+      margin-top: -10px;
+      margin-bottom: -10px;
+    }
   }
   article {
     margin-bottom: 80px;
@@ -61,4 +66,17 @@
   z-index: -1;
   position: absolute;
   top: 0;
+}
+
+#list {
+  time {
+    font-size: $smaller-font-size;
+  }
+  h2 {
+    margin-top: -10px;
+    margin-bottom: -10px;
+  }
+  li {
+    margin-top: 20px;
+  }
 }
