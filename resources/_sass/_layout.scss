@@ -247,6 +247,25 @@ footer {
   }
 }
 @media screen and (max-width: 700px) {
+  .album {
+    img {
+      width: 100%;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    .col-2 {
+      width: -webkit-calc(50% - 5px);
+      width: -moz-calc(50% - 5px);
+      width: calc(50% - 5px);
+      float: left;
+    }
+    .first {
+      margin-right: 5px;
+    }
+    .second {
+      margin-left: 5px;
+    }
+  }
   .light {
     -webkit-column-count: 2;
     -webkit-column-gap:   0px;
