@@ -71,7 +71,7 @@ function getGithubData(){
          }
         description = repositories[index].description;
 
-        html.push('<li><time datetime="' + date +'">' + date + '</time>');
+        html.push('<li><p class="post-meta"><time datetime="' + date +'">' + date + '</time></p>');
         html.push('<a href="' + url + '"><h2 class="name">' + title + '</h2></a>');
         if(description) { html.push('<p>' + lang_text + description + '</p>'); }
       });

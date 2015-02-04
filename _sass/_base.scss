@@ -25,11 +25,15 @@ body {
   font-size: 5rem;
   line-height: 5.5rem;
   letter-spacing: -.15rem;
-  margin-bottom: 15px;
 }
 .hidden {
   display: none;
 }
+::selection {
+  background: $grey-color-light;
+  opacity: .8;
+}
+
 
 /**
  * Images

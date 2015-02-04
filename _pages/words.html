@@ -8,7 +8,7 @@ permalink: '/words/'
   {% for post in site.posts %}
     {% if post.type == "words" %}
     <li class="{{ post.type }}">
-      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_xmlschema }}</time>
+      <p class="post-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_xmlschema }}</time> • {% include read_time.html %}</p>
       <h2>
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </h2>
