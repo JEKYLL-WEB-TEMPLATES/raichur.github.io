@@ -1,6 +1,5 @@
 ---
 title: "Iceberg"
-type: pixels
 img_dir: "/iceberg/"
 img_large: "/iceberg/01.jpg"
 ---

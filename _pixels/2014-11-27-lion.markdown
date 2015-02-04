@@ -1,6 +1,6 @@
 ---
 title: "Lion"
-type: pixels
+
 img_dir: "/lion/"
 img_large: "/lion/01.jpg"
 ---

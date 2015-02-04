@@ -1,6 +1,6 @@
 ---
 title: "Sundae"
-type: pixels
+
 img_dir: "/sundae/"
 img_large: "/sundae/01.jpg"
 ---

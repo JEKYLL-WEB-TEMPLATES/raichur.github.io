@@ -29,4 +29,8 @@ defaults:
 
 # Collections
 collections:
-  - pixels
+  pixels:
+    output: false
+  light:
+    output: true
+    permalink: "/album/:title/"

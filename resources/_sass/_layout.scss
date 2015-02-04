@@ -122,6 +122,17 @@
   }
 }
 
+// Light
+.light {
+  line-height: 0;
+   -webkit-column-count: 4;
+   -webkit-column-gap:   0px;
+   -moz-column-count:    5;
+   -moz-column-gap:      0px;
+   column-count:         5;
+   column-gap:           0px;
+}
+
 
 main {
   padding-top: 20px;
