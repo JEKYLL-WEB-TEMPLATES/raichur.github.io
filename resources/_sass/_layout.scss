@@ -247,6 +247,20 @@ footer {
   }
 }
 @media screen and (max-width: 700px) {
+  nav {
+    li:nth-child(3){
+      clear:right;
+    }
+  }
+  .large {
+    font-size: 3rem;
+  }
+  h1 {
+
+  }
+  h2 {
+    font-size: 2rem;
+  }
   .pixels li {
     width: calc(100%/3);
   }
