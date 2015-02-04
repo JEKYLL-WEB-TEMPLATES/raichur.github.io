@@ -131,6 +131,36 @@
    -moz-column-gap:      0px;
    column-count:         5;
    column-gap:           0px;
+   a {
+     color: white;
+     &:hover {
+       color: white;
+     }
+     &:visited {
+       color: white;
+     }
+   }
+   h3 {
+     transition: all ease .5s;
+     bottom: 0;
+     margin-bottom: 50px;
+     margin-left: 30px;
+     z-index: 3;
+     position: absolute;
+     float: left;
+     opacity: 0;
+   }
+   img {
+     transition: all ease .3s;
+     width: 100%;
+     height: 100%;
+   }
+   a:hover h3 {
+     opacity: 1;
+   }
+   a:hover img {
+     -webkit-filter: grayscale(.8) brightness(0.5);
+   }
 }
 .album {
   img {

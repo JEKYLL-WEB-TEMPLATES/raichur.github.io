@@ -7,9 +7,9 @@ permalink: '/light/'
 <ul class="light">
   {% for album in site.light %}
     <li>
-        <a class="lightbox" href="{{ album.url }}">
+        <a href="{{ album.url }}">
+          <h3>{{ album.title }}</h3>
           <img src="/resources/photos/{{ album.img_dir }}/{{ album.feat_img }}.jpg">
-          <h2>{{ album.title }}</h2>
         </a>
     </li>
   {% endfor %}
