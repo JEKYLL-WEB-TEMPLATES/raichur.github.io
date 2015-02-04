@@ -1,0 +1,6 @@
+---
+title: "Message"
+tags: poster
+img_dir: "/bottle/"
+img_large: "/resources/img/bottle/01.jpg"
+---

@@ -1,0 +1,6 @@
+---
+title: "Panda"
+type: pixels
+img_dir: "/panda/"
+img_large: "/panda/01.jpg"
+---

@@ -1,6 +1,0 @@
----
-title: "Skrillex"
-type: pixels
-img_dir: "/illustrations/skrillex/"
-img_large: "/resources/work/illustrations/skrillex/01.jpg"
----

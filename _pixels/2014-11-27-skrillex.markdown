@@ -1,0 +1,6 @@
+---
+title: "Skrillex"
+type: pixels
+img_dir: "/skrillex/"
+img_large: "/skrillex/01.jpg"
+---

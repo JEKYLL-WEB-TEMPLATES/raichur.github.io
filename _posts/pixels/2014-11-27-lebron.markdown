@@ -1,6 +1,0 @@
----
-title: "LeBron James"
-type: pixels
-img_dir: "/illustrations/lebron/"
-img_large: "/resources/work/illustrations/lebron/01.jpg"
----

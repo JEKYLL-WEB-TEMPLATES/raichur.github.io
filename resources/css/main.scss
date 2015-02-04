@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: 'Source Sans Pro';
-  src: url('/css/fonts/SourceSansPro-Light.otf');
+  src: url('/resources/css/fonts/SourceSansPro-Light.otf');
 }
 @font-face {
   font-family: 'Source Sans Pro';
@@ -15,12 +15,12 @@
 }
 @font-face {
   font-family: 'Source Sans Pro';
-  src: url('/css/fonts/SourceSansPro-Semibold.otf');
+  src: url('/resources/css/fonts/SourceSansPro-Semibold.otf');
   font-weight: bold;
 }
 @font-face {
   font-family: 'Source Sans Pro';
-  src: url('/css/fonts/SourceSansPro-SemiboldIt.otf');
+  src: url('/resources/css/fonts/SourceSansPro-SemiboldIt.otf');
   font-weight: bold;
   font-style: italic;
 }
@@ -34,7 +34,7 @@ $base-line-height: 1.5;
 $spacing-unit:     30px;
 
 $text-color:       #111;
-$background-color: #fdfdfd;
+$background-color: #fcfcfc;
 $brand-color:      #E54C3E;
 
 $grey-color:       #828282;
@@ -42,9 +42,9 @@ $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:    55%;
+$content-width:    60%;
 $on-palm:          90%;
-$on-laptop:        55%;
+$on-laptop:        60%;
 
 @mixin media-query($device) {
     @media screen and (max-width: $device) {

@@ -5,15 +5,9 @@ permalink: '/pixels/'
 ---
 
 <ul id="list">
-  {% for post in site.posts %}
-    {% if post.type == "pixels" %}
-    <li class="{{ post.type }}">
-      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_xmlschema }}</time>
-      <h2>
-        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </h2>
-      <p>{{ post.subtitle }}</p>
+  {% for image in site.pixels %}
+    <li>
+        <a><img src="/resources/img{{ image.img_dir }}thumb.png"></a>
     </li>
-    {% endif %}
   {% endfor %}
 </ul>

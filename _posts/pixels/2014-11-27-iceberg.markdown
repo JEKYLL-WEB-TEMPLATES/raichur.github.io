@@ -1,6 +1,0 @@
----
-title: "Iceberg"
-type: pixels
-img_dir: "/illustrations/iceberg/"
-img_large: "/resources/work/illustrations/iceberg/01.jpg"
----

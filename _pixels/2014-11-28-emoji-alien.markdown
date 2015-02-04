@@ -1,8 +1,8 @@
 ---
 title: "Emoji Alien"
 type: pixels
-img_dir: "/illustrations/emoji/"
-img_large: "/resources/work/illustrations/emoji/03.png"
+img_dir: "/emoji/"
+img_large: "/emoji/03.png"
 ---
 
 ![Tongue out](/resources/work/illustrations/emoji/04.png)

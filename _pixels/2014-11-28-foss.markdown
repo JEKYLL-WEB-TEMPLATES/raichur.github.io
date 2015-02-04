@@ -1,0 +1,6 @@
+---
+title: "FOSS"
+tags: poster
+img_dir: "/foss/"
+img_large: "/resources/foss/01.jpg"
+---

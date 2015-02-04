@@ -1,6 +1,0 @@
----
-title: "PSY"
-type: pixels
-img_dir: "/illustrations/psy/"
-img_large: "/resources/work/illustrations/psy/01.jpg"
----

@@ -1,6 +1,0 @@
----
-title: "Lion"
-type: pixels
-img_dir: "/illustrations/lion/"
-img_large: "/resources/work/illustrations/lion/01.jpg"
----

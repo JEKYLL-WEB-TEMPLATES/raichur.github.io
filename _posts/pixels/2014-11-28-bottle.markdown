@@ -1,6 +1,0 @@
----
-title: "Message"
-tags: poster
-img_dir: "/posters/bottle/"
-img_large: "/resources/work/posters/bottle/01.jpg"
----

@@ -8,6 +8,9 @@ url: "http://joshuaraichur.com" # the base hostname & protocol for your site
 # Build settings
 markdown: kramdown
 permalink: /:title/
+sass:
+    sass_dir: resources/_sass
+    style: :compressed
 
 # Include and exculde
 include: ['_pages']
@@ -23,3 +26,7 @@ defaults:
       path: "_posts"
     values:
       layout: "post"
+
+# Collections
+collections:
+  - pixels

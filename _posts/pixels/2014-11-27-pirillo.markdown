@@ -1,6 +1,0 @@
----
-title: "Pirillo"
-type: pixels
-img_dir: "/illustrations/pirillo/"
-img_large: "/resources/work/illustrations/pirillo/01.jpg"
----
