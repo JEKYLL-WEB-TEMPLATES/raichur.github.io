@@ -3,8 +3,6 @@
   padding-top: 80px;
   padding-bottom: 10px;
   .title-head {
-    -webkit-animation: fadeInUp 1s;
-    animation: fadeInUp 1s;
     h1 {
       font-size: $base-font-size * 1.5;
       text-transform: uppercase;
@@ -23,17 +21,11 @@
   }
   p {
     animation-delay: .5s;
-    -webkit-animation: fadeInUp .5s;
-    animation: fadeInUp .5s;
   }
   .about {
-    -webkit-animation: fadeInUp 1s;
-    animation: fadeInUp 1s;
     margin-top: 10px;
   }
   nav {
-    -webkit-animation: fadeInUp 1s;
-    animation: fadeInUp 1s;
     ul {
       li {
         float: right;
