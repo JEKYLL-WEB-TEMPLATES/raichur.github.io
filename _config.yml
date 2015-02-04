@@ -11,3 +11,15 @@ permalink: /:title/
 
 # Include and exculde
 include: ['_pages']
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+    scope:
+      path: "_posts"
+    values:
+      layout: "post"
