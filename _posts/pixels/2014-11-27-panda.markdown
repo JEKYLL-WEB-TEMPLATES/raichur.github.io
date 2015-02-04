@@ -1,0 +1,6 @@
+---
+title: "Panda"
+type: pixels
+img_dir: "/illustrations/panda/"
+img_large: "/resources/work/illustrations/panda/01.jpg"
+---

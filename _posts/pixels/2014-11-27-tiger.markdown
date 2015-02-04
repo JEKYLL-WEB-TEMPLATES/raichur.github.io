@@ -1,0 +1,6 @@
+---
+title: "Tiger"
+type: pixels
+img_dir: "/illustrations/tiger/"
+img_large: "/resources/work/illustrations/tiger/01.jpg"
+---

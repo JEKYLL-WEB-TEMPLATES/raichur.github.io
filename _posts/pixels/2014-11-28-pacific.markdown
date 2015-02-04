@@ -1,0 +1,6 @@
+---
+title: "Pacific"
+tags: poster
+img_dir: "/posters/pacific/"
+img_large: "/resources/work/posters/pacific/01.jpg"
+---

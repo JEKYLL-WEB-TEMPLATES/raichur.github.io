@@ -1,0 +1,12 @@
+---
+title: "Will.i.am"
+type: pixels
+img_dir: "/illustrations/william/"
+---
+
+
+
+
+![Will.i.am](/resources/work/illustrations/william/01.jpg)
+
+

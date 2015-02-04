@@ -1,0 +1,6 @@
+---
+title: "Sundae"
+type: pixels
+img_dir: "/illustrations/sundae/"
+img_large: "/resources/work/illustrations/sundae/01.jpg"
+---
