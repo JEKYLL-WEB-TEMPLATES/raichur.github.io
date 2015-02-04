@@ -228,6 +228,14 @@ footer {
 
 // Media Queries
 @media screen and (max-width: 1100px) {
+  .light {
+    -webkit-column-count: 4;
+    -webkit-column-gap:   0px;
+    -moz-column-count:    5;
+    -moz-column-gap:      0px;
+    column-count:         5;
+    column-gap:           0px;
+  }
   .pixels li {
     width: calc(100%/5);
   }
@@ -247,22 +255,36 @@ footer {
   }
 }
 @media screen and (max-width: 700px) {
+  .light {
+    -webkit-column-count: 2;
+    -webkit-column-gap:   0px;
+    -moz-column-count:    5;
+    -moz-column-gap:      0px;
+    column-count:         5;
+    column-gap:           0px;
+  }
+  #list {
+    h2 {
+      margin-bottom: -5px;
+      margin-top: 0;
+    }
+    p {
+      font-size: 1.3rem;
+    }
+  }
   nav {
     li:nth-child(3){
       clear:right;
     }
   }
   .large {
-    font-size: 3rem;
-  }
-  h1 {
-
+    font-size: 2.5rem;
   }
   h2 {
     font-size: 2rem;
   }
   .pixels li {
-    width: calc(100%/3);
+    width: calc(100%/2);
   }
   #particles {
     height: 200px;
