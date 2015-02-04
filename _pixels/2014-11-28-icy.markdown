@@ -2,5 +2,5 @@
 title: "Icy Beats"
 tags: poster
 img_dir: "/twist/"
-img_large: "/resources/img/twist/01.jpg"
+img_large: "/twist/01.jpg"
 ---

@@ -2,11 +2,10 @@
 title: "Will.i.am"
 type: pixels
 img_dir: "/william/"
+img_large: "/william/01.jpg"
 ---
 
 
 
 
 ![Will.i.am](/resources/work/illustrations/william/01.jpg)
-
-

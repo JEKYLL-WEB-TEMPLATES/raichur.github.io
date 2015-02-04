@@ -1,37 +1,37 @@
-function getDribbbleData(){
-  $.jribbble.getShotsByPlayerId('geek', function (playerShots) {
-    var html = [], date, title, image;
-    $.each(playerShots.shots, function (i, shot) {
-      date = new Date(shot.created_at).toISOString();
-      title = shot.title;
-      image = shot.image_url;
-      html.push('<li><time datetime="' + date + '">' + date + '</time></a>');
-      html.push('<h2 class="name">' + title + '</h2>');
-      html.push('<img src="' + image + '" alt="' + title + '"/></li>');
-    });
-
-    $('#list').append(html.join(''));
-  }, {page: 1, per_page: 10});
-}
-
-function getInstagramData(){
-  var feed = new Instafeed({
-    get: 'user',
-    target: 'list',
-    resolution: 'standard_resolution',
-    userId: 1508254017,
-    limit: 10,
-    accessToken: '1508254017.467ede5.4d8570b3606645bfa2859e1d1c54f8f1',
-    template: '<li><time class="instafeed time" datetime="{{model.created_at}}">{{model.created_time}}</time><a href="{{link}}"><img src="{{image}}" /></a><p class="name">{{caption}}</p></li>',
-    after: function() {
-      $('.instafeed.time').each(function(){
-        this.setAttribute('datetime', (new Date(this.innerHTML*1000)).toISOString());
-      });
-        $('time').timeago();
-    },
-  });
-  feed.run();
-}
+// function getDribbbleData(){
+//   $.jribbble.getShotsByPlayerId('geek', function (playerShots) {
+//     var html = [], date, title, image;
+//     $.each(playerShots.shots, function (i, shot) {
+//       date = new Date(shot.created_at).toISOString();
+//       title = shot.title;
+//       image = shot.image_url;
+//       html.push('<li><time datetime="' + date + '">' + date + '</time></a>');
+//       html.push('<h2 class="name">' + title + '</h2>');
+//       html.push('<img src="' + image + '" alt="' + title + '"/></li>');
+//     });
+//
+//     $('#list').append(html.join(''));
+//   }, {page: 1, per_page: 10});
+// }
+//
+// function getInstagramData(){
+//   var feed = new Instafeed({
+//     get: 'user',
+//     target: 'list',
+//     resolution: 'standard_resolution',
+//     userId: 1508254017,
+//     limit: 10,
+//     accessToken: '1508254017.467ede5.4d8570b3606645bfa2859e1d1c54f8f1',
+//     template: '<li><time class="instafeed time" datetime="{{model.created_at}}">{{model.created_time}}</time><a href="{{link}}"><img src="{{image}}" /></a><p class="name">{{caption}}</p></li>',
+//     after: function() {
+//       $('.instafeed.time').each(function(){
+//         this.setAttribute('datetime', (new Date(this.innerHTML*1000)).toISOString());
+//       });
+//         $('time').timeago();
+//     },
+//   });
+//   feed.run();
+// }
 
 function getGithubData(){
   var reqURI = 'https://api.github.com/users/raichur',
@@ -91,6 +91,7 @@ function start(){
 $(function(){
   start();
   $('time').timeago();
+  $('.lightbox').fluidbox();
   $(document).ajaxComplete(function() {
     $("img").lazyload({effect : "fadeIn"});
     $('time').timeago();
@@ -110,9 +111,7 @@ $(function(){
       document.title = data.match(/<title>(.*?)<\/title>/)[1];
       $('.content').html($(data).find('.content'));
       $('nav').html($(data).find('nav'));
-      //_gaq.push(['_trackPageview', State.url]);	// This updates Google Analytics with a visit to the new page.
-                            // If you don't use Google Analytics, you can safety comment or
-                            // remove that line.
+      //_gaq.push(['_trackPageview', State.url]);
     });
   });
 });

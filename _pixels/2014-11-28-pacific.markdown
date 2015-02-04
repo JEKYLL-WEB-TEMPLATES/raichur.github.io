@@ -2,5 +2,5 @@
 title: "Pacific"
 tags: poster
 img_dir: "/pacific/"
-img_large: "/resources/img/pacific/01.jpg"
+img_large: "/pacific/01.jpg"
 ---

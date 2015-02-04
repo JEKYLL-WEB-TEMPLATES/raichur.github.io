@@ -2,5 +2,5 @@
 title: "FOSS"
 tags: poster
 img_dir: "/foss/"
-img_large: "/resources/foss/01.jpg"
+img_large: "/foss/01.jpg"
 ---
