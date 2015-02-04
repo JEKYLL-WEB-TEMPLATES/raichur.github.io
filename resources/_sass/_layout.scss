@@ -132,7 +132,25 @@
    column-count:         5;
    column-gap:           0px;
 }
-
+.album {
+  img {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .col-2 {
+    width: -webkit-calc(50% - 10px);
+    width: -moz-calc(50% - 10px);
+    width: calc(50% - 10px);
+    float: left;
+  }
+  .first {
+    margin-right: 10px;
+  }
+  .second {
+    margin-left: 10px;
+  }
+}
 
 main {
   padding-top: 20px;
