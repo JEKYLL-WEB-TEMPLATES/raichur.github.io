@@ -7,7 +7,7 @@ permalink: '/faves/'
 <div class="faves" markdown="1">
 
 ## Books
-I normally read 1-2 books a week. Here are a few of my favorites.
+I normally read 1-2 books a week. Here are a few of my favorites in chronological order.
 
 - [Einstein: His Life and Universe](http://www.amazon.com/Einstein-Life-Universe-Walter-Isaacson-ebook/dp/B007F5SFWS)
 - [The Social Animal](http://www.amazon.com/Social-Animal-Sources-Character-Achievement/dp/0812979370)
@@ -27,11 +27,10 @@ I normally read 1-2 books a week. Here are a few of my favorites.
 
 ## Blogs
 
-- [Paul Graham's Essays](http://www.paulgraham.com/articles.html)
 - [Farnam Street](http://www.farnamstreetblog.com)
 - [Brain Pickings](http://www.brainpickings.org)
-- [Sam Altman's Blog](http://blog.samaltman.com)
 - [Zen Habits](http://zenhabits.net)
+- [Paul Graham's Essays](http://www.paulgraham.com/articles.html)
 - [Oliver Emberton's blog](http://oliveremberton.com)
 - [Nautilus](http://nautil.us)
 - [Coding Horror](http://blog.codinghorror.com)
@@ -42,8 +41,6 @@ I normally read 1-2 books a week. Here are a few of my favorites.
 - [Tuts+](http://code.tutsplus.com)
 - [A List Apart](http://alistapart.com)
 - [Dribbble](http://dribbble.com)
-- [Practical typography](http://practicaltypography.com)
-- [Chemguide](http://www.chemguide.co.uk)
 
 ## MOOC & Video Sites
 
@@ -55,7 +52,6 @@ I normally read 1-2 books a week. Here are a few of my favorites.
 - [Foundation](http://foundation.bz)
 - [Humble Pied](http://humblepied.com)
 - [AsapSCIENCE _on Youtube_](https://www.youtube.com/user/AsapSCIENCE)
-- [Ben's Chem Videos _on YouTube_](https://www.youtube.com/user/ChemAssistBeta)
 - [CGP Grey _on YouTube_](https://www.youtube.com/user/CGPGrey)
 - [BrainStuff _on YouTube_](https://www.youtube.com/user/BrainStuffShow)
 - [Khan Academy _on YouTube_](https://www.youtube.com/user/khanacademy)
@@ -66,26 +62,20 @@ I normally read 1-2 books a week. Here are a few of my favorites.
 - [Numberphile _on YouTube_](https://www.youtube.com/user/numberphile)
 - [SciShow _on YouTube_](https://www.youtube.com/user/scishow)
 - [TED-Ed _on YouTube_](https://www.youtube.com/user/TEDEducation)
-- [UCBerkeley _on YouTube_](https://www.youtube.com/user/UCBerkeley)
 - [VSauce _on YouTube_](https://www.youtube.com/user/Vsauce)
 - [VlogBrothers _on YouTube_](https://www.youtube.com/user/vlogbrothers)
 
 ## Podcasts
 
-- [Intelligence Squared](https://itunes.apple.com/us/podcast/intelligence-squared/id708371900?mt=2)
-- [Debug](https://itunes.apple.com/us/podcast/debug/id578812394?mt=2)
-- [Iterate](https://itunes.apple.com/us/podcast/iterate/id447063932?mt=2)
-- [Serial by WBEZ](https://itunes.apple.com/us/podcast/serial/id917918570?mt=2)
 - [The Tim Ferriss Show](https://itunes.apple.com/us/podcast/the-tim-ferriss-show/id863897795?mt=2)
 - [Radiolab from WNYC](https://itunes.apple.com/us/podcast/radiolab-from-wnyc/id152249110?mt=2)
+- [Intelligence Squared](https://itunes.apple.com/us/podcast/intelligence-squared/id708371900?mt=2)
+- [Iterate](https://itunes.apple.com/us/podcast/iterate/id447063932?mt=2)
+- [Serial by WBEZ](https://itunes.apple.com/us/podcast/serial/id917918570?mt=2)
 - [This Developer's Life](https://itunes.apple.com/us/podcast/this-developers-life/id389727545?mt=2)
 - [TEDTalks](https://www.ted.com/talks)
-- [The Rocketship Podcast](https://itunes.apple.com/us/podcast/the-rocketship-podcast/id808014240?mt=2)
 - [HBR IdeaCast](https://itunes.apple.com/in/podcast/hbr-ideacast/id152022135?mt=2)
 - [BrainStuff](https://itunes.apple.com/us/podcast/brainstuff/id260335249?mt=2)
-- [This Is Your Life with Michael Hyatt](https://itunes.apple.com/us/podcast/this-is-your-life-michael/id502414581?mt=2)
-- [Hello Internet](https://itunes.apple.com/in/podcast/hello-internet/id811377230?mt=2)
-- [Stuff You Should Know](https://itunes.apple.com/us/podcast/stuff-you-should-know/id278981407?mt=2)
 - [Fw:Thinking](https://itunes.apple.com/us/podcast/fw-thinking/id604177167?mt=2)
 - [TechStuff](https://itunes.apple.com/us/podcast/techstuff/id282795787?mt=2)
 
