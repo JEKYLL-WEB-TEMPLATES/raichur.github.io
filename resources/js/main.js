@@ -112,7 +112,7 @@ $(function(){
       document.title = data.match(/<title>(.*?)<\/title>/)[1];
       $('.content').html($(data).find('.content'));
       $('nav').html($(data).find('nav'));
-      //_gaq.push(['_trackPageview', State.url]);
+      _gaq.push(['_trackPageview', State.url]);
     });
   });
 });
