@@ -42,6 +42,8 @@
 }
 
 .wrapper {
+  -webkit-animation: fadeInUp .4s;
+  animation: fadeInUp .4s;
   header {
     -webkit-animation: fadeInUp .3s;
     animation: fadeInUp .3s;
