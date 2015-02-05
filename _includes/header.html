@@ -3,6 +3,7 @@
     <nav>
       <ul>
         <li><a href="/faves/"{% if page.url contains 'faves' %} class="active"{% endif %}>Faves</a></li>
+        <li><a href="/sketch/"{% if page.url contains 'sketch' %} class="active"{% endif %}>Sketch</a></li>
         <li><a href="/light/"{% if page.url contains 'light' %} class="active"{% endif %}{% if page.layout == 'album' %} class="active"{% endif %}>Light</a></li>
         <li><a href="/pixels/"{% if page.url contains 'pixels' %} class="active"{% endif %}>Pixels</a></li>
         <li><a href="/code/"{% if page.url contains 'code' %} class="active"{% endif %}>Code</a></li>

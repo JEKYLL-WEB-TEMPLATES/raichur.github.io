@@ -31,6 +31,8 @@ defaults:
 collections:
   pixels:
     output: false
+  sketch:
+    output: false
   light:
     output: true
     permalink: "/album/:title/"
