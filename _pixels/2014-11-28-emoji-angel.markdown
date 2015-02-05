@@ -1,6 +1,6 @@
 ---
-title: "Emoji Camera"
+title: "Emoji Angel"
 
-img_dir: "/emoji/"
-img_large: "/emoji/10.png"
+img_dir: "/emoji-10/"
+img_large: "/emoji-10/10.png"
 ---

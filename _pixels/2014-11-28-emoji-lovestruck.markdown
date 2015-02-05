@@ -1,6 +1,6 @@
 ---
 title: "Emoji Lovestruck"
 
-img_dir: "/emoji/"
-img_large: "/emoji/07.png"
+img_dir: "/emoji-7/"
+img_large: "/emoji-7/07.png"
 ---
