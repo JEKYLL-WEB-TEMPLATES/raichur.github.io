@@ -30,6 +30,7 @@ I normally read 1-2 books a week. Here are a few of my favorites in chronologica
 - [Farnam Street](http://www.farnamstreetblog.com)
 - [Brain Pickings](http://www.brainpickings.org)
 - [Zen Habits](http://zenhabits.net)
+- [Raptitude](http://www.raptitude.com)
 - [Paul Graham's Essays](http://www.paulgraham.com/articles.html)
 - [Oliver Emberton's blog](http://oliveremberton.com)
 - [Nautilus](http://nautil.us)
