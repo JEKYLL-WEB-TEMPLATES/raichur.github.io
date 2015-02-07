@@ -9,30 +9,37 @@ url: "http://joshuaraichur.com" # the base hostname & protocol for your site
 markdown: kramdown
 permalink: /:title/
 sass:
-    sass_dir: resources/_sass
-    style: :compressed
+ sass_dir: resources/_sass
+ style: :compressed
 
 # Include and exculde
 include: ['_pages']
 
 # Defaults
 defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-    values:
-      layout: "default"
-    scope:
-      path: "_posts"
-    values:
-      layout: "post"
+ -
+  scope:
+   path: "" # an empty string here means all files in the project
+  values:
+   layout: "default"
+ -
+  scope:
+   path: "_posts"
+  values:
+   layout: "post"
+   type: "notes"
+ -
+  scope:
+   path: "_photos"
+  values:
+   layout: "album"
 
 # Collections
 collections:
-  pixels:
-    output: false
-  sketch:
-    output: false
-  light:
-    output: true
-    permalink: "/album/:title/"
+ pixels:
+  output: false
+ sketch:
+  output: false
+ photos:
+  output: true
+  permalink: "/album/:title/"

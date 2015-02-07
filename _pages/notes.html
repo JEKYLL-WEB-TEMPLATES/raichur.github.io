@@ -1,12 +1,12 @@
 ---
 layout: page
-title: 'Words'
-permalink: '/words/'
+title: 'Notes'
+permalink: '/notes/'
 ---
 
 <ul id="list">
   {% for post in site.posts %}
-    {% if post.type == "words" %}
+    {% if post.type == "notes" %}
     <li class="{{ post.type }}">
       <p class="post-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_xmlschema }}</time> • {% include read_time.html %}</p>
       <h2>
