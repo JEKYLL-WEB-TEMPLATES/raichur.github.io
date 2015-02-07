@@ -28,11 +28,6 @@ defaults:
   values:
    layout: "post"
    type: "notes"
- -
-  scope:
-   path: "_photos"
-  values:
-   layout: "album"
 
 # Collections
 collections:
