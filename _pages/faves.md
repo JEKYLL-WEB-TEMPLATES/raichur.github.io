@@ -45,9 +45,6 @@ I normally read 1-2 books a week. Here are a few of my favorites in chronologica
 
 ## MOOC & Video Sites
 
-- [DocumentaryHeaven](http://documentaryheaven.com)
-- [Instead of TV, you should watch...](http://unplugthetv.com)
-- [University of Reddit](http://ureddit.com)
 - [Udacity](https://www.udacity.com)
 - [edX](https://www.edx.org)
 - [Foundation](http://foundation.bz)
@@ -75,8 +72,6 @@ I normally read 1-2 books a week. Here are a few of my favorites in chronologica
 - [Serial by WBEZ](https://itunes.apple.com/us/podcast/serial/id917918570?mt=2)
 - [This Developer's Life](https://itunes.apple.com/us/podcast/this-developers-life/id389727545?mt=2)
 - [TEDTalks](https://www.ted.com/talks)
-- [HBR IdeaCast](https://itunes.apple.com/in/podcast/hbr-ideacast/id152022135?mt=2)
-- [BrainStuff](https://itunes.apple.com/us/podcast/brainstuff/id260335249?mt=2)
 - [Fw:Thinking](https://itunes.apple.com/us/podcast/fw-thinking/id604177167?mt=2)
 - [TechStuff](https://itunes.apple.com/us/podcast/techstuff/id282795787?mt=2)
 
