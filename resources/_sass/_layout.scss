@@ -26,7 +26,7 @@
     margin-top: 10px;
   }
   nav {
-    li:nth-child(4){
+    li:nth-child(3){
       clear:right;
     }
     ul {
@@ -61,7 +61,7 @@
       margin-bottom: 1.5rem;
     }
     b {
-      font-weight: 400 !important;
+      font-weight: 600 !important;
     }
     .success {
       color: #259b24;
@@ -104,7 +104,22 @@
   position: absolute;
   top: 0;
 }
-
+input[type="text"] {
+  border: none;
+  outline: none;
+  font-size: $base-font-size;
+  background: none;
+  font-family: $base-font-family;
+  border-bottom: 2px solid $grey-color-light;
+  transition: all ease .25s;
+  opacity: .8;
+  width: 100%;
+  margin-bottom: 40px;
+  &:focus {
+    opacity: 1;
+    border-bottom: 2px solid $grey-color;
+  }
+}
 #list {
   -webkit-animation: fadeInUp .4s;
   animation: fadeInUp .4s;
@@ -148,78 +163,6 @@
     &:hover img {
       -webkit-filter: grayscale(0);
     }
-  }
-}
-
-// Light
-.light {
-  animation-delay: 1s;
-  -webkit-animation: fadeInUp .4s;
-  animation: fadeInUp .4s;
-  line-height: 0;
-   -webkit-column-count: 4;
-   -webkit-column-gap:   0px;
-   -moz-column-count:    5;
-   -moz-column-gap:      0px;
-   column-count:         5;
-   column-gap:           0px;
-   a {
-     color: white;
-     &:hover {
-       color: white;
-     }
-     &:visited {
-       color: white;
-     }
-   }
-   h3 {
-     transition: all ease .5s;
-     margin-top: 50px;
-     margin-left: 30px;
-     z-index: 5;
-     position: absolute;
-     opacity: 0;
-   }
-   img {
-     transition: all ease .3s;
-     width: 100%;
-     height: 100%;
-   }
-   a:hover h3 {
-     opacity: 1;
-   }
-   a:hover img {
-     -webkit-filter: grayscale(.8) brightness(0.5);
-   }
-}
-.album {
-  animation-delay: 1s;
-  -webkit-animation: fadeInUp .4s;
-  animation: fadeInUp .4s;
-  img {
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  .col-2 {
-    width: -webkit-calc(50% - 10px);
-    width: -moz-calc(50% - 10px);
-    width: calc(50% - 10px);
-    float: left;
-  }
-  .first {
-    margin-right: 10px;
-  }
-  .second {
-    margin-left: 10px;
-  }
-}
-
-main {
-  padding-top: 20px;
-  padding-bottom: 80px;
-  a {
-    font-weight: 600;
   }
 }
 

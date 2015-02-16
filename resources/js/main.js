@@ -1,37 +1,4 @@
-// function getDribbbleData(){
-//   $.jribbble.getShotsByPlayerId('geek', function (playerShots) {
-//     var html = [], date, title, image;
-//     $.each(playerShots.shots, function (i, shot) {
-//       date = new Date(shot.created_at).toISOString();
-//       title = shot.title;
-//       image = shot.image_url;
-//       html.push('<li><time datetime="' + date + '">' + date + '</time></a>');
-//       html.push('<h2 class="name">' + title + '</h2>');
-//       html.push('<img src="' + image + '" alt="' + title + '"/></li>');
-//     });
-//
-//     $('#list').append(html.join(''));
-//   }, {page: 1, per_page: 10});
-// }
-//
-// function getInstagramData(){
-//   var feed = new Instafeed({
-//     get: 'user',
-//     target: 'list',
-//     resolution: 'standard_resolution',
-//     userId: 1508254017,
-//     limit: 10,
-//     accessToken: '1508254017.467ede5.4d8570b3606645bfa2859e1d1c54f8f1',
-//     template: '<li><time class="instafeed time" datetime="{{model.created_at}}">{{model.created_time}}</time><a href="{{link}}"><img src="{{image}}" /></a><p class="name">{{caption}}</p></li>',
-//     after: function() {
-//       $('.instafeed.time').each(function(){
-//         this.setAttribute('datetime', (new Date(this.innerHTML*1000)).toISOString());
-//       });
-//         $('time').timeago();
-//     },
-//   });
-//   feed.run();
-// }
+// I should refactor this mess
 
 function getGithubData(){
   var reqURI = 'https://api.github.com/users/raichur',
@@ -71,9 +38,9 @@ function getGithubData(){
          }
         description = repositories[index].description;
 
-        html.push('<li><p class="post-meta"><time datetime="' + date +'">' + date + '</time></p>');
+        html.push('<li><p class="post-meta"><time class="date" datetime="' + date +'">' + date + '</time></p>');
         html.push('<a href="' + url + '"><h2 class="name">' + title + '</h2></a>');
-        if(description) { html.push('<p>' + lang_text + description + '</p>'); }
+        if(description) { html.push('<p><span class="language">' + lang_text + '</span><span class="description">' + description + '</span></p>'); }
       });
       $('.code').append(html.join(''));
     }
@@ -82,9 +49,17 @@ function getGithubData(){
 
 // Getting the data from services when the page loads
 function start(){
-    if($('.code').length) {getGithubData();}
-    // getDribbbleData();
-    // getInstagramData();
+    if($('.code').length) {
+      getGithubData();
+      $(document).ajaxComplete(function(){
+        var options = {
+          valueNames: [ 'date', 'name', 'description', 'language']
+        };
+
+        var userList = new List('code', options);
+        userList.sort('date', { order: "desc" });
+      });
+    }
 }
 
 

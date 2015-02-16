@@ -35,6 +35,3 @@ collections:
   output: false
  sketch:
   output: false
- photos:
-  output: true
-  permalink: "/album/:title/"
