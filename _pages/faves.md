@@ -4,9 +4,9 @@ title: 'Faves'
 permalink: '/faves/'
 ---
 
-<div class="faves" markdown="1">
-
 ## Books
+
+I read at least one book every week, and here are a few of my favorites.
 
 - [Einstein: His Life and Universe](http://www.amazon.com/Einstein-Life-Universe-Walter-Isaacson-ebook/dp/B007F5SFWS)
 - [The Social Animal](http://www.amazon.com/Social-Animal-Sources-Character-Achievement/dp/0812979370)
@@ -24,7 +24,7 @@ permalink: '/faves/'
 - [In The Plex: How Google Thinks, Works, and Shapes Our Lives](http://www.amazon.com/Plex-Google-Thinks-Works-Shapes-ebook/dp/B003UYUP6M)
 - [Steve Jobs: The Exclusive Biography](http://www.amazon.com/Steve-Jobs-Exclusive-Walter-Isaacson-ebook/dp/B005J3IEZQ)
 
-## Blogs
+## Reads
 
 - [Farnam Street](http://www.farnamstreetblog.com)
 - [Brain Pickings](http://www.brainpickings.org)
@@ -42,25 +42,23 @@ permalink: '/faves/'
 - [A List Apart](http://alistapart.com)
 - [Dribbble](http://dribbble.com)
 
-## MOOC & Video Sites
+## Inspiring Videos
 
-- [Udacity](https://www.udacity.com)
-- [edX](https://www.edx.org)
+Video sites and YouTube channels whose videos I find inspiring and educational.
+
+- [SciShow](https://www.youtube.com/user/scishow)
+- [TED-Ed](https://www.youtube.com/user/TEDEducation)
+- [VSauce](https://www.youtube.com/user/Vsauce)
+- [VlogBrothers](https://www.youtube.com/user/vlogbrothers)
 - [Foundation](http://foundation.bz)
-- [Humble Pied](http://humblepied.com)
-- [AsapSCIENCE _on Youtube_](https://www.youtube.com/user/AsapSCIENCE)
-- [CGP Grey _on YouTube_](https://www.youtube.com/user/CGPGrey)
-- [BrainStuff _on YouTube_](https://www.youtube.com/user/BrainStuffShow)
-- [Khan Academy _on YouTube_](https://www.youtube.com/user/khanacademy)
-- [Google Tech Talks _on YouTube_](https://www.youtube.com/user/GoogleTechTalks)
-- [Crash Course _on YouTube_](https://www.youtube.com/user/crashcourse)
-- [Minute Physics _on YouTube_](https://www.youtube.com/user/minutephysics)
-- [MIT OCW _on YouTube_](https://www.youtube.com/user/MIT)
-- [Numberphile _on YouTube_](https://www.youtube.com/user/numberphile)
-- [SciShow _on YouTube_](https://www.youtube.com/user/scishow)
-- [TED-Ed _on YouTube_](https://www.youtube.com/user/TEDEducation)
-- [VSauce _on YouTube_](https://www.youtube.com/user/Vsauce)
-- [VlogBrothers _on YouTube_](https://www.youtube.com/user/vlogbrothers)
+- [AsapSCIENCE](https://www.youtube.com/user/AsapSCIENCE)
+- [CGP Grey](https://www.youtube.com/user/CGPGrey)
+- [BrainStuff](https://www.youtube.com/user/BrainStuffShow)
+- [Khan Academy](https://www.youtube.com/user/khanacademy)
+- [Crash Course](https://www.youtube.com/user/crashcourse)
+- [Minute Physics](https://www.youtube.com/user/minutephysics)
+- [Numberphile](https://www.youtube.com/user/numberphile)
+
 
 ## Podcasts
 
@@ -73,6 +71,3 @@ permalink: '/faves/'
 - [TEDTalks](https://www.ted.com/talks)
 - [Fw:Thinking](https://itunes.apple.com/us/podcast/fw-thinking/id604177167?mt=2)
 - [TechStuff](https://itunes.apple.com/us/podcast/techstuff/id282795787?mt=2)
-
-
-</div>

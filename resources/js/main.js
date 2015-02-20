@@ -102,15 +102,15 @@ if(desktop.matches) {
       particles: {
           color: '#c6c6c6',
           shape: 'circle', // "circle", "edge" or "triangle"
-          opacity: 0.3,
+          opacity: 0,
           size: 0.1,
           size_random: true,
           nb: 70,
           line_linked: {
               enable_auto: true,
-              distance: 320,
+              distance: 300,
               color: '#c6c6c6',
-              opacity: 0.52,
+              opacity: 0.6,
               width: 1,
               condensed_mode: {
                   enable: false,
@@ -120,7 +120,7 @@ if(desktop.matches) {
               },
               anim: {
                   enable: true,
-                  speed: 0.4
+                  speed: 0.6
                 }
               },
               interactivity: {
@@ -128,7 +128,7 @@ if(desktop.matches) {
                   mouse: {
                       distance: 150
                     },
-                    detect_on: 'canvas', // "canvas" or "window"
+                    detect_on: 'window', // "canvas" or "window"
                     mode: 'grab',
                     line_linked: {
                         opacity: 0.5
