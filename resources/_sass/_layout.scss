@@ -56,7 +56,7 @@
     margin-bottom: 80px;
     font-family: $base-font-family;
     font-size: 1.4rem;
-    p, ul {
+    p {
       margin-top: 1.5rem;
       margin-bottom: 1.5rem;
     }
@@ -69,11 +69,7 @@
     del {
       color: $grey-color;
     }
-    ul li:before {
-      content: '– ';
-      margin-left: -10px;
-      color: $brand-color;
-    }
+
   }
 }
 
