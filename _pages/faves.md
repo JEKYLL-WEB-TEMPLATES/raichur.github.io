@@ -4,6 +4,10 @@ title: 'Faves'
 permalink: '/faves/'
 ---
 
+<div class="faves" markdown="1">
+
+# Faves
+
 ## Books
 
 I read at least one book every week, and here are a few of my favorites.
@@ -71,3 +75,5 @@ Video sites and YouTube channels whose videos I find inspiring and educational.
 - [TEDTalks](https://www.ted.com/talks)
 - [Fw:Thinking](https://itunes.apple.com/us/podcast/fw-thinking/id604177167?mt=2)
 - [TechStuff](https://itunes.apple.com/us/podcast/techstuff/id282795787?mt=2)
+
+</div>
