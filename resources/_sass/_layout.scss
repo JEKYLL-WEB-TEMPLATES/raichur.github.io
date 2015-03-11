@@ -203,6 +203,9 @@ footer {
   }
 }
 @media screen and (max-width: 650px) {
+  .home h3 {
+    display: none;
+  }
   .album {
     img {
       width: 100%;
