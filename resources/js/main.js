@@ -13,7 +13,7 @@ function getGithubData(){
   }
   requestJSON(reqURI, function(github_JSON) {
     var repositories, output = '', repo_colors = {};
-    requestJSON('/resources/js/colors.json', function(data){
+    requestJSON('http://cdn.rawgit.com/raichur/github-language-colors/master/colors.json', function(data){
       repo_colors = data;
     });
 
