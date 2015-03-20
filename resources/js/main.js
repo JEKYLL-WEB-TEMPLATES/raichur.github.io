@@ -2,7 +2,7 @@
 
 function getGithubData(){
   var reqURI = 'https://api.github.com/users/raichur',
-  repoURI = 'https://api.github.com/users/raichur/repos';
+  repoURI = 'https://api.github.com/users/raichur/repos?per_page=200';
   function requestJSON(url, callback) {
     $.ajax({
       url: url,
