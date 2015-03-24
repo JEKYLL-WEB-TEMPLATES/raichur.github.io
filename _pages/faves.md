@@ -12,6 +12,8 @@ permalink: '/faves/'
 
 I read at least one book every week, and here are a few of my favorites.
 
+- [Talent Is Overrated: What Really Separates World-Class Performers from Everybody Else](http://www.amazon.com/Talent-Overrated-Separates-World-Class-Performers-ebook/dp/B004HYH7K6)
+- [Humans of New York](http://www.amazon.com/Humans-New-York-Brandon-Stanton-ebook/dp/B00SHSP87C)
 - [Einstein: His Life and Universe](http://www.amazon.com/Einstein-Life-Universe-Walter-Isaacson-ebook/dp/B007F5SFWS)
 - [The Social Animal](http://www.amazon.com/Social-Animal-Sources-Character-Achievement/dp/0812979370)
 - [The Art of Worldly Wisdom](http://www.amazon.com/Worldly-Wisdom-Unabridged-Start-Publishing-ebook/dp/B00BDJH78K)
