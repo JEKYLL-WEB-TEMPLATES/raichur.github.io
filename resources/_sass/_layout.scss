@@ -22,10 +22,20 @@
   }
 }
 
+.home {
+  header {
+    h2 {
+      margin-top: 15px;
+      line-height: 1em;
+      font-size: 1em;
+    }
+  }
+}
+
 .wrapper {
   -webkit-animation: fadeInUp .4s;
   animation: fadeInUp .4s;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
   header {
     -webkit-animation: fadeInUp .3s;
     animation: fadeInUp .3s;
@@ -423,7 +433,7 @@ nav {
   }
   .title {
     height: auto;
-    padding-top: 30px;
+    padding-top: 60px;
     padding-bottom: 60px;
     h1 {
       font-size: $base-font-size !important;
