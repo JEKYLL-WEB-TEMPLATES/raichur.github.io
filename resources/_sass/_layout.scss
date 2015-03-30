@@ -22,16 +22,6 @@
   }
 }
 
-.home {
-  header {
-    h2 {
-      margin-top: 15px;
-      line-height: 1em;
-      font-size: 1em;
-    }
-  }
-}
-
 .wrapper {
   -webkit-animation: fadeInUp .4s;
   animation: fadeInUp .4s;
@@ -342,6 +332,15 @@ nav {
 
 // Media Queries
 @media screen and (max-width: 1150px) {
+  .home {
+    header {
+      h2 {
+        margin-top: 15px;
+        line-height: 1em;
+        font-size: 1em;
+      }
+    }
+  }
   .light {
     -webkit-column-count: 4;
     -webkit-column-gap:   0px;
@@ -354,7 +353,7 @@ nav {
     width: calc(100%/5);
   }
   .title {
-    height: auto;
+    height: 100px;
     h1 {
       span {
         display: none;
