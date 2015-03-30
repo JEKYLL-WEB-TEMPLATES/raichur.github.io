@@ -357,6 +357,16 @@ nav {
   .wrapper {
     max-width: 98%;
   }
+  .nav-title {
+    margin-left: 8% !important;
+  }
+  .navToggle {
+    left: 85% !important;
+  }
+  nav ul li {
+    padding-left: 0;
+    font-size: 0.95em;
+  }
 }
 @media screen and (max-width: 650px) {
   .home h3 {
