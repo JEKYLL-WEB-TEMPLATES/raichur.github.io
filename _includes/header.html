@@ -1,14 +1,13 @@
+<div id="bg-blur"></div>
 <header class="title">
   <div id="particles"></div>
 </header>
 
 <nav>
-  <div class="navWrapper">
-    <div class="navToggle">
-      <div class="icon-left"></div>
-      <div class="icon-right"></div>
-    </div>
-    <div class="nav-title">{{ site.title }}</div>
+  <div class="nav-title"><a href="/">{{ site.title }}</a></div>
+  <div class="navToggle">
+    <div class="icon-left"></div>
+    <div class="icon-right"></div>
   </div>
   <ul>
     <li><a href="/code/"{% if page.url contains 'code' %} class="active"{% endif %}>Code</a></li>
