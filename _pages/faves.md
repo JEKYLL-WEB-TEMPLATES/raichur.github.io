@@ -8,29 +8,7 @@ permalink: '/faves/'
 
 # Faves
 
-## Books
-
-I read at least one book every week, and here are a few of my favorites.
-
-- [Talent Is Overrated: What Really Separates World-Class Performers from Everybody Else](http://www.amazon.com/Talent-Overrated-Separates-World-Class-Performers-ebook/dp/B004HYH7K6)
-- [Humans of New York](http://www.amazon.com/Humans-New-York-Brandon-Stanton-ebook/dp/B00SHSP87C)
-- [Einstein: His Life and Universe](http://www.amazon.com/Einstein-Life-Universe-Walter-Isaacson-ebook/dp/B007F5SFWS)
-- [The Social Animal](http://www.amazon.com/Social-Animal-Sources-Character-Achievement/dp/0812979370)
-- [The Art of Worldly Wisdom](http://www.amazon.com/Worldly-Wisdom-Unabridged-Start-Publishing-ebook/dp/B00BDJH78K)
-- [How Google Works](http://www.amazon.com/How-Google-Works-Eric-Schmidt-ebook/dp/B00J379F3O)
-- [What If?: Serious Scientific Answers to Absurd Hypothetical Questions](http://www.amazon.com/What-If-Scientific-Hypothetical-Questions-ebook/dp/B00J379DC2)
-- [Mindless Eating: Why We Eat More Than We Think](http://www.amazon.com/Mindless-Eating-More-Than-Think/dp/0553384481)
-- [So Good They Can't Ignore You: Why Skills Trump Passion in the Quest for Work You Love](http://www.amazon.com/Good-They-Cant-Ignore-You-ebook/dp/B00FOVTOMA)
-- [Quiet: The power of introverts in a world that can't stop talking](http://www.amazon.com/Quiet-Power-Introverts-World-Talking-ebook/dp/B0074YVW1G)
-- [Focus: The Hidden Driver of Excellence](http://www.amazon.com/Focus-Hidden-Excellence-Daniel-Goleman-ebook/dp/B00EQZN930)
-- [Manage Your Day-to-Day: Build Your Routine, Find Your Focus, and Sharpen Your Creative Mind](http://www.amazon.com/Manage-Your-Day---Day-Creative-ebook/dp/B00B77UE4W)
-- [Daily Rituals: How Artists Work](http://www.amazon.com/Daily-Rituals-How-Artists-Work/dp/0307273601)
-- [Steal Like an Artist: 10 Things Nobody Told You About Being Creative](http://www.amazon.com/Steal-Like-Artist-Things-Creative-ebook/dp/B0074QGGK6)
-- [Sparks of Genius: The Thirteen Thinking Tools of the World's Most Creative People](http://www.amazon.com/Sparks-Genius-Thirteen-Thinking-Creative-ebook/dp/B00EXBRFXC)
-- [In The Plex: How Google Thinks, Works, and Shapes Our Lives](http://www.amazon.com/Plex-Google-Thinks-Works-Shapes-ebook/dp/B003UYUP6M)
-- [Steve Jobs: The Exclusive Biography](http://www.amazon.com/Steve-Jobs-Exclusive-Walter-Isaacson-ebook/dp/B005J3IEZQ)
-
-## Reads
+## Blogs
 
 - [Farnam Street](http://www.farnamstreetblog.com)
 - [Brain Pickings](http://www.brainpickings.org)
@@ -48,7 +26,7 @@ I read at least one book every week, and here are a few of my favorites.
 - [A List Apart](http://alistapart.com)
 - [Dribbble](http://dribbble.com)
 
-## Inspiring Videos
+## Videos
 
 Video sites and YouTube channels whose videos I find inspiring and educational.
 
