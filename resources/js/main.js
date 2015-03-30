@@ -325,3 +325,49 @@ function greeting(){
   else if ( myDate.getHours() > 17 && myDate.getHours() <= 24 )
   { $('#greeting').text("Good Evening"); }
 }
+
+// Navigation
+
+function openCloseNav(){
+  $(".navToggle").toggleClass("open");
+  $("nav").toggleClass("open");
+  $('#bg-blur').fadeToggle();
+  $('body').toggleClass('fixed');
+}
+$(".navToggle").click(openCloseNav);
+
+$('#bg-blur').click(function(event) {
+  openCloseNav();
+});
+
+// Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('nav').outerHeight();
+
+$(window).scroll(function(event){
+  didScroll = true;
+});
+
+setInterval(function() {
+  if (didScroll) {
+    hasScrolled();
+    didScroll = false;
+  }
+}, 250);
+
+function hasScrolled() {
+  var st = $(this).scrollTop();
+  if(Math.abs(lastScrollTop - st) <= delta)
+  return;
+  if (st > lastScrollTop && st > navbarHeight){
+    $('nav').addClass('nav-hide');
+  } else {
+    if(st + $(window).height() < $(document).height()) {
+      $('nav').removeClass('nav-hide');
+    }
+  }
+
+  lastScrollTop = st;
+}
