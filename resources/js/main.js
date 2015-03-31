@@ -65,6 +65,7 @@ function start(){
 
 
 $(function(){
+  start();
   greeting();
   $('time').timeago();
   $('.lightbox').fluidbox();
@@ -89,7 +90,6 @@ $(function(){
       });
     });
   });
-  start();
 });
 
 var desktop = window.matchMedia('all and (min-width: 700px)');
