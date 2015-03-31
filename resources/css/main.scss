@@ -49,13 +49,13 @@ $on-palm:          90%;
 $on-laptop:        55%;
 
 @mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+  @media screen and (max-width: $device) {
+    @content;
+  }
 }
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base",
-        "layout",
-        "syntax-highlighting";
+"base",
+"layout",
+"syntax-highlighting";
