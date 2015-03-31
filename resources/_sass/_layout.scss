@@ -58,6 +58,9 @@
     del {
       color: $grey-color;
     }
+    ol li {
+      list-style: inherit !important;
+    }
   }
 }
 
