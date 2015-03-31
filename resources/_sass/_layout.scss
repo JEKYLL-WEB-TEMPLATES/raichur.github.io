@@ -480,6 +480,8 @@ nav {
       div:nth-child(3) {
         margin-left: 8% !important;
         margin-right: 8% !important;
+        font-size: 1em !important;
+        line-height: 1.2em;
       }
     }
   }
@@ -567,6 +569,9 @@ nav {
   }
   .home h3 {
     display: none;
+  }
+  input[type="text"] {
+    font-size: 0.8em;
   }
   .album {
     img {
