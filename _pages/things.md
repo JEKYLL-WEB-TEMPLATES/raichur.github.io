@@ -14,19 +14,12 @@ _Last updated: March 31st, 2015._
 
 I maintain this list to be more conscious and appreciative of what I own, and reduce and optimize my possessions to only what I really need and frequently use.
 
-<br/>
-
-Rules I followed while developing this list:
-
-- **Pieces of furniture don't count.** I'll be moving out soon anyway.
-- **Books don't count.** I have a reasonably large-sized collection od physical books that I am required to have as a student. I have counted my book collection as one item.
-- **Eatables don't count.** They are temporary and frankly too time consuming to list out.
+i have excluded pieces of furniture, books, eatables, and cables for brevity.
 
 <br/>
 
-1. Apple MacBook Pro 15”
-2. MacBook Pro 15" case
-2. Apple iPad Mini
+1. Apple MacBook Pro 15” + case
+2. Apple iPad Mini + case
 3. Apple iPod Touch 5 + Apple EarPods
 4. DELL 18.4” Monitor
 5. Texas Instruments TI-84 Plus Pocket SE
@@ -89,5 +82,6 @@ Rules I followed while developing this list:
 61. Pen and pencil collection
 62. Book collection
 63. Coin collection
+64. “Memory Box”
 
 </div>
