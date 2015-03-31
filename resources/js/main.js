@@ -91,56 +91,56 @@ $(function(){
     });
   });
 });
-
-var desktop = window.matchMedia('all and (min-width: 700px)');
-if(desktop.matches) {
-  setInterval(particlesJS('particles', {
-    particles: {
-      color: '#c6c6c6',
-      shape: 'circle', // "circle", "edge" or "triangle"
-      opacity: 0,
-      size: 0.1,
-      size_random: true,
-      nb: 70,
-      line_linked: {
-        enable_auto: true,
-        distance: 300,
-        color: '#c6c6c6',
-        opacity: 0.6,
-        width: 1,
-        condensed_mode: {
-          enable: false,
-          rotateX: 600,
-          rotateY: 600
-        }
-      },
-      anim: {
-        enable: true,
-        speed: 0.6
-      }
-    },
-    interactivity: {
-      enable: false,
-      mouse: {
-        distance: 150
-      },
-      detect_on: 'window', // "canvas" or "window"
-      mode: 'grab',
-      line_linked: {
-        opacity: 0.5
-      },
-      events: {
-        onclick: {
-          enable: true,
-          mode: 'push', // "push" or "remove" (particles)
-          nb: 1
-        }
-      }
-    },
-    /* Retina Display Support */
-    retina_detect: true
-  }), 1000);
-}
+//
+// var desktop = window.matchMedia('all and (min-width: 700px)');
+// if(desktop.matches) {
+//   setInterval(particlesJS('particles', {
+//     particles: {
+//       color: '#c6c6c6',
+//       shape: 'circle', // "circle", "edge" or "triangle"
+//       opacity: 0,
+//       size: 0.1,
+//       size_random: true,
+//       nb: 70,
+//       line_linked: {
+//         enable_auto: true,
+//         distance: 300,
+//         color: '#c6c6c6',
+//         opacity: 0.6,
+//         width: 1,
+//         condensed_mode: {
+//           enable: false,
+//           rotateX: 600,
+//           rotateY: 600
+//         }
+//       },
+//       anim: {
+//         enable: true,
+//         speed: 0.6
+//       }
+//     },
+//     interactivity: {
+//       enable: false,
+//       mouse: {
+//         distance: 150
+//       },
+//       detect_on: 'window', // "canvas" or "window"
+//       mode: 'grab',
+//       line_linked: {
+//         opacity: 0.5
+//       },
+//       events: {
+//         onclick: {
+//           enable: true,
+//           mode: 'push', // "push" or "remove" (particles)
+//           nb: 1
+//         }
+//       }
+//     },
+//     /* Retina Display Support */
+//     retina_detect: true
+//   }), 1000);
+// }
 
 if(document.getElementById("next_link")) {
   shortcut.add("Left",function() {
@@ -333,5 +333,12 @@ function openCloseNav(){
 $(".navToggle").click(openCloseNav);
 
 $('#bg-blur').click(function(event) {
+  openCloseNav();
+});
+
+shortcut.add("Esc",function() {
+  openCloseNav();
+});
+shortcut.add("m",function() {
   openCloseNav();
 });
