@@ -42,6 +42,7 @@ function getGithubData(){
         html.push('<a href="' + url + '"><h2 class="name">' + title + '</h2></a>');
         if(description) { html.push('<p><span class="language">' + lang_text + '</span><span class="description">' + description + '</span></p>'); }
       });
+      $('.loader').hide();
       $('.code').append(html.join(''));
     }
   });
