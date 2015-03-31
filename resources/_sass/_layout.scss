@@ -146,6 +146,15 @@
 
 .post {
   margin-bottom: 40px;
+  .post-meta {
+    margin-bottom: 5px;
+    color: $grey-color;
+  }
+  header h3 {
+    margin-top: 10px;
+    line-height: 1.2em;
+    font-size: 1em;
+  }
 }
 
 #particles {
@@ -413,6 +422,11 @@ nav {
         line-height: 1em;
         font-size: 1em;
       }
+    }
+  }
+  .post {
+    .post-meta {
+      font-size: 0.8em;
     }
   }
   .gr_grid_container {
