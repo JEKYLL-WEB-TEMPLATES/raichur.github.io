@@ -381,7 +381,6 @@ nav {
     li{
       list-style: none;
       transition: all 0.2s;
-      padding-left: 22%;
       a {
         padding: 0.25em 1.5em 0.25em 1.5em;
         display: inline-block;
@@ -391,6 +390,7 @@ nav {
         font-weight: 500;
         height: 100%;
         color: $text-color;
+        padding-left: 25%;
       }
       &:hover {
         color: $grey-color-dark;
