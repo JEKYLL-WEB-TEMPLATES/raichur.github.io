@@ -19,69 +19,75 @@ I maintain this list to be more conscious and appreciative of what I own, and re
 Rules I followed while developing this list:
 
 - **Pieces of furniture don't count.** I'll be moving out soon anyway.
-- **Books don't count.** Though I rarely read physical books anymore, I have a reasonably large-sized physical book collection.
-- **Eatables don't count.** They are temporary and frankly too time-consuming to list out.
+- **Books don't count.** I have a reasonably large-sized collection od physical books that I am required to have as a student. I have counted my book collection as one item.
+- **Eatables don't count.** They are temporary and frankly too time consuming to list out.
 
-## Electronics
-- Apple MacBook Pro 15”
-- Apple iPad Mini
-- Apple iPod Touch 5 + Apple EarPods
-- DELL 18.4” Monitor
-- Texas Instruments TI-84 Plus Pocket SE
-- Microsoft Natural Ergonomic Keyboard 4000
-- Microsoft Compact Optical Mouse
-- Wacom CTE-430 Graphic Tablet
-- Buffalo MiniStation 1TB HDD
-- Olympus E-420 DSLR
-- SJCam SJ4000 Action Camera
-- Arduino Uno
-- Raspberry Pi Model B
-- Eveready Desk Lamp
-- Vox Mini 3 Amplifier
-- Vox Stomplab IIG
-- Microscope
+<br/>
 
-## Clothes and Wearables
-- Nike CTR360 Football Boots
-- Nike Shoes
-- Flip flops
-- Casio wrist watch
-- White t-shirt
-- Red t-shirt
-- Blue t-shirt
-- Orange t-shirt
-- Grey t-shirt
-- Green v-neck t-shirt
-- White collared t-shirt
-- Yellow collared t-shirt
-- Purple collared t-shirt
-- Blue collared t-shirt
-- Blue and white striped collared t-shirt
-- Orange long sleeve t-shirt
-- Red long sleeve t-shirt
-- Red and white striped long sleeve t-shirt
-- Blue long sleeve t-shirt
-- Dark blue long sleeve t-shirt
-- Grey long sleeve t-shirt
-- Blue hoodie
-- Blue sweater
-- Grey sweater
-- Lab coat
-- Dark blue jeans
-- Blue shirt
-- Grey formal pants
-- Football jersey
-- Football jersey
-- White belt
-- Black belt
-- Brown belt
-- Deodorant
-
-
-## Tools
-- Rubik’s Cube (3x3)
-- Pack of picks
-- Stagg acoustic guitar
-- Craftsman electric guitar
+1. Apple MacBook Pro 15”
+2. MacBook Pro 15" case
+2. Apple iPad Mini
+3. Apple iPod Touch 5 + Apple EarPods
+4. DELL 18.4” Monitor
+5. Texas Instruments TI-84 Plus Pocket SE
+6. Microsoft Natural Ergonomic Keyboard 4000
+7. Microsoft Compact Optical Mouse
+8. Wacom CTE-430 Graphic Tablet
+9. Buffalo MiniStation 1TB HDD
+10. Olympus E-420 DSLR
+11. SJCam SJ4000 Action Camera
+12. Arduino Uno
+13. Raspberry Pi Model B
+14. Eveready Desk Lamp
+15. Vox Mini 3 Amplifier
+16. Vox Stomplab IIG
+17. Microscope
+18. 10000mAh Power Bank
+19. Nike CTR360 Football Boots
+20. Nike Shoes
+21. Flip flops
+22. Casio AE-1000w 3198 watch
+23. White t-shirt
+24. Red t-shirt
+25. Blue t-shirt
+26. Orange t-shirt
+27. Grey t-shirt
+28. Green v-neck t-shirt
+29. White collared t-shirt
+30. Yellow collared t-shirt
+31. Purple collared t-shirt
+32. Blue collared t-shirt
+33. Blue and white striped collared t-shirt
+34. Orange long sleeve t-shirt
+35. Red long sleeve t-shirt
+36. Red and white striped long sleeve t-shirt
+37. Blue long sleeve t-shirt
+38. Dark blue long sleeve t-shirt
+39. Grey long sleeve t-shirt
+40. Blue hoodie
+41. Blue sweater
+42. Grey sweater
+43. Lab coat
+44. Dark blue jeans
+45. Blue shirt
+46. Grey formal pants
+47. Football jersey
+48. Football jersey
+49. White belt
+50. Black belt
+51. Brown belt
+52. Deodorant
+53. Rubik’s Cube (3x3)
+54. Pack of picks
+55. Stagg acoustic guitar
+56. Craftsman electric guitar
+57. Capo
+57. Football
+58. Football
+59. Targus Stylus
+60. Whiteboard
+61. Pen and pencil collection
+62. Book collection
+63. Coin collection
 
 </div>
