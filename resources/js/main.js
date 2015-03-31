@@ -23,7 +23,7 @@ function getGithubData(){
     });
 
     function outputPageContent() {
-      var html = [], date, title, url, language = '', description = false, lang_text = '';
+      var html = [], date, title, url, language = '', description = false, website = false, lang_text = '';
       $.each(repositories, function(index) {
 
         date = repositories[index].updated_at;
@@ -37,8 +37,9 @@ function getGithubData(){
           lang_text = '';
         }
         description = repositories[index].description;
-
+        website = repositories[index].homepage;
         html.push('<li><p class="post-meta"><time class="date" datetime="' + date +'">' + date + '</time></p>');
+        if(website) { html.push('<a class="codeweb" href="' + website + '">Web</a>'); }
         html.push('<a href="' + url + '"><h2 class="name">' + title + '</h2></a>');
         if(description) { html.push('<p><span class="language">' + lang_text + '</span><span class="description">' + description + '</span></p>'); }
       });
