@@ -1,8 +1,7 @@
 # Site settings
 title: Joshua Raichur
 email: hello@joshuaraichur.com
-description: >
-  Joshua Raichur's website.
+description: Joshua Raichur's website.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://joshuaraichur.com" # the base hostname & protocol for your site
 

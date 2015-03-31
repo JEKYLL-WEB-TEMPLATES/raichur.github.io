@@ -87,6 +87,12 @@
 }
 
 #gr_challenge_3082 {
+  #challenge {
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: .9em;
+    color: $grey-color;
+  }
   #gr_challenge_progress_body_3082 {
     top: 60px;
     width: 100%;
@@ -104,7 +110,7 @@
       margin-left: 25%;
       margin-right: 25%;
       margin-bottom: 15px;
-      font-size: 2em !important;
+      font-size: 1.3em !important;
       line-height: 1.2em;
     }
     div:nth-child(4) {
@@ -214,11 +220,16 @@ input[type="text"] {
   transition: all ease .25s;
   opacity: .8;
   width: 100%;
+  margin-top: 20px;
   margin-bottom: 40px;
   &:focus {
     opacity: 1;
     border-bottom: 2px solid $grey-color;
   }
+}
+#code p {
+  line-height: 1.2em;
+  font-size: 1em;
 }
 #list {
   -webkit-animation: fadeInUp .4s;
@@ -251,12 +262,15 @@ input[type="text"] {
   animation-delay: 1s;
   -webkit-animation: fadeInUp .4s;
   animation: fadeInUp .4s;
+  z-index: -2;
   li {
+    z-index: -2;
     width: calc(100%/7);
     height: auto;
     float: left;
     transition: all ease .4s;
     img {
+      z-index: -2;
       width: 100%;
       height: auto;
       -webkit-filter: grayscale(0.4);
@@ -450,6 +464,18 @@ nav {
 
 // Media Queries
 @media screen and (max-width: 1150px) {
+  #gr_challenge_3082 {
+    div {
+      div:nth-child(3) {
+        margin-left: 8% !important;
+        margin-right: 8% !important;
+      }
+    }
+  }
+  #challenge {
+    margin-left: 8% !important;
+    margin-right: 8% !important;
+  }
   #gr_challenge_3082 {
     margin-top: 0 !important;
   }

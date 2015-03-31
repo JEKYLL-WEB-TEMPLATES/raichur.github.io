@@ -65,7 +65,6 @@ function start(){
 
 
 $(function(){
-  start();
   greeting();
   $('time').timeago();
   $('.lightbox').fluidbox();
@@ -74,9 +73,6 @@ $(function(){
     $('time').timeago();
     jQuery(document).ready(function() {
       var siteUrl = 'http://'+(document.location.hostname||document.location.host);
-
-      //	Catch all internally-focused links and push a new state.
-      //	Note: External links will not be affected by this behavior.
       $(document).delegate('a[href^="/"],a[href^="'+siteUrl+'"]', "click", function(e) {
         e.preventDefault();
         History.pushState({}, "", this.pathname);
@@ -84,7 +80,7 @@ $(function(){
 
       History.Adapter.bind(window, 'statechange', function(){
         var State = History.getState();
-        $.get(State.url, function(data){	// Use AJAX to get the new content.
+        $.get(State.url, function(data){	// Use AJAX to get the new content
           document.title = data.match(/<title>(.*?)<\/title>/)[1];
           $('.content').html($(data).find('.content'));
           $('nav').html($(data).find('nav'));
@@ -92,9 +88,8 @@ $(function(){
         });
       });
     });
-
-
   });
+  start();
 });
 
 var desktop = window.matchMedia('all and (min-width: 700px)');
