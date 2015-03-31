@@ -10,7 +10,11 @@ permalink: '/things/'
 
 _Last updated: March 31st, 2015._
 
+<br/>
+
 I maintain this list to be more conscious and appreciative of what I own, and reduce and optimize my possessions to only what I really need and frequently use.
+
+<br/>
 
 Rules I followed while developing this list:
 
