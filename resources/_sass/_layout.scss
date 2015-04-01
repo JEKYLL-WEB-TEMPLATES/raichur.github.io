@@ -352,7 +352,7 @@ nav {
   z-index: 7;
   width: 100%;
   max-height: 60px;
-  background-color: rgba(253,253,253,0.94);
+  background-color: rgba(253,253,253,0.97);
   top: 0;
   transition-duration: 0.3s;
   transition-timing-function: swing;
@@ -381,6 +381,7 @@ nav {
     li{
       list-style: none;
       transition: all 0.2s;
+      border-top: 1px solid $grey-color-light;
       a {
         padding: 0.25em 1.5em 0.25em 1.5em;
         display: inline-block;
@@ -553,8 +554,8 @@ nav {
   .navToggle {
     left: 85% !important;
   }
-  nav ul li {
-    padding-left: 0;
+  nav ul li a {
+    padding-left: 8%;
     font-size: 0.95em;
   }
 }
