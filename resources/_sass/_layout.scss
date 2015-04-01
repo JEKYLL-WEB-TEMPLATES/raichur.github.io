@@ -239,11 +239,18 @@ input[type="text"] {
 }
 #code p {
   line-height: 1.2em;
-  font-size: 1em;
+  font-size: .9em;
 }
 .codeweb {
   float: right;
-  font-size: .9em;
+  font-size: .7em;
+  svg {
+    fill: $brand-color;
+    transition: .2s all ease;
+    &:hover {
+      fill: darken($brand-color, 25%);
+    }
+  }
 }
 #list {
   -webkit-animation: fadeInUp .4s;
