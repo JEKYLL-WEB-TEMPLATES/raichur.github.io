@@ -30,6 +30,9 @@
     -webkit-animation: fadeInUp .3s;
     animation: fadeInUp .3s;
     margin-bottom: 80px;
+    h2 {
+      margin-top: 30px;
+    }
   }
   article {
     animation-delay: 1s;
@@ -39,12 +42,15 @@
     font-family: $base-font-family;
     font-size: 1.4rem;
     p {
-      margin-top: 1.5rem;
-      margin-bottom: 1.5rem;
+      padding-top: 10px;
     }
     h3 {
       margin-top: 30px;
       margin-bottom: 5px !important;
+    }
+    h2 {
+      margin-top: 30px;
+      margin-bottom: 0px;
     }
     b {
       font-weight: 600 !important;
@@ -163,13 +169,13 @@
 .post {
   margin-bottom: 40px;
   .post-meta {
-    margin-bottom: 5px;
+    margin-bottom: 25px;
     color: $grey-color;
   }
   header h3 {
-    margin-top: 10px;
     line-height: 1.2em;
     font-size: 1em;
+    margin-top: 30px;
   }
 }
 .loader {
@@ -263,13 +269,16 @@ input[type="text"] {
   }
   p {
     opacity: .8;
+    margin-top: 10px;
   }
   .post-meta {
     opacity: .55;
   }
   h2 {
-    margin-top: -2px;
-    margin-bottom: -5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.4em;
+    line-height: 1.2em;
   }
   li {
     padding-top: 20px;
