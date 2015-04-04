@@ -1,12 +1,12 @@
 ---
 layout: page
-title: 'Faves'
+title: 'Favorites'
 permalink: '/faves/'
 ---
 
 <div class="faves" markdown="1">
 
-# Faves
+# Favorites
 
 ## Blogs
 
