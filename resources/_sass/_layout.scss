@@ -21,11 +21,130 @@
     animation-delay: .5s;
   }
 }
+.player {
+  overflow: hidden;
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  margin: auto;
+  height: 260px;
+  width: 49%;
 
+  background: #edf0f2;
+  border-radius: 10px;
+}
+.art {
+  overflow: hidden;
+  height: 130px;
+  width: 100%;
+
+  background: #DDD;
+  background-image: url('');
+  background-size: cover;
+  background-position: center;
+}
+.info {
+  height: 20%;
+}
+.info .title {
+  height: 50%;
+  width: 100%;
+
+  font-size: 0.9em;
+  color: #48586b;
+  text-shadow: 0 1px #EFEFEF;
+  padding: 0 10%;
+  margin-top: 10px;
+}
+.info .song {
+  height: 50%;
+  display: block;
+  font-size: 0.5em;
+  color: #6a7888;
+  padding: 0 10%;
+}
+.info .progress {
+  user-select: none;
+  cursor: pointer;
+  clear: both;
+  overflow: hidden;
+  top: 0;
+  height: 4px;
+  width: 100%;
+  background: #333;
+}
+.progress .progress-bar {
+  height: 100%;
+  width: 0%;
+
+  background: $brand-color;
+}
+.controls {
+  position: relative;
+  margin: 20px 0 6.5% 0;
+  padding: 0 10%;
+}
+.controls button {
+  cursor: pointer;
+  position: absolute;
+  height: 27px;
+  width: 27px;
+  border: none;
+
+  text-align: center;
+  background: #414141;
+  color: #d9d9d9;
+  border-radius: 50%;
+  font-size: 0.8em;
+  transition: .1s;
+  line-height: 1em;
+  &:focus {
+    outline: none;
+  }
+}
+.controls button:hover {
+  opacity: 0.95;
+}
+.controls button:active{
+  opacity: 0.5;
+}
+.controls .play {
+  height: 37px;
+  width: 37px;
+
+  font-size: 1.2em;
+  line-height: 35px;
+}
+.controls .backward, .controls .forward {
+  top: .7em;
+  font-size: .5em;
+  letter-spacing: .4em;
+  line-height: .7em;
+}
+.controls .backward {
+  left: 28%;
+}
+.controls .forward {
+  left: 42%;
+  letter-spacing: .3em;
+  text-align: right;
+}
+
+.controls .settings {
+  cursor: pointer;
+  color: #CCC;
+  float: right;
+  margin-top: 5%;
+}
+
+.controls .settings:hover { color: #AAA; }
+.sc-widget {
+  display: none !important;
+}
 .wrapper {
   -webkit-animation: fadeInUp .4s;
   animation: fadeInUp .4s;
   margin-bottom: 50px;
+
   header {
     -webkit-animation: fadeInUp .3s;
     animation: fadeInUp .3s;
@@ -326,7 +445,7 @@ footer {
   width: 30px;
   height: 60px;
   top: $top;
-  left: 72%;
+  left: 73%;
   z-index: 9;
   transition-duration: 0.2s;
 }
