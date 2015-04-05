@@ -346,7 +346,7 @@ shortcut.add("m",function() {
   openCloseNav();
 });
 
-if($('.sound')) {
+if($('.sound').length > 0) {
   console.clear();
   $(document).ready(function(){
 
