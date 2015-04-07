@@ -190,7 +190,7 @@ function singleLetters($words) {
     var word = $(this),
     letters = word.text().split(''),
     selected = word.hasClass('is-visible');
-    for (i in letters) {
+    for(i in letters) {
       if(word.parents('.rotate-2').length > 0) letters[i] = '<em>' + letters[i] + '</em>';
       letters[i] = (selected) ? '<i class="in">' + letters[i] + '</i>': '<i>' + letters[i] + '</i>';
     }
@@ -209,7 +209,7 @@ function animateHeadline($headlines) {
       setTimeout(function(){ headline.find('.cd-words-wrapper').addClass('is-loading') }, barWaiting);
     } else if (headline.hasClass('clip')){
       var spanWrapper = headline.find('.cd-words-wrapper'),
-      newWidth = spanWrapper.width() + 10
+      newWidth = spanWrapper.width() + 10;
       spanWrapper.css('width', newWidth);
     } else if (!headline.hasClass('type') ) {
       //assign to .cd-words-wrapper the width of its longest word
@@ -220,7 +220,7 @@ function animateHeadline($headlines) {
         if (wordWidth > width) width = wordWidth;
       });
       headline.find('.cd-words-wrapper').css('width', width);
-    };
+    }
 
     //trigger animation
     setTimeout(function(){ hideWord( headline.find('.is-visible').eq(0) ) }, duration);
