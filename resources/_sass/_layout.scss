@@ -203,35 +203,6 @@
   column-gap:           0px;
 }
 
-#photos {
-  width: 100% !important;
-  margin: 0;
-  padding: 0;
-  margin-top: -120px;
-  line-height: 0;
-  -webkit-column-count: 6;
-  -webkit-column-gap:   0px;
-  -moz-column-count:    6;
-  -moz-column-gap:      0px;
-  column-count:         6;
-  column-gap:           0px;
-  li {
-    padding: 0px 0px;
-    margin: 0;
-    overflow: hidden;
-    width: 100% !important;
-    height: auto !important;
-    img {
-      width: 100%;
-      height: auto;
-    }
-    a {
-      margin: 0 !important;
-      padding: 0 !important;
-    }
-  }
-}
-
 .gr_grid_book_container {
   padding: 0px 0px;
   margin: 0;

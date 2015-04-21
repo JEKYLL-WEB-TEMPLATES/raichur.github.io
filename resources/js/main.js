@@ -54,12 +54,12 @@ function getFlickrPhotos(){
   null,
   function(data) {
     $.each(data.photos.photo, function(i,item){
-      $('<li><a class="lightbox" href="https://farm' + item.farm + ".staticflickr.com/" + item.server + "/" + item.id + "_" + item.secret + '_b.jpg">' + '<img src="https://farm' + item.farm + ".staticflickr.com/" + item.server + "/" + item.id + "_" + item.secret + '_m.jpg"></a></li>').appendTo("#photos");
+      $('<li><a class="lightbox" href="https://farm' + item.farm + ".staticflickr.com/" + item.server + "/" + item.id + "_" + item.secret + '_b.jpg">' + '<img src="https://farm' + item.farm + ".staticflickr.com/" + item.server + "/" + item.id + "_" + item.secret + '_q.jpg"></a></li>').appendTo("#photos");
     });
   });
-  // $(document).ajaxComplete(function(){
-  //   $('.lightbox').fluidbox();
-  // });
+  $(document).ajaxComplete(function(){
+    $('.lightbox').fluidbox();
+  });
 }
 
 
