@@ -157,6 +157,13 @@
     margin-bottom: 80px;
     font-family: $base-font-family;
     font-size: 1.4rem;
+    .middle {
+      font-weight: 600;
+      font-size: 2rem;
+      margin: auto;
+      text-align: center;
+      font-style: italic;
+    }
     p {
       padding-top: 10px;
     }
@@ -167,9 +174,6 @@
     h2 {
       margin-top: 30px;
       margin-bottom: 0px;
-    }
-    b {
-      font-weight: 600 !important;
     }
     .success {
       color: #259b24;
@@ -197,6 +201,35 @@
   -moz-column-gap:      0px;
   column-count:         11;
   column-gap:           0px;
+}
+
+#photos {
+  width: 100% !important;
+  margin: 0;
+  padding: 0;
+  margin-top: -120px;
+  line-height: 0;
+  -webkit-column-count: 6;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    6;
+  -moz-column-gap:      0px;
+  column-count:         6;
+  column-gap:           0px;
+  li {
+    padding: 0px 0px;
+    margin: 0;
+    overflow: hidden;
+    width: 100% !important;
+    height: auto !important;
+    img {
+      width: 100%;
+      height: auto;
+    }
+    a {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+  }
 }
 
 .gr_grid_book_container {
@@ -479,12 +512,11 @@ footer {
   top: 10px;
 }
 
-
 nav {
   z-index: 7;
   width: 100%;
   max-height: 60px;
-  background-color: rgba(253,253,253,0.97);
+  background-color: rgba(253,253,253,0.94);
   top: 0;
   transition-duration: 0.3s;
   transition-timing-function: swing;
