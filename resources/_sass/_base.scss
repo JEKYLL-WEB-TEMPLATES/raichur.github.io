@@ -89,12 +89,8 @@ h4, h5, h6 {
 */
 a {
   transition: all ease .2s;
-  color: $brand-color;
+  color: darken($brand-color, 15%);
   text-decoration: none;
-
-  &:visited {
-    color: darken($brand-color, 15%);
-  }
 }
 article a, nav a, ul a {
   &:hover {

@@ -431,6 +431,10 @@ input[type="text"] {
   }
 }
 
+#photos li {
+  width: calc(100%/10);
+}
+
 footer {
   padding-bottom: 70px;
   font-style: italic;
@@ -501,7 +505,7 @@ nav {
   }
   .nav-title {
     margin-left: 80px;
-    margin-top: 10px;
+    margin-top: 7px;
     font-weight: 500;
     font-size: 1.6rem;
     color: white;
@@ -518,10 +522,10 @@ nav {
       transition: all 0.2s;
       border-top: 1px solid $grey-color-light;
       a {
-        padding: 0.25em 1.5em 0.25em 1.5em;
+        padding: 0.15em 0.5em 0.15em 0.5em;
         display: inline-block;
         text-decoration: none;
-        font-size: 1.15em;
+        font-size: 1.1em;
         width: 100%;
         font-weight: 500;
         height: 100%;
@@ -669,6 +673,12 @@ nav {
   .pixels li {
     width: calc(100%/5);
   }
+  #photos {
+    margin-top: -60px;
+  }
+  #photos li {
+    width: calc(100%/7);
+  }
   .title {
     height: 100px;
     h1 {
@@ -758,6 +768,10 @@ nav {
   }
   .pixels li {
     width: calc(100%/2);
+  }
+
+  #photos li {
+    width: calc(100%/5);
   }
   #particles {
     height: 300px;
