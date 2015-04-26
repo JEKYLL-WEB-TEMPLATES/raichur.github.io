@@ -28,8 +28,6 @@ permalink: '/faves/'
 
 ## Videos
 
-Video sites and YouTube channels whose videos I find inspiring and educational.
-
 - [SciShow](https://www.youtube.com/user/scishow)
 - [TED-Ed](https://www.youtube.com/user/TEDEducation)
 - [VSauce](https://www.youtube.com/user/Vsauce)

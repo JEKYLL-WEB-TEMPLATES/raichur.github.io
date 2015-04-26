@@ -5,7 +5,7 @@ layout: default
 <div class="home wrapper">
   <header>
     <h1 class="large"><span id="greeting">Hi</span>.</h1>
-    <h2>I'm Josh, an insatiable learner.</h2>
+    <h2 style="font-weight: 500;">I'm Josh, an insatiable learner.</h2>
     <h3 class="cd-headline letters rotate-2"><span>I like</span>
       <span class="word-wrapper">
         <b class="is-visible">&nbsp;JavaScript.</b>
@@ -23,7 +23,17 @@ layout: default
       </span>
     </h3>
   </header>
-  <article>
-    <p><a href='http://github.com/raichur'>GitHub</a>   <a href='http://twitter.com/JoshuaRaichur'>Twitter</a>   <a href="mailto:hello@joshuaraichur.com">Email</a> </p>
-  </article>
+  <ul id="list">
+    {% for post in site.posts %}
+    {% if post.type == "notes" %}
+    <li class="{{ post.type }}">
+      <p class="post-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_xmlschema }}</time> • {% include read_time.html %}</p>
+      <h2>
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h2>
+      <p>{{ post.subtitle }}</p>
+    </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
 </div>

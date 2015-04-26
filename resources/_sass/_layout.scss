@@ -287,7 +287,7 @@
 }
 
 .post {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   .post-meta {
     margin-bottom: 25px;
     color: $grey-color;
@@ -295,7 +295,7 @@
   header h3 {
     line-height: 1.2em;
     font-size: 1em;
-    margin-top: 30px;
+    margin-top: 20px;
   }
 }
 .loader {
@@ -389,20 +389,18 @@ input[type="text"] {
   }
   p {
     opacity: .8;
-    margin-top: 10px;
+    font-size: 0.9em;
   }
   .post-meta {
     opacity: .55;
   }
   h2 {
-    margin-top: 10px;
-    margin-bottom: 10px;
     font-size: 1.4em;
     line-height: 1.2em;
   }
   li {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
@@ -507,7 +505,7 @@ nav {
     margin-left: 80px;
     margin-top: 7px;
     font-weight: 500;
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     color: white;
     float: left;
     margin-left: 25%;
@@ -753,7 +751,7 @@ nav {
   #list {
     h2 {
       margin-bottom: 0px;
-      margin-top: 5px;
+      margin-top: 0px;
     }
     p {
       font-size: 1.3rem;
