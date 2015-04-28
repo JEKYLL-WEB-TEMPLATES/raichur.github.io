@@ -148,14 +148,14 @@
   header {
     -webkit-animation: fadeInUp .3s;
     animation: fadeInUp .3s;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
   article {
     animation-delay: 1s;
     -webkit-animation: fadeInUp .4s;
     animation: fadeInUp .4s;
     margin-bottom: 80px;
-    font-family: $base-font-family;
+    font-family: $serif-font-family;
     font-size: 1.4rem;
     .middle {
       font-weight: 600;
@@ -289,13 +289,13 @@
 .post {
   margin-bottom: 30px;
   .post-meta {
-    margin-bottom: 25px;
+    margin-bottom: 5px;
     color: $grey-color;
   }
   header h3 {
     line-height: 1.2em;
     font-size: 1em;
-    margin-top: 20px;
+    margin-top: 10px;
   }
 }
 .loader {
@@ -640,7 +640,7 @@ nav {
   .home {
     header {
       h2 {
-        margin-top: 15px;
+        margin-top: 5px;
         line-height: 1em;
         font-size: 1em;
       }
