@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Favorites'
-permalink: '/faves/'
+permalink: '/favorites/'
 ---
 
 <div class="faves" markdown="1">
