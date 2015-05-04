@@ -53,10 +53,10 @@ permalink: '/favorites/'
 - [Fw:Thinking](https://itunes.apple.com/us/podcast/fw-thinking/id604177167?mt=2)
 - [TechStuff](https://itunes.apple.com/us/podcast/techstuff/id282795787?mt=2)
 
-### Apps
+### Apps and services
 
 - [OmniFocus](https://www.omnigroup.com/omnifocus)
-- [Scrivener](https://www.literatureandlatte.com/scrivener.php)
+- [Ulysses](http://www.ulyssesapp.com/)
 - [Adobe Photoshop CC](http://www.adobe.com/products/photoshop.html)
 - [Adobe Illustrator CC](http://www.adobe.com/products/illustrator.html)
 - [Adobe Photoshop Lightroom 5](http://www.adobe.com/products/photoshop-lightroom.html)
@@ -70,4 +70,7 @@ permalink: '/favorites/'
 - [LastPass](https://lastpass.com/)
 - [StayFocusd](https://chrome.google.com/webstore/detail/stayfocusd/laankejkbhbdhmipfmgcngdelahlfoji?hl=en)
 - [Pocket](http://getpocket.com)
+- [Flickr](http://flickr.com)
+- [Day One](http://dayoneapp.com/)
+
 </div>
