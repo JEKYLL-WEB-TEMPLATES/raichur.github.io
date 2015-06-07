@@ -107,16 +107,9 @@ blockquote {
   color: $grey-color-dark;
   border-left: 4px solid $brand-color;
   padding-left: $spacing-unit / 2;
-  font-size: 18px;
-  letter-spacing: -1px;
   font-style: italic;
-
-  > :last-child {
-    margin-bottom: 0;
-  }
-  p {
-    padding-top: 0 !important;
-  }
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 
