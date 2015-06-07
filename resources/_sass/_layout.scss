@@ -272,11 +272,6 @@
     margin-top: 30px;
     margin-bottom: 20px;
   }
-  ul li:before {
-    content: '– ';
-    margin-left: -10px;
-    color: $text-color;
-  }
   ol li {
     list-style: inherit !important;
   }
@@ -401,6 +396,7 @@ input[type="text"] {
   li {
     padding-top: 10px;
     padding-bottom: 10px;
+    list-style-type: none;
   }
 }
 #code #list h2 {
@@ -419,6 +415,7 @@ input[type="text"] {
     width: calc(100%/7);
     height: auto;
     float: left;
+  list-style-type: none;
     transition: all ease .4s;
     img {
       z-index: -2;
