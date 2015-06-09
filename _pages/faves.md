@@ -10,12 +10,14 @@ permalink: '/favorites/'
 
 ### Blogs
 
-- [Farnam Street](http://www.farnamstreetblog.com)
 - [Brain Pickings](http://www.brainpickings.org)
+- [Farnam Street](http://www.farnamstreetblog.com)
 - [Zen Habits](http://zenhabits.net)
 - [Paul Graham's Essays](http://www.paulgraham.com/articles.html)
 - [The Great Discontent](http://thegreatdiscontent.com)
-- [Dribbble](http://dribbble.com)
+- [WIRED](http://www.wired.com/)
+- [ReadWrite](http://readwrite.com/)
+- [Ars Technica](http://arstechnica.com/)
 
 ### Courses and tutorials
 
@@ -39,6 +41,8 @@ permalink: '/favorites/'
 - [Crash Course](https://www.youtube.com/user/crashcourse)
 - [Minute Physics](https://www.youtube.com/user/minutephysics)
 - [Numberphile](https://www.youtube.com/user/numberphile)
+- [Casey Neistat](https://www.youtube.com/user/caseyneistat)
+- [FunForLouis](https://www.youtube.com/user/funforlouis)
 - [UReddit](http://ureddit.com/)
 
 ### Podcasts
@@ -55,12 +59,14 @@ permalink: '/favorites/'
 
 ### Apps and services
 
-- [OmniFocus](https://www.omnigroup.com/omnifocus)
-- [Ulysses](http://www.ulyssesapp.com/)
+- [Wunderlist](https://www.wunderlist.com/)
+- [Evernote](http://evernote.com)
 - [Adobe Photoshop CC](http://www.adobe.com/products/photoshop.html)
+- [Anki](http://ankisrs.net/)
 - [Adobe Illustrator CC](http://www.adobe.com/products/illustrator.html)
 - [Adobe Photoshop Lightroom 5](http://www.adobe.com/products/photoshop-lightroom.html)
-- [Sunrise](https://calendar.sunrise.am/)
+- [Adobe Premiere Pro CC](http://www.adobe.com/products/premiere.html)
+- [MindNode Pro](https://mindnode.com/)
 - [iTerm](http://iterm2.com/)
 - [Atom](https://atom.io/)
 - [Mailbox](http://www.mailboxapp.com/)
@@ -69,8 +75,9 @@ permalink: '/favorites/'
 - [f.lux](https://justgetflux.com/)
 - [LastPass](https://lastpass.com/)
 - [StayFocusd](https://chrome.google.com/webstore/detail/stayfocusd/laankejkbhbdhmipfmgcngdelahlfoji?hl=en)
+- [Fantastical](https://flexibits.com/fantastical)
+- [SelfControl](https://selfcontrolapp.com/)
 - [Pocket](http://getpocket.com)
 - [Flickr](http://flickr.com)
-- [Day One](http://dayoneapp.com/)
 
 </div>
