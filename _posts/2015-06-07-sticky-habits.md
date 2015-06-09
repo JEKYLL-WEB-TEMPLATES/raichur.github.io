@@ -6,7 +6,7 @@ tags: ['life']
 ---
 
 > We are what we repeatedly do. Excellence, then, is not an act, but a habit.
-  – Aristotle
+  <br/>– <cite>Will Durant, The Story of Philosophy, p. 76</cite>
 
 Consistently performing behaviors that improve your skills will help you achieve mastery in the long run, so at the beginning of this year I set out to build twelve new habits. Halfway into the year, I’ve been successful so far in forming the habits I set out to form. Here are four things I’ve learnt about habit formation in the process:
 
