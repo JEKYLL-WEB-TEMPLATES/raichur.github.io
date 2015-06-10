@@ -13,7 +13,7 @@ permalink: '/beliefs/'
 ## Type 1: Metabeliefs
 
 - This document attempts to capture my beliefs.
-- This document in not exhaustive, but does not claim to be.
+- This document in not exhaustive, and does not claim to be.
 - Some of these beliefs may be wrong and uninformed, and I must try my best to minimize these.
 - I'm open to changing my beliefs by evidence.
 
@@ -72,6 +72,15 @@ Beliefs how I interpret my perceptions and synthesize the meaning of reality. 3A
 - I should study my mistakes.
 - I should work hard(er).
 - I should not procrastinate.
+
+#### Priorities
+
+1. Experiences
+2. Education
+3. Health
+4. Skill development
+5. Family
+6. Friends and community
 
 ### 3B: Opinions: How I believe society should be structured
 
