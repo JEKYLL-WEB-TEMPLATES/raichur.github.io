@@ -60,6 +60,8 @@ Beliefs how I interpret my perceptions and synthesize the meaning of reality. 3A
 - I should create a monthly report and plan on the first of every month.
 - I should create a yearly report and plan on my birthday every year.
 
+<br/>
+
 #### Values
 
 - I should enjoy life.
@@ -72,6 +74,8 @@ Beliefs how I interpret my perceptions and synthesize the meaning of reality. 3A
 - I should study my mistakes.
 - I should work hard(er).
 - I should not procrastinate.
+
+<br/>
 
 #### Priorities
 
