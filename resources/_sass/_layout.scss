@@ -156,7 +156,7 @@
     animation: fadeInUp .4s;
     margin-bottom: 80px;
     font-family: $base-font-family;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     .middle {
       font-weight: 600;
       font-size: 2rem;
@@ -174,6 +174,12 @@
     h2 {
       margin-top: 30px;
       margin-bottom: 0px;
+    }
+    h1 {
+      font-size: 2.5em;
+    }
+    h2 {
+      font-size: 1.4em;
     }
     .success {
       color: #259b24;
@@ -264,18 +270,6 @@
   }
 }
 
-.faves {
-  animation-delay: 1s;
-  -webkit-animation: fadeInUp .4s;
-  animation: fadeInUp .4s;
-  h1, h2, h3, h4, h5 {
-    margin-top: 30px;
-    margin-bottom: 20px;
-  }
-  ol li {
-    list-style: inherit !important;
-  }
-}
 
 .title {
   height: 100px;
@@ -385,6 +379,7 @@ input[type="text"] {
   p {
     opacity: .8;
     font-size: 0.9em;
+    margin-top: 0px;
   }
   .post-meta {
     opacity: .55;
@@ -392,6 +387,10 @@ input[type="text"] {
   h2 {
     font-size: 1.4em;
     line-height: 1.2em;
+    margin-top: 0px;
+  }
+  h2.name {
+    margin-bottom: -5px !important;
   }
   li {
     padding-top: 10px;
@@ -462,6 +461,7 @@ footer {
   height: $height;
   top: 25px;
   width: $width;
+  border-radius: 5px;
   background-color: $grey-color;
 }
 
@@ -473,6 +473,7 @@ footer {
   background-color: $grey-color;
   content: "";
   top: -10px;
+  border-radius: 5px;
 }
 
 @mixin icon-after($height, $width) {
@@ -483,6 +484,7 @@ footer {
   background-color: $grey-color;
   content: "";
   top: 10px;
+  border-radius: 5px;
 }
 
 nav {
@@ -557,22 +559,22 @@ nav {
     cursor: pointer;
   }
   .icon-left {
-    @include icon(4px, 15px);
+    @include icon(4px, 18px);
     &:before{
-      @include icon-before(4px, 15px);
+      @include icon-before(4px, 18px);
     }
     &:after{
-      @include icon-after(4px, 15px);
+      @include icon-after(4px, 18px);
     }
   }
   .icon-right {
-    @include icon(4px, 15px);
+    @include icon(4px, 18px);
     left: 15px;
     &:before{
-      @include icon-before(4px, 15px);
+      @include icon-before(4px, 18px);
     }
     &:after{
-      @include icon-after(4px, 15px);
+      @include icon-after(4px, 18px);
     }
   }
   &.open {

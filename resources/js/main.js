@@ -126,7 +126,7 @@ if(desktop.matches) {
         enable_auto: true,
         distance: 300,
         color: '#c6c6c6',
-        opacity: 0.6,
+        opacity: 0.65,
         width: 1,
         condensed_mode: {
           enable: false,
@@ -140,7 +140,7 @@ if(desktop.matches) {
       }
     },
     interactivity: {
-      enable: false,
+      enable: true,
       mouse: {
         distance: 150
       },

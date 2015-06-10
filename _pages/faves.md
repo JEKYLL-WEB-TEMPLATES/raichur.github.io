@@ -4,11 +4,7 @@ title: 'Favorites'
 permalink: '/favorites/'
 ---
 
-<div class="faves" markdown="1">
-
-# Favorites
-
-### Blogs
+## Blogs
 
 - [Brain Pickings](http://www.brainpickings.org)
 - [Farnam Street](http://www.farnamstreetblog.com)
@@ -19,7 +15,9 @@ permalink: '/favorites/'
 - [ReadWrite](http://readwrite.com/)
 - [Ars Technica](http://arstechnica.com/)
 
-### Courses and tutorials
+<br/>
+
+## Courses and tutorials
 
 - [Udacity](http://udacity.com)
 - [Coursera](https://www.coursera.org/)
@@ -45,7 +43,9 @@ permalink: '/favorites/'
 - [FunForLouis](https://www.youtube.com/user/funforlouis)
 - [UReddit](http://ureddit.com/)
 
-### Podcasts
+<br/>
+
+## Podcasts
 
 - [The Tim Ferriss Show](https://itunes.apple.com/us/podcast/the-tim-ferriss-show/id863897795?mt=2)
 - [Radiolab from WNYC](https://itunes.apple.com/us/podcast/radiolab-from-wnyc/id152249110?mt=2)
@@ -57,7 +57,9 @@ permalink: '/favorites/'
 - [Fw:Thinking](https://itunes.apple.com/us/podcast/fw-thinking/id604177167?mt=2)
 - [TechStuff](https://itunes.apple.com/us/podcast/techstuff/id282795787?mt=2)
 
-### Apps and services
+<br/>
+
+## Apps and services
 
 - [Wunderlist](https://www.wunderlist.com/)
 - [Evernote](http://evernote.com)
@@ -79,5 +81,3 @@ permalink: '/favorites/'
 - [SelfControl](https://selfcontrolapp.com/)
 - [Pocket](http://getpocket.com)
 - [Flickr](http://flickr.com)
-
-</div>
