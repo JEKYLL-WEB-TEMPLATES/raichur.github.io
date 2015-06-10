@@ -88,5 +88,5 @@ This is an experiment, inspired by [Buster Benson](http://bustr.me/post/21579186
 > “If you don't stand for something you will fall for anything.”
 <br/>― Gordon A. Eadie, Mental Hygiene, Volume 29
 
-> Ignorance is preferable to error; and he is less remote from the truth who believes nothing, than he who believes what is wrong.
+> “Ignorance is preferable to error; and he is less remote from the truth who believes nothing, than he who believes what is wrong.”
 <br/>– Thomas Jefferson, Notes on the State of Virginia.
