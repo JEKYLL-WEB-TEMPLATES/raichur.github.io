@@ -28,7 +28,7 @@ permalink: '/beliefs/'
 - We love stories because we love meaning.
 - There is no point at which the course of your life is decided. Every day that you're alive you are making changes, small or large, that shape your “destiny”.
 
-### 2B: Perceptions: My take on the spiritual and supernatural
+<!-- ### 2B: Perceptions: My take on the spiritual and supernatural
 
 - When have no real purpose given to us, but we are allowed for us to make one up ourselves.
 - My purpose is to enjoy life, and help others enjoy life.
@@ -36,7 +36,7 @@ permalink: '/beliefs/'
 - The Gods of organized religion don't exist.
 - There is no heaven or hell.
 - Magic and miracles don't exist outside the explanations of science.
-- We have no cosmic significance.
+- We have no cosmic significance. -->
 
 ### 2C: Perceptions: Science, politics, and the universe
 
