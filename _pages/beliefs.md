@@ -33,7 +33,6 @@ permalink: '/beliefs/'
 - When have no real purpose given to us, but we are allowed for us to make one up ourselves.
 - My purpose is to enjoy life, and help others enjoy life.
 - None of us will be remembered, so we might as well enjoy life.
-- Souls don't exist as separate from the physical body.
 - The Gods of organized religion don't exist.
 - There is no heaven or hell.
 - Magic and miracles don't exist outside the explanations of science.
