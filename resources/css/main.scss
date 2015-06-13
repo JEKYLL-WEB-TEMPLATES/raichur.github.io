@@ -4,30 +4,11 @@
 
 // Fonts
 
-@font-face {
-  font-family: 'Source Sans Pro';
-  src: url('/resources/css/fonts/SourceSansPro-Regular.otf');
-}
-@font-face {
-  font-family: 'Source Sans Pro';
-  src: url('/resources/css/fonts/SourceSansPro-It.otf');
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Source Sans Pro';
-  src: url('/resources/css/fonts/SourceSansPro-Semibold.otf');
-  font-weight: bold;
-}
-@font-face {
-  font-family: 'Source Sans Pro';
-  src: url('/resources/css/fonts/SourceSansPro-SemiboldIt.otf');
-  font-weight: bold;
-  font-style: italic;
-}
+@import url(http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic);
 @import url(http://fonts.googleapis.com/css?family=Inconsolata:400,700);
 
 // Variables
-$base-font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+$base-font-family: Karla;
 $base-font-size:   26px;
 $mono-font-family: Inconsolata, Lucida Console, monospace;
 $smaller-font-size:  $base-font-size * 0.75;

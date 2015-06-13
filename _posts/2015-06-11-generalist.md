@@ -6,12 +6,25 @@ subtitle: 'Bring back the polymath'
 
 Being my curious self, I've dabbled in learning many skills over the last couple of years.
 
+## Against “Jack of all trades, master of none”
+
+The skills that 
 
 As soon as you stop challenging yourself to grow, you stop enjoying life.
 
-# Why be a generalist
+## Why be a generalist
 
-# Tips for learning things
+- **You can enjoy life more**<br/>
+The generalist enjoys the pursuit of excellence, and can find otherwise unseen interconnectedness by being a polymath.
+
+## Tips for learning things
+
+
+- **Stay focused**<br/>
+It's very easy to become overwhelmed by all the things that you want to learn, and in the end never learn anything that you wanted to. My biggest problem was that I want to learn too many things. Don't overload yourself with skills you want to pursue–make a list of skills, and work on them in batches or one at a time.Work on developing your skills on a regular basis, setting specific times for when you're going to practice.
+
+- **Achieve mastery**<br/>
+Don't stay a novice–achieve mastery in the skills you pursue in learning.
 
 
 --------
