@@ -1,0 +1,5 @@
+---
+title: "Mouth"
+img_dir: "/mouth/"
+img_large: "/mouth/mouth.jpg"
+---
