@@ -81,3 +81,9 @@ permalink: '/favorites/'
 - [SelfControl](https://selfcontrolapp.com/)
 - [Pocket](http://getpocket.com)
 - [Flickr](http://flickr.com)
+
+<br/>
+
+## Books
+
+<script src="https://www.goodreads.com/review/grid_widget/41689506.Joshua's%20bookshelf:%20read?cover_size=medium&hide_link=true&hide_title=true&num_books=200&order=d&shelf=read&sort=date_read&widget_id=1427761541" type="text/javascript" charset="utf-8"></script>

@@ -1,20 +1,18 @@
 ---
 layout: page
-title: 'Things'
-permalink: '/things/'
+title: 'Things I Own'
+permalink: '/self/things/'
 ---
 
 <div class="faves" markdown="1">
 
-# Things I Own
-
-_Last updated: March 31st, 2015._
+_Last updated: June 16th, 2015._
 
 <br/>
 
 I maintain this list to be more conscious and appreciative of what I own, and reduce and optimize my possessions to only what I really need and frequently use.
 
-i have excluded pieces of furniture, books, eatables, and cables for brevity.
+I have excluded pieces of furniture, books, eatables, and cables for brevity.
 
 <br/>
 
@@ -31,21 +29,21 @@ i have excluded pieces of furniture, books, eatables, and cables for brevity.
 11. SJCam SJ4000 Action Camera
 12. Arduino Uno
 13. Raspberry Pi Model B
-14. Eveready Desk Lamp
 15. Vox Mini 3 Amplifier
 16. Vox Stomplab IIG
 17. Microscope
 18. 10000mAh Power Bank
+19. USB Ionizer
 19. Nike CTR360 Football Boots
 20. Nike Shoes
-21. Flip flops
+21. Slippers
+21. Swimming goggles
 22. Casio AE-1000w 3198 watch
 23. White t-shirt
 24. Red t-shirt
 25. Blue t-shirt
 26. Orange t-shirt
 27. Grey t-shirt
-28. Green v-neck t-shirt
 29. White collared t-shirt
 30. Yellow collared t-shirt
 31. Purple collared t-shirt
@@ -60,7 +58,6 @@ i have excluded pieces of furniture, books, eatables, and cables for brevity.
 40. Blue hoodie
 41. Blue sweater
 42. Grey sweater
-43. Lab coat
 44. Dark blue jeans
 45. Blue shirt
 46. Grey formal pants
@@ -75,10 +72,7 @@ i have excluded pieces of furniture, books, eatables, and cables for brevity.
 55. Stagg acoustic guitar
 56. Craftsman electric guitar
 57. Capo
-57. Football
-58. Football
 59. Targus Stylus
-60. Whiteboard
 61. Pen and pencil collection
 62. Book collection
 63. Coin collection

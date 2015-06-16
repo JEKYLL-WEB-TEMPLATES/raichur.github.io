@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Beliefs and Values'
-permalink: '/beliefs/'
+permalink: '/self/beliefs/'
 ---
 
 ## Index

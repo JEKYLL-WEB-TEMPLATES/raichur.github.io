@@ -201,17 +201,17 @@
   margin: 0;
   padding: 0;
   line-height: 0;
-  -webkit-column-count: 11;
+  -webkit-column-count: 7;
   -webkit-column-gap:   0px;
-  -moz-column-count:    11;
+  -moz-column-count:    7;
   -moz-column-gap:      0px;
-  column-count:         11;
+  column-count:         7;
   column-gap:           0px;
 }
 
 .gr_grid_book_container {
-  padding: 0px 0px;
-  margin: 0;
+  padding: 0;
+  margin: 5px;
   overflow: hidden;
   width: 100% !important;
   height: auto !important;
@@ -224,52 +224,6 @@
     padding: 0 !important;
   }
 }
-
-#gr_challenge_3082 {
-  #challenge {
-    margin-left: 25%;
-    margin-right: 25%;
-    font-size: .9em;
-    color: $grey-color;
-  }
-  #gr_challenge_progress_body_3082 {
-    top: 60px;
-    width: 100%;
-    font-family: $base-font-family !important;
-  }
-  h3 {
-    display: none !important;
-  }
-  a[href="https://www.goodreads.com/user_challenges/2831459?utm_medium=api&utm_source=challenge_widget&utm_campaign="] {
-    display: none !important;
-  }
-  margin-top: -80px;
-  div {
-    div:nth-child(3) {
-      margin-left: 25%;
-      margin-right: 25%;
-      margin-bottom: 15px;
-      font-size: 1.3em !important;
-      line-height: 1.2em;
-    }
-    div:nth-child(4) {
-      width: 100% !important;
-      margin: 0 !important;
-      float: left;
-      border: none !important;
-      height: 10px !important;
-      overflow: hidden;
-      background: none !important;
-      div {
-        background-color: $brand-color !important;
-      }
-    }
-  }
-  .challengePic {
-    display: none !important;
-  }
-}
-
 
 .title {
   height: 100px;
@@ -619,23 +573,6 @@ nav {
 
 // Media Queries
 @media screen and (max-width: 1150px) {
-  #gr_challenge_3082 {
-    div {
-      div:nth-child(3) {
-        margin-left: 8% !important;
-        margin-right: 8% !important;
-        font-size: 1em !important;
-        line-height: 1.2em;
-      }
-    }
-  }
-  #challenge {
-    margin-left: 8% !important;
-    margin-right: 8% !important;
-  }
-  #gr_challenge_3082 {
-    margin-top: 0 !important;
-  }
   .home {
     header {
       h2 {
@@ -656,19 +593,19 @@ nav {
     padding: 0;
     line-height: 0;
     -webkit-column-count: 7;
-    -webkit-column-gap:   0px;
+    -webkit-column-gap:   10px;
     -moz-column-count:    7;
-    -moz-column-gap:      0px;
+    -moz-column-gap:      10px;
     column-count:         7;
-    column-gap:           0px;
+    column-gap:           10px;
   }
   .light {
     -webkit-column-count: 4;
-    -webkit-column-gap:   0px;
+    -webkit-column-gap:   10px;
     -moz-column-count:    5;
-    -moz-column-gap:      0px;
+    -moz-column-gap:      10px;
     column-count:         5;
-    column-gap:           0px;
+    column-gap:           10px;
   }
   .pixels li {
     width: calc(100%/5);
@@ -711,11 +648,11 @@ nav {
     padding: 0;
     line-height: 0;
     -webkit-column-count: 4;
-    -webkit-column-gap:   0px;
+    -webkit-column-gap:   10px;
     -moz-column-count:    4;
-    -moz-column-gap:      0px;
+    -moz-column-gap:      10px;
     column-count:         4;
-    column-gap:           0px;
+    column-gap:           10px;
   }
   .home h3 {
     display: none;
@@ -744,11 +681,11 @@ nav {
   }
   .light {
     -webkit-column-count: 2;
-    -webkit-column-gap:   0px;
+    -webkit-column-gap:   10px;
     -moz-column-count:    5;
-    -moz-column-gap:      0px;
+    -moz-column-gap:      10px;
     column-count:         5;
-    column-gap:           0px;
+    column-gap:           10px;
   }
   #list {
     h2 {
