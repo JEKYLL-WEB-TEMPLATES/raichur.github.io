@@ -1,5 +1,4 @@
 ---
 title: "Drop"
-img_dir: "/drop/"
-img_large: "/drop/drop.jpg"
+img_dir: "drop"
 ---

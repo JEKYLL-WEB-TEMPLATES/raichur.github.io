@@ -7,7 +7,7 @@ permalink: '/sketch/'
 <ul class="pixels">
   {% for image in site.sketch %}
   <li>
-    <a class="lightbox" href="/resources/sketches{{ image.img_large}}"><img src="/resources/sketches{{ image.img_dir }}thumb.png"></a>
+    <a class="lightbox" href="/resources/sketches/{{ image.img_dir }}/{{ image.img_dir }}.jpg"><img src="/resources/sketches/{{ image.img_dir }}/thumb.png"></a>
   </li>
   {% endfor %}
 </ul>
