@@ -1,0 +1,5 @@
+---
+title: "Leopard"
+img_dir: "/leopard/"
+img_large: "/leopard/leopard.jpg"
+---
