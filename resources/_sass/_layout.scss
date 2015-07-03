@@ -149,6 +149,9 @@
     -webkit-animation: fadeInUp .3s;
     animation: fadeInUp .3s;
     margin-bottom: 40px;
+    p {
+      line-height: 1em;
+    }
   }
   article {
     animation-delay: 1s;
