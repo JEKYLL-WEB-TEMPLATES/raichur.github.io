@@ -41,6 +41,8 @@ permalink: '/favorites/'
 - [Numberphile](https://www.youtube.com/user/numberphile)
 - [Casey Neistat](https://www.youtube.com/user/caseyneistat)
 - [FunForLouis](https://www.youtube.com/user/funforlouis)
+- [JacksGap](https://www.youtube.com/user/JacksGap)
+- [Mr. Ben Brown](https://www.youtube.com/user/benbrown100)
 - [UReddit](http://ureddit.com/)
 
 <br/>
