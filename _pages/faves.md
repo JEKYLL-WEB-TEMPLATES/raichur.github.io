@@ -81,6 +81,10 @@ permalink: '/favorites/'
 - [SelfControl](https://selfcontrolapp.com/)
 - [Pocket](http://getpocket.com)
 - [Flickr](http://flickr.com)
+- [Cocktail](http://www.maintain.se/cocktail/)
+- [Moom](http://manytricks.com/moom/)
+- [Alfred](http://alfredapp.com)
+- [iStat Menus](http://bjango.com/mac/istatmenus/)
 
 <br/>
 
