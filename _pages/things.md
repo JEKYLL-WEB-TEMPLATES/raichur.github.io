@@ -1,6 +1,7 @@
 ---
 layout: page
 title: 'Things I Own'
+is_page: true
 permalink: '/self/things/'
 ---
 
