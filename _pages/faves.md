@@ -15,7 +15,9 @@ permalink: '/favorites/'
 - [WIRED](http://www.wired.com/)
 - [ReadWrite](http://readwrite.com/)
 - [Ars Technica](http://arstechnica.com/)
-
+- [The Setup](https://usesthis.com/)
+- [XKCD](http://xkcd.com)
+- [Ray Wenderlich](http://www.raywenderlich.com/)
 <br/>
 
 ## Courses and tutorials
@@ -59,6 +61,9 @@ permalink: '/favorites/'
 - [TEDTalks](https://www.ted.com/talks)
 - [Fw:Thinking](https://itunes.apple.com/us/podcast/fw-thinking/id604177167?mt=2)
 - [TechStuff](https://itunes.apple.com/us/podcast/techstuff/id282795787?mt=2)
+- [Developer Tea](https://itunes.apple.com/us/podcast/developer-tea/id955596067?mt=2)
+- [Design Details](https://itunes.apple.com/us/podcast/design-details/id947191070)
+
 
 <br/>
 
