@@ -37,6 +37,11 @@ body {
 b, strong {
   font-weight: 600;
 }
+blockquote p {
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+}
+
 hr {
   outline: 0;
   margin-top: 50px;
