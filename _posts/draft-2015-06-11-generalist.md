@@ -4,7 +4,7 @@ title: "Generalist"
 subtitle: 'Bring back the polymath'
 ---
 
-Being my curious self, I've dabbled in learning many skills over the last couple of years.
+Being my curious self, I've dabbled in learning many skills over the last couple of years. 
 
 ## Against “Jack of all trades, master of none”
 
@@ -16,6 +16,7 @@ As soon as you stop challenging yourself to grow, you stop enjoying life.
 
 - **You can enjoy life more**<br/>
 The generalist enjoys the pursuit of excellence, and can find otherwise unseen interconnectedness by being a polymath.
+
 
 ## Tips for learning things
 
