@@ -179,10 +179,12 @@
       margin-bottom: 0px;
     }
     h1 {
-      font-size: 2.5em;
+      font-size: 2.2em;
+      line-height: 1em;
     }
     h2 {
-      font-size: 1.4em;
+      line-height: 1em;
+	    font-size: 1.4em;
     }
     .success {
       color: #259b24;
@@ -575,6 +577,10 @@ nav {
 
 // Media Queries
 @media screen and (max-width: 1150px) {
+
+  header h3 {
+	  margin-top: 0;
+  }
   .home {
     header {
       h2 {
@@ -585,9 +591,16 @@ nav {
     }
   }
   .post {
+	 article h1 {
+		font-size: 1.5em !important;
+	  }
     .post-meta {
       font-size: 0.8em;
     }
+  }
+  .large {
+	  font-size: 2em !important;
+	  line-height: 1.5em;
   }
   .gr_grid_container {
     width: 100% !important;
@@ -699,7 +712,7 @@ nav {
     }
   }
   .large {
-    font-size: 2.5rem;
+    font-size: 2.5em;
     line-height: 2.5rem;
   }
   h2 {
