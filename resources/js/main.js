@@ -31,7 +31,7 @@ function getGithubData(){
         url = repositories[index].html_url;
         if(repositories[index].language) {
           language = repositories[index].language;
-          lang_text = '<span style="color: ' + repo_colors[language] + '">' + language + '</span> ';
+          lang_text = '<span data-color="' + language + '" style="color: ' + repo_colors[language] + '">' + language + '</span> ';
         } else {
           language = '';
           lang_text = '';
