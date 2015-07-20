@@ -17,7 +17,7 @@ permalink: '/favorites/'
 - [Ars Technica](http://arstechnica.com/)
 - [The Setup](https://usesthis.com/)
 - [XKCD](http://xkcd.com)
-- [Ray Wenderlich](http://www.raywenderlich.com/)
+- [Ray Wenderlich Tutorials](http://www.raywenderlich.com/)
 <br/>
 
 ## Courses and tutorials

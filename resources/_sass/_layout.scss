@@ -175,12 +175,12 @@
       padding-top: 20px;
     }
     h3 {
-      margin-top: 30px;
-      margin-bottom: 5px !important;
+      margin-top: 10px;
+      margin-bottom: 10px;
     }
     h2 {
-      margin-top: 30px;
-      margin-bottom: 0px;
+      margin-top: 25px;
+      margin-bottom: 10px;
     }
     h1 {
       font-size: 2.2em;
@@ -256,8 +256,11 @@
 		opacity: 1 !important;
 	}
 }
-#list p {
-	padding-top: 10px;
+.code p {
+	padding-top: 10px !important;
+}
+.code .post-meta {
+	padding-top: 20px;
 }
 .post {
   margin-bottom: 40px;
@@ -265,7 +268,6 @@
   header h3 {
     line-height: 1.2em;
     font-size: 1em;
-    margin-top: 10px;
   }
 }
 .loader {
@@ -339,7 +341,6 @@ input[type="text"] {
 }
 #code p {
   line-height: 1.2em;
-  font-size: .9em;
 }
 .codeweb {
   float: right;
@@ -375,7 +376,7 @@ input[type="text"] {
     margin-bottom: -5px !important;
   }
   li {
-    padding-top: 10px;
+    padding-top: 15px;
     padding-bottom: 10px;
     list-style-type: none;
   }
@@ -616,7 +617,7 @@ nav {
   .post {
 	 article h1 {
 		font-size: 2em !important;
-		
+
 	  }
     .post-meta {
       font-size: 0.8em;
@@ -624,7 +625,8 @@ nav {
   }
   .large {
 	  font-size: 2em !important;
-	  line-height: 1.5em;
+	  line-height: 1.2em !important;
+	  padding-bottom: 5px;
   }
   .gr_grid_container {
     width: 100% !important;
