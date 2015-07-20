@@ -421,7 +421,9 @@ footer {
   text-align: center;
 }
 
-
+.language span[data-color="JavaScript"] {
+  color: darken(#f1e05a, 30%) !important;
+}
 .nav-hide {
   transition: all ease .15s;
   top: -60px;
