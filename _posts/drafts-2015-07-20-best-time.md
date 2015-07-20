@@ -5,7 +5,7 @@ subtitle: "Exploring the ideal hours to perform activities"
 tags: ['life']
 ---
 
-Although I've given the time of day for each of the following activities, it's important to note that these are for the average person. For example, if you sleep polyphasically and wake up at 2 AM (like me), **you are not considered average**.
+Although I've given the time of day for each of the following activities, it's important to note that these are for the average person. For example, if you sleep polyphasically and wake up at 2 AM (like me), **you are not considered average**. Also, the reliability of some of these studies is questionable, so take it with a grain of salt.
 
 <br/>
 
