@@ -7,21 +7,26 @@ is_page: true
   <header>
     <h1 class="large"><span id="greeting">Hi</span>.</h1>
     <h2 style="font-weight: 500;">I'm Josh, an insatiable learner.</h2>
-    <p>I'm a developer, designer, and student.</p>
+    <p id="me_wrapper">I'm <span id="me">a developer</span>.</p>
     <p>I <span class="pulse">❤</span> JavaScript and RoR.</p>
     <p>Want to talk? Catch me on <a href="http://twitter.com/JoshuaRaichur">Twitter</a> or write me an <a href="mailto:hello@joshuaraichur.com">email</a>.</p>
   </header>
-  <ul id="list">
-    {% for post in site.posts %}
-    {% if post.type == "notes" %}
-    <li class="{{ post.type }}">
-	    <p class="post-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_xmlschema }}</time> • {% include read_time.html %} • <span>{{ post.tags | join: ', ' }}</span></p>
-      <h2>
-        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </h2>
-      <p>{{ post.subtitle }}</p>
-    </li>
-    {% endif %}
-    {% endfor %}
-  </ul>
+    <div id="post_list">
+
+      <input class="search" placeholder="Search post title or tag" type="text"/>
+      <ul id="list" class="list">
+        {% for post in site.posts %}
+        {% if post.type == "notes" %}
+        <li>
+    	    <p class="post-meta"><time class="date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_xmlschema }}</time> • <span class="post_read_time">{% include read_time.html %}</span> • <span class="tags capitalize">{{ post.tags | join: ', ' }}</span></p>
+          <a href="{{ post.url | prepend: site.baseurl }}">
+            <h2 class="post_title">{{ post.title }}</h2>
+          </a>
+          <p class="post_sub">{{ post.subtitle }}</p>
+        </li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+
+    </div>
 </div>

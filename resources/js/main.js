@@ -24,6 +24,7 @@ function getGithubData(){
 
     function outputPageContent() {
       var html = [], date, title, url, language = '', description = false, website = false, lang_text = '';
+      $('.loader').fadeOut(300);
       $.each(repositories, function(index) {
 
         date = repositories[index].updated_at;
@@ -43,8 +44,7 @@ function getGithubData(){
         html.push('<a href="' + url + '"><h2 class="name">' + title + '</h2></a>');
         if(description) { html.push('<p><span class="language">' + lang_text + '</span><span class="description">' + description + ' </span></p>'); }
       });
-      $('.loader').hide();
-      $('.code').append(html.join(''));
+      $('.code').append(html.join('')).delay(500).fadeTo(500, 1);
     }
   });
 }
@@ -65,6 +65,13 @@ function getFlickrPhotos(){
 
 // Getting the data from services when the page loads
 function start(){
+  if($('#post_list').length) {
+    var postOptions = {
+      valueNames: [ 'post_sub', 'post_title', 'tags', 'post_read_time']
+    };
+
+    var postList = new List('post_list', postOptions);
+  }
   if($('.code').length) {
     getGithubData();
     $(document).ajaxComplete(function(){
@@ -95,7 +102,13 @@ $(function(){
       $(document).delegate('a[href^="/"],a[href^="'+siteUrl+'"]', "click", function(e) {
         if(!e.hasClass('codeweb')){
           e.preventDefault();
-          History.pushState({}, "", this.pathname);
+          if(e.hasClass('nav_item')){
+            openCloseNav();
+            History.pushState({}, "", this.pathname);
+          } else {
+            History.pushState({}, "", this.pathname);
+          }
+
         }
       });
 
@@ -205,6 +218,17 @@ $('#bg-blur').click(function(event) {
 shortcut.add("Esc",function() {
   openCloseNav();
 });
-shortcut.add("m",function() {
-  openCloseNav();
-});
+
+
+// Text switcher
+
+var me_count = 1;
+
+setInterval(function() {
+  var me = ["a developer", "a reader", "a designer", "a thinker", "a maker"];
+  $('#me').text(me[me_count]);
+  me_count++;
+  if(me_count == me.length) {
+    me_count = 0;
+  }
+}, 1000);

@@ -141,14 +141,14 @@
   display: none !important;
 }
 .wrapper {
-  -webkit-animation: fadeInUp .4s;
-  animation: fadeInUp .4s;
-  margin-bottom: 50px;
+  -webkit-animation: fadeInUp .2s;
+  animation: fadeInUp .2s;
+  margin-bottom: 30px;
 
   header {
     -webkit-animation: fadeInUp .3s;
     animation: fadeInUp .3s;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     p {
       line-height: 1em;
       margin-top: 15px;
@@ -163,8 +163,8 @@
   }
   article {
     animation-delay: 1s;
-    -webkit-animation: fadeInUp .4s;
-    animation: fadeInUp .4s;
+    -webkit-animation: fadeInUp .2s;
+    animation: fadeInUp .2s;
     margin-bottom: 80px;
     font-family: $base-font-family;
     font-size: 1.4rem;
@@ -250,13 +250,13 @@
 	  margin-top: 30px;
     margin-bottom: 0;
     color: $grey-color;
-    span {
+    .capitalize {
 	text-transform: capitalize;
     }
   }
 
 .pulse {
-  color: #FF5252;
+  color: $brand-color;
   -webkit-animation-name: 'pulse';
   -webkit-animation-duration: 1700ms;
   -webkit-transform-origin: 70% 70%;
@@ -305,6 +305,9 @@
 	.post-meta {
 		opacity: 1 !important;
 	}
+}
+.code {
+  opacity: 0;
 }
 .code p {
 	padding-top: 10px !important;
@@ -383,7 +386,7 @@ input[type="text"] {
   opacity: .8;
   width: 100%;
   margin-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   &:focus {
     opacity: 1;
     border-bottom: 2px solid $grey-color;
@@ -404,8 +407,8 @@ input[type="text"] {
   }
 }
 #list {
-  -webkit-animation: fadeInUp .4s;
-  animation: fadeInUp .4s;
+  -webkit-animation: fadeInUp .3s;
+  animation: fadeInUp .3s;
   .post-meta {
     &:first-letter {
       text-transform: capitalize;
@@ -430,6 +433,9 @@ input[type="text"] {
     padding-bottom: 10px;
     list-style-type: none;
   }
+  li:first-child {
+    padding-top: 5px;
+  }
 }
 #code #list h2 {
   margin-bottom: 5px;
@@ -439,8 +445,8 @@ input[type="text"] {
 .pixels {
   margin-top: -40px;
   animation-delay: 1s;
-  -webkit-animation: fadeInUp .4s;
-  animation: fadeInUp .4s;
+  -webkit-animation: fadeInUp .3s;
+  animation: fadeInUp .3s;
   z-index: -2;
   li {
     z-index: -2;
@@ -574,7 +580,7 @@ nav {
         color: $grey-color-dark;
         background: $grey-color-light;
       }
-      .active {
+      #active {
         font-weight: 700;
       }
     }
