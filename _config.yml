@@ -22,12 +22,18 @@ defaults:
    path: "" # an empty string here means all files in the project
   values:
    layout: "default"
+   type: "notes"
  -
   scope:
    path: "_posts"
   values:
    layout: "post"
    type: "notes"
+ -
+  scope:
+   path: "_drafts"
+  values:
+   layout: "post"
 
 # Collections
 collections:

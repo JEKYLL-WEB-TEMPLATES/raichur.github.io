@@ -2,7 +2,7 @@
 layout: post
 title: "Markov Chains"
 subtitle: "Understanding the beautiful stochastic process and its applications"
-tags: ['statistics', 'development']
+tags: ['math', 'dev']
 ---
 
 # History
@@ -51,14 +51,14 @@ A transition matrix is a matrix used to describe the transitions of a Markov cha
 
 <img src="/resources/post-images/markov/transition_matrix.png" alt="">
 
-Rows of the matrix represent inputs wile columns represent outputs. In a transition matrix, each entry is a nonnegative real number and every row sums to 1. 
+Rows of the matrix represent inputs wile columns represent outputs. In a transition matrix, each entry is a nonnegative real number and every row sums to 1.
 
 You can create a transition matrix out of the Markov chains Each row must sum to 1 by convention, but each column does not necessarily have to sum to 1.
 
 
 <br/>
 
-# Applications 
+# Applications
 
 Markov chains are used mainly in two different ways[^1]:
 

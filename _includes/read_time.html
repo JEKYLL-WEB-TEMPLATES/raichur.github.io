@@ -9,6 +9,17 @@
 
 {{ reading_time }}
 
+{% elsif page.path contains '_drafts' %}
+
+{% assign words = content | number_of_words %}
+{% if words < 270 %}
+{% assign reading_time = "1 min read" %}
+{% else %}
+{% assign reading_time = words | divided_by:180 | append:" min read" %}
+{% endif %}
+
+{{ reading_time }}
+
 {% else %}
 
 {% assign words = post.content | number_of_words %}
