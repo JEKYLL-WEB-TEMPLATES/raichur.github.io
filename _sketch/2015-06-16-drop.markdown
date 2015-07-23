@@ -1,4 +1,0 @@
----
-title: "Drop"
-img_dir: "drop"
----
