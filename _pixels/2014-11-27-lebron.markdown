@@ -1,6 +1,6 @@
 ---
 title: "LeBron James"
 
-img_dir: "/lebron/"
+img_dir: "/lebron/thumb.png"
 img_large: "/lebron/01.jpg"
 ---

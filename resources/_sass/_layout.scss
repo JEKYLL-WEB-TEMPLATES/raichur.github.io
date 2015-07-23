@@ -20,6 +20,10 @@
   p {
     animation-delay: .5s;
   }
+
+}
+#me {
+  font-style: italic;
 }
 .player {
   overflow: hidden;
@@ -180,7 +184,8 @@
       font-style: italic;
     }
     p {
-      padding-top: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
     }
     h3 {
       margin-top: 10px;
@@ -191,6 +196,8 @@
       margin-bottom: 10px;
     }
     h1 {
+      margin-top: 25px;
+      margin-bottom: 10px;
       font-size: 2.2em;
       line-height: 1em;
     }
@@ -426,6 +433,7 @@ input[type="text"] {
     margin-top: 0px;
   }
   h2.name {
+    margin-top: -10px;
     margin-bottom: -5px !important;
   }
   li {
@@ -561,12 +569,21 @@ nav {
     z-index: 10;
     padding-top: 60px;
     margin-bottom: 0;
-    li{
+    li:nth-child(2n) {
+      padding-right: 25%;
+      width: 25%;
+      padding-left: 0;
+      text-align: right;
+    }
+    li {
+      padding-left: 25%;
+      width: 25%;
+      float: left;
       list-style: none;
       transition: all 0.2s;
       border-top: 1px solid $grey-color-light;
       a {
-        padding: 0.15em 0.5em 0.15em 0.5em;
+        padding: 0.15em 0em;
         display: inline-block;
         text-decoration: none;
         font-size: 1.1em;
@@ -574,7 +591,6 @@ nav {
         font-weight: 500;
         height: 100%;
         color: $text-color;
-        padding-left: 25%;
       }
       &:hover {
         color: $grey-color-dark;
@@ -701,6 +717,12 @@ nav {
     -moz-column-gap:      10px;
     column-count:         7;
     column-gap:           10px;
+  }
+  nav ul li {
+    width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    text-align: left !important;
   }
   .light {
     -webkit-column-count: 4;
@@ -829,10 +851,6 @@ nav {
     }
     p {
       display: none;
-    }
-    nav ul li {
-      font-size: 18px;
-      margin-left: 8px;
     }
   }
   article, .faves {

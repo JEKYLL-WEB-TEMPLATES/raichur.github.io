@@ -1,6 +1,0 @@
----
-title: "Icy Beats"
-tags: poster
-img_dir: "/twist/"
-img_large: "/twist/01.jpg"
----

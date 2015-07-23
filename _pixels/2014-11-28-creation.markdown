@@ -1,6 +1,6 @@
 ---
 title: "Creation"
 tags: poster
-img_dir: "/creation/"
+img_dir: "/creation/thumb.png"
 img_large: "/creation/01.jpg"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Pirillo"
 
-img_dir: "/pirillo/"
+img_dir: "/pirillo/thumb.png"
 img_large: "/pirillo/01.jpg"
 ---

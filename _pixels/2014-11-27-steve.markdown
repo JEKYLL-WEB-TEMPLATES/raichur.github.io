@@ -1,6 +1,6 @@
 ---
 title: "Steve Jobs"
 
-img_dir: "/steve_jobs/"
+img_dir: "/steve_jobs/thumb.png"
 img_large: "/steve_jobs/01.jpg"
 ---

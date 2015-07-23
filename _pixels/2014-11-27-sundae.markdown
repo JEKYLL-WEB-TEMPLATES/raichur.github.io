@@ -1,6 +1,6 @@
 ---
 title: "Sundae"
 
-img_dir: "/sundae/"
+img_dir: "/sundae/thumb.png"
 img_large: "/sundae/01.jpg"
 ---

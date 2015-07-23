@@ -1,6 +1,6 @@
 ---
 title: "Tiger"
 
-img_dir: "/tiger/"
+img_dir: "/tiger/thumb.png"
 img_large: "/tiger/01.jpg"
 ---

@@ -8,7 +8,7 @@ permalink: '/pixels/'
   {% assign images = site.pixels | sort: 'date' | reverse %}
   {% for image in images %}
   <li>
-    <a class="lightbox" href="/resources/img{{ image.img_large}}"><img src="/resources/img{{ image.img_dir }}thumb.png"></a>
+    <a class="lightbox" href="/resources/img{{ image.img_large}}"><img src="/resources/img{{ image.img_dir }}"></a>
   </li>
   {% endfor %}
 </ul>

@@ -1,0 +1,5 @@
+---
+title: "Generative Art Experiment 1"
+img_dir: "/gae1/thumb.gif"
+img_large: "/gae1/1.gif"
+---

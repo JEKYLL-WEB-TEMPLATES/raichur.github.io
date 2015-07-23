@@ -1,7 +1,7 @@
 ---
 title: "Will.i.am"
 
-img_dir: "/william/"
+img_dir: "/william/thumb.png"
 img_large: "/william/01.jpg"
 ---
 

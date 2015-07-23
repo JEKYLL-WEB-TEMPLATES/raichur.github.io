@@ -1,6 +1,6 @@
 ---
 title: "Skrillex"
 
-img_dir: "/skrillex/"
+img_dir: "/skrillex/thumb.png"
 img_large: "/skrillex/01.jpg"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "PSY"
 
-img_dir: "/psy/"
+img_dir: "/psy/thumb.png"
 img_large: "/psy/01.jpg"
 ---

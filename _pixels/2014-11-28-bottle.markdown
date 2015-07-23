@@ -1,6 +1,6 @@
 ---
 title: "Message"
 tags: poster
-img_dir: "/bottle/"
+img_dir: "/bottle/thumb.png"
 img_large: "/bottle/01.jpg"
 ---

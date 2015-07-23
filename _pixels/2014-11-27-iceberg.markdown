@@ -1,5 +1,5 @@
 ---
 title: "Iceberg"
-img_dir: "/iceberg/"
+img_dir: "/iceberg/thumb.png"
 img_large: "/iceberg/01.jpg"
 ---

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>createMarkedFile</key>
+	<false/>
+	<key>sheetClusters</key>
+	<array>
+		<array>
+			<string>2014-12-08-matter.md</string>
+		</array>
+		<array>
+			<string>2014-12-14-grunt.md</string>
+		</array>
+		<array>
+			<string>2014-12-20-2014.md</string>
+		</array>
+		<array>
+			<string>2015-01-03-habits-2015.md</string>
+		</array>
+		<array>
+			<string>2015-06-07-sticky-habits.md</string>
+		</array>
+		<array>
+			<string>2015-06-09-infinity.md</string>
+		</array>
+		<array>
+			<string>2015-07-14-terminal.md</string>
+		</array>
+		<array>
+			<string>2015-07-15-markov-chains.md</string>
+		</array>
+		<array>
+			<string>2015-07-20-focus.md</string>
+		</array>
+	</array>
+</dict>
+</plist>

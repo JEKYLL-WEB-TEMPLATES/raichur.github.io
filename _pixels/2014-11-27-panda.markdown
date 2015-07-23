@@ -1,6 +1,6 @@
 ---
 title: "Panda"
 
-img_dir: "/panda/"
+img_dir: "/panda/thumb.png"
 img_large: "/panda/01.jpg"
 ---
