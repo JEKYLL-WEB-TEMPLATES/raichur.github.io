@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Optimizing OmniFocus
-subtitle: Tips to be more productive with OmniFocus
+subtitle: GTD with OmniFocus
 tags: [productivity, tech]
 ---
 
 I recently switched from [Wunderlist][1] to [OmniFocus][2] as my task manager. Wunderlist was too simplistic for my needs; it was unable to do something simple like _repeat a task every Thursday_ which I thought was ridiculous. OmniFocus, on the other hand, is much more powerful, flexible, and customizable, but still maintains a clean design. I love continuously improving my tools and methods, so I quickly switched over.
 
-# GT-what?
+# GTD + OmniFocus = <span class="pulse">&#9829;</span>
 GTD, or Getting Things Done, is a time management methodology first coined by [David Allen][3]. GTD is a method for organizing your actions in a way that helps you achieve your long term goals. He thought about what gets us motivated to do the work we have to do. He realized that there were two key elements that made a task list motivating: it needs to be **short** and **relevant**. Short as in the task list must be _between 4 to 10 tasks_, and relevant as in the tasks must be _context and time specific_.
 
 How I use the GTD methodology:
