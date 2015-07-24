@@ -58,7 +58,7 @@ Here are some tips for using OmniFocus more effectively for GTD:
 
 	Now, all you need to say is _“Siri, Remember to …”_ and it will automatically be captured in your OmniFocus Inbox.
 
-7. **Use AppleScript for scripting with OmniFocus:** AppleScript is a programming language that can be used to manipulate data and interface elements of supported applications on OS X. You can do so much with AppleScript. Here’s an example of launching a view (Today is a custom Perspective I made):
+7. **Use AppleScript for scripting with OmniFocus:** AppleScript is a programming language that can be used to manipulate data and interface elements of supported applications on OS X. AppleScript becomes even more useful with a quick launcher like [Alfred](http://www.alfredapp.com/) . Here’s an example of launching a view (Today is a custom Perspective I made):
 
 <br/>
 
