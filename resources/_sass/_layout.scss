@@ -320,8 +320,10 @@
 }
 .code {
   opacity: 0;
+  font-family: $base-font-family !important;
 }
 .code p {
+  font-family: $base-font-family !important;
 	padding-top: 10px !important;
 }
 .code .post-meta {
