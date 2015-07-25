@@ -12,34 +12,33 @@ GTD, or Getting Things Done, is a time management methodology first coined by [D
 
 How I use the GTD methodology:
 
-### 1. What are all the things I need to do?
-
+## What are all the things I need to do?
 Make it a habit to put in _everything_ on your mind into OmniFocus. Stuff that you need to get done now, stuff part of small projects, stuff part of big projects, and even long-term goals. Get it out of your head, and into your computer. They’re better at remembering things, and it will help you clear your mind.
 
-### 2. Is it actionable?
-
+## Is it actionable?
 Once or twice a day, go through each task in your inbox and ask yourself if it is actionable.  
 
 - **NO:** *Eliminate* it if it is unnecessary, *file* it away if you need to archive it for future reference, or *incubate* it for some undefined time in the future.  
 
 - **YES:** If the task is complex and needs to be split up into smaller actionable tasks, create a separate project list for it with the smaller tasks. Otherwise, assign the task to a Project or a Single Action List of similar actions.
 
-### 3. What’s the next action?
-
+## What’s the next action?
 Look at your task list, and determine what is the next action.  
 
 - **If it takes less than 2 minutes**: Do it **now** and get it over with.
+
 - **If it takes more than 2 minutes**: Give the task a Context (more below). If it is time-specific, add it to your calendar. If it cannot be done now, _Defer_ it to sometime in the future. There should only be up to 3 critically important tasks per day.
 
-### 4. Weekly Review
-
+## Weekly Review
 Once a week, check how things are going. OmniFocus makes this much easier with the Review section. Do another brain dump during this time as well.
+
+<br/>
 
 # OmniFocus Tips
 
 Here are some tips for using OmniFocus more effectively for GTD:
 
-1. **Use the keyboard shortcuts:** OmniFocus has keyboard shortcuts which can help you save time. Become familiar with them. Use `^⌥Space` for Quick Entry, and set up a Clippings shortcut (mine is `⌘⌥Space`). These keyboard shortcuts will help you more quickly get things out of your head and into your computer.
+1. **Use the keyboard shortcuts:** OmniFocus has keyboard shortcuts which can help you save time. Become familiar with the custom key commands. Use relative dates and times when entering defer and due dates: `2d`, `1h`, `10a`, `-3w`, all expand to the dates and times we expect. Use `^⌥Space` for Quick Entry, and set up a Clippings shortcut (mine is `⌘⌥Space`). These keyboard shortcuts will help you more quickly get things out of your head and into your computer.
 
 2. **Use Contexts effectively:** Contexts allow you to categorize actions by person, tool, or place necessary to carry out that action. I use `@!`(least important), `@!!`(semi-important), and `@!!!`(very important) Contexts to prioritize tasks. If you use OmniFocus for iPhone, you can also create location-based contexts which are extremely helpful. Don’t create too many Contexts that you will never use, though.  
 
@@ -58,7 +57,8 @@ Here are some tips for using OmniFocus more effectively for GTD:
 
 	Now, all you need to say is _“Siri, Remember to …”_ and it will automatically be captured in your OmniFocus Inbox.
 
-7. **Use AppleScript for scripting with OmniFocus:** AppleScript is a programming language that can be used to manipulate data and interface elements of supported applications on OS X. AppleScript becomes even more useful with a quick launcher like [Alfred](http://www.alfredapp.com/) . Here’s an example of launching a view (Today is a custom Perspective I made):
+9. **Use TextExpander with OmniFocus:** [TextExpander](https://smilesoftware.com/TextExpander/index.html) snippets can be used with OmniFocus to save even more time typing.
+8. **Use AppleScript for scripting with OmniFocus:** AppleScript is a programming language that can be used to manipulate data and interface elements of supported applications on OS X. AppleScript becomes even more useful with a quick launcher like [Alfred](http://www.alfredapp.com/) . Here’s an example of launching a view (Today is a custom Perspective I made):
 
 <br/>
 
