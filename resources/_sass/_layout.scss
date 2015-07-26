@@ -708,7 +708,6 @@ nav {
   .post {
 	 article h1 {
 		font-size: 2em !important;
-
 	  }
     .post-meta {
       font-size: 0.8em;
@@ -870,8 +869,9 @@ nav {
     }
   }
   article, .faves {
-    p, a, blockquote, ul li {
+    p, a, blockquote, ul li, ol li, a, code {
       font-size: 0.9em !important;
+      line-height: 1.6em !important;
     }
   }
 }
