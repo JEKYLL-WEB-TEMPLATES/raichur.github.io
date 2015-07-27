@@ -9,6 +9,7 @@ permalink: '/favorites/'
 
 - [Brain Pickings](http://www.brainpickings.org)
 - [Farnam Street](http://www.farnamstreetblog.com)
+- [Study Hacks](http://calnewport.com/blog/)
 - [Zen Habits](http://zenhabits.net)
 - [Paul Graham's Essays](http://www.paulgraham.com/articles.html)
 - [The Great Discontent](http://thegreatdiscontent.com)
@@ -18,6 +19,7 @@ permalink: '/favorites/'
 - [The Setup](https://usesthis.com/)
 - [XKCD](http://xkcd.com)
 - [Ray Wenderlich Tutorials](http://www.raywenderlich.com/)
+- [Mike Bostock](http://bost.ocks.org/mike/)
 <br/>
 
 ## Courses and tutorials
@@ -65,7 +67,7 @@ permalink: '/favorites/'
 
 ## Apps and services
 
-- [Wunderlist](https://www.wunderlist.com/)
+- [OmniFocus](https://www.omnigroup.com/omnifocus)
 - [Evernote](http://evernote.com)
 - [Adobe Photoshop CC](http://www.adobe.com/products/photoshop.html)
 - [Anki](http://ankisrs.net/)
@@ -76,6 +78,8 @@ permalink: '/favorites/'
 - [iTerm](http://iterm2.com/)
 - [Atom](https://atom.io/)
 - [Mailbox](http://www.mailboxapp.com/)
+- [TextExpander](https://smilesoftware.com/TextExpander/index.html)
+- [Sip](https://itunes.apple.com/app/sip/id507257563?mt=12&ls=1)
 - [Ableton Live 9](https://www.ableton.com/)
 - [Xcode](https://developer.apple.com/xcode/)
 - [f.lux](https://justgetflux.com/)
