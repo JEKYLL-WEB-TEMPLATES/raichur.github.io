@@ -50,10 +50,10 @@ function getGithubData(){
 }
 
 function getFlickrPhotos(){
-  $.getJSON("https://api.flickr.com/services/rest/?&method=flickr.people.getPublicPhotos&api_key=70fdb0af0340abd95eaf4f0c3ab89e1c&user_id=97085003@N08&format=json&&per_page=2000&jsoncallback=?",
+  $.getJSON("https://api.flickr.com/services/rest/?&method=flickr.photosets.getPhotos&api_key=70fdb0af0340abd95eaf4f0c3ab89e1c&photoset_id=72157656042910469&user_id=97085003@N08&format=json&&per_page=2000&jsoncallback=?",
   null,
   function(data) {
-    $.each(data.photos.photo, function(i,item){
+    $.each(data.photoset.photo, function(i,item){
       $('<li><a class="lightbox" href="https://farm' + item.farm + ".staticflickr.com/" + item.server + "/" + item.id + "_" + item.secret + '_b.jpg">' + '<img src="https://farm' + item.farm + ".staticflickr.com/" + item.server + "/" + item.id + "_" + item.secret + '_q.jpg"></a></li>').appendTo("#photos");
     });
   });
