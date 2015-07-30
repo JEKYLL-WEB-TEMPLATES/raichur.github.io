@@ -626,6 +626,143 @@ nav {
   display: none;
   cursor: pointer;
 }
+.sound {
+  margin-top: -40px;
+  width: 100%;
+}
+figure#audioplayer {
+  overflow: hidden;
+  padding: .4rem;
+  margin: 0 auto;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+figure#audioplayer audio { width: 0; height: 0; }
+figure#audioplayer figcaption {
+  width: 21.5rem;
+  font-size: 0;
+  margin: .45rem;
+  float: left;
+}
+figure#audioplayer figcaption {
+  margin-bottom: -40px;
+}
+figure#audioplayer figcaption div {
+  color: $text-color;
+  padding: .8rem;
+  text-transform: uppercase;
+  font-size: .8rem;
+  display: inline-block;
+}
+#playback {
+  margin-left: -60px;
+}
+figure#audioplayer figcaption div span {
+  display: block;
+  font-size: 1.3rem;
+}
+div#album {
+  width: 100%;
+}
+div#time {
+  width: 7.55rem;
+}
+figure#audioplayer button {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  outline: 0;
+  background: $text-color;
+  color: $grey-color-light;
+  font-size: 1.1em;
+  padding-left: 13px;
+  padding-top: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all ease .3s;
+  &:hover {
+    background: $brand-color;
+  }
+  span {
+    font-size: 1.3em;
+    margin-left: -5px;
+    padding-top: 5px;
+  }
+}
+#playback {
+  clear: both;
+  margin-bottom: -15px;
+}
+div#fader {
+  display: inline-block;
+  margin-left: 1rem;
+  margin-top: -20px;
+}
+#playback progress {
+  margin-left: 1rem;
+  width: calc(100% - 5rem);
+  height: 14px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: $grey-color-dark;
+  border-radius: 10px;
+  margin-top: -40px;
+  border: none;
+  color: $brand-color;
+}
+progress::-webkit-progress-bar, progress::-moz-progress-bar, progress::progress-bar {
+  background: $brand-color;
+  border-radius: 10px;
+}
+progress::-webkit-progress-value { background: $brand-color; }
+progress::-moz-progress-bar {
+  background-color: $brand-color;
+  border-radius: 10px;
+}
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 18px 0;
+  width: 100%;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: $brand-color;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+input[type=range]::-webkit-slider-thumb {
+  height: 8.4px;
+  width: 16px;
+  cursor: pointer;
+  background: $text-color;
+  -webkit-appearance: none;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: darken($brand-color, 10%);
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: $brand-color;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+input[type=range]::-moz-range-thumb {
+  height: 8.4px;
+  width: 16px;
+  border-radius: 3px;
+  background: $text-color;
+  cursor: pointer;
+}
 
 .navToggle{
   @include navToggle(25px, 3px);

@@ -232,3 +232,72 @@ setInterval(function() {
     me_count = 0;
   }
 }, 1000);
+
+// Audio playlist (adapted from http://codepen.io/dudleystorey/pen/GEyzn)
+function player() {
+  if (audioTrack.paused) {
+	setText(this, "<span>◼</span>");
+	audioTrack.play();
+	} else {
+	setText(this,"▶");
+	audioTrack.pause();
+	}
+}
+
+function setText(el,text) {
+	el.innerHTML = text;
+}
+
+function finish() {
+		audioTrack.currentTime = 0;
+		setText(playButton,"▶");
+}
+
+function updatePlayhead() {
+	playhead.value = audioTrack.currentTime;
+	var s = parseInt(audioTrack.currentTime % 60);
+    var m = parseInt((audioTrack.currentTime / 60) % 60);
+    s = (s >= 10) ? s : "0" + s;
+    m = (m >= 10) ? m : "0" + m;
+    playbacktime.innerHTML = m + ':' + s ;
+
+}
+
+function muter() {
+	if (audioTrack.volume == 0) {
+		audioTrack.volume = restoreValue;
+		volumeSlider.value = restoreValue;
+	} else {
+		audioTrack.volume = 0;
+		restoreValue = volumeSlider.value;
+		volumeSlider.value = 0;
+	}
+}
+
+function setAttributes(el, attrs) {
+	for(var key in attrs){
+		el.setAttribute(key, attrs[key]);
+	}
+}
+
+var audioPlayer = document.getElementById("audioplayer"),
+fader = document.getElementById("fader"),
+playback = document.getElementById("playback"),
+audioTrack = document.getElementById("audiotrack"),
+playbackTime = document.getElementById("playbacktime"),
+playButton = document.createElement("button"),
+playhead = document.createElement("progress")
+volumeSlider = document.createElement("input");
+setText(playButton, "▶");
+setAttributes(volumeSlider, { "type": "range", "min": "0", "max": "1", "step": "any", "value": "1", "id": "volumeSlider" });
+var duration = audioTrack.duration;
+setAttributes(playhead, { "min": "0", "max": "100", "value": "0", "id": "playhead" });
+fader.appendChild(volumeSlider);
+playback.appendChild(playButton);
+playback.appendChild(playhead);
+audioTrack.removeAttribute("controls");
+playButton.addEventListener("click", player, false);
+volumeSlider.addEventListener("input", function(){ audioTrack.volume = volumeSlider.value; }, false);
+audioTrack.addEventListener('playing', function(){ playhead.max = audioTrack.duration; }, false);
+audioTrack.addEventListener('timeupdate', updatePlayhead, false);
+audioTrack.addEventListener('ended', finish, false);
