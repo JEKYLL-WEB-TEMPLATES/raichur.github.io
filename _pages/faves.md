@@ -62,6 +62,8 @@ permalink: '/favorites/'
 - [Developer Tea](https://itunes.apple.com/us/podcast/developer-tea/id955596067?mt=2)
 - [Design Details](https://itunes.apple.com/us/podcast/design-details/id947191070)
 - [Here's The Thing with Alec Baldwin](https://itunes.apple.com/us/podcast/heres-thing-alec-baldwin/id472939437?mt=2)
+- [Science Vs](https://itunes.apple.com/au/podcast/science-vs/id998250544?mt=2)
+- [Becoming Superhuman](http://www.becomingasuperhuman.com/)
 
 <br/>
 
