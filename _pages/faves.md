@@ -61,7 +61,7 @@ permalink: '/favorites/'
 - [TechStuff](https://itunes.apple.com/us/podcast/techstuff/id282795787?mt=2)
 - [Developer Tea](https://itunes.apple.com/us/podcast/developer-tea/id955596067?mt=2)
 - [Design Details](https://itunes.apple.com/us/podcast/design-details/id947191070)
-
+- [Here's The Thing with Alec Baldwin](https://itunes.apple.com/us/podcast/heres-thing-alec-baldwin/id472939437?mt=2)
 
 <br/>
 
