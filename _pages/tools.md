@@ -120,31 +120,33 @@ _Last updated: August 4, 2015_
 <br/>
 
 # Courses
-- [Machine Learning][88] – Coursera
+- [Machine Learning][88] – Stanford University, Coursera
 - [The Nature of Code][89] – Daniel Shiffman
 - [Become a SuperLearner: Learn Speed Reading & Advanced Memory][90] – Udemy
 - [JavaScript Design Patterns][91] – Udacity
 - [How To Build A Startup][92] – Udacity
 - [Data Visualization and D3.js][93] – Udacity
 - [Intro to Data Science][94] – Udacity
+- [Exposing Digital Photography][95] – Harvard Extension School
+- [Ruby on Rails 3 Tutorial][96] – LiveLessons
 
 </br>
 
 # Books
 
-- [Talent Is Overrated][95] – Geoff Colvin
-- [Steve Jobs][96] – Walter Isaacson
-- [Einstein][97] – Walter Isaacson
-- [So Good They Can't Ignore You: Why Skills Trump Passion in the Quest for Work You Love][98] – Cal Newport
-- [The Social Animal][99] – David Brooks
-- [Quiet: The Power of Introverts in a World That Can’t Stop Talking][100] – Susan Cain
-- [Mindless Eating: Why We Eat More Than We Think][101] – Brian Wansink
-- [The Art of Worldly Wisdom][102] – Baltasar Gracián
-- [A Brief History of Time][103] – Stephen Hawking
-- [The 4-Hour Workweek][104] – Timothy Ferriss
-- [Sparks of Genius][105] – Robert S. Root-Bernstein, Michele M. Root-Bernstein
-- [Mastery][106] – Robert Greene
-- [What If?][107] – Randall Munroe
+- [Talent Is Overrated][97] – Geoff Colvin
+- [Steve Jobs][98] – Walter Isaacson
+- [Einstein][99] – Walter Isaacson
+- [So Good They Can't Ignore You: Why Skills Trump Passion in the Quest for Work You Love][100] – Cal Newport
+- [The Social Animal][101] – David Brooks
+- [Quiet: The Power of Introverts in a World That Can’t Stop Talking][102] – Susan Cain
+- [Mindless Eating: Why We Eat More Than We Think][103] – Brian Wansink
+- [The Art of Worldly Wisdom][104] – Baltasar Gracián
+- [A Brief History of Time][105] – Stephen Hawking
+- [The 4-Hour Workweek][106] – Timothy Ferriss
+- [Sparks of Genius][107] – Robert S. Root-Bernstein, Michele M. Root-Bernstein
+- [Mastery][108] – Robert Greene
+- [What If?][109] – Randall Munroe
 
 [1]:	http://www.brainpickings.org
 [2]:	http://www.farnamstreetblog.com
@@ -240,16 +242,18 @@ _Last updated: August 4, 2015_
 [92]:	https://www.udacity.com/course/how-to-build-a-startup--ep245
 [93]:	https://www.udacity.com/course/data-visualization-and-d3js--ud507
 [94]:	https://www.udacity.com/course/intro-to-data-science--ud359
-[95]:	http://www.amazon.com/Talent-Overrated-Separates-World-Class-Performers/dp/1591842948/
-[96]:	http://www.amazon.com/Steve-Jobs-Exclusive-Walter-Isaacson-ebook/dp/B005J3IEZQ/
-[97]:	http://www.amazon.com/Einstein-Life-Universe-Walter-Isaacson/dp/0743264746/
-[98]:	http://www.amazon.com/Good-They-Cant-Ignore-You/dp/1455509124/
-[99]:	http://www.amazon.com/Social-Animal-Sources-Character-Achievement/dp/0812979370
-[100]:	http://www.amazon.com/Quiet-Power-Introverts-World-Talking/dp/0307352153/
-[101]:	http://www.amazon.com/Mindless-Eating-More-Than-Think/dp/0553384481/
-[102]:	http://www.amazon.com/Art-Worldly-Wisdom-Baltasar-Gracian/dp/0385421311
-[103]:	http://www.amazon.com/Brief-History-Time-Stephen-Hawking/dp/0553380168/
-[104]:	http://www.amazon.com/4-Hour-Workweek-Anywhere-Expanded-Updated/dp/0307465357
-[105]:	http://www.amazon.com/Sparks-Genius-Thirteen-Thinking-Creative/dp/0618127453/
-[106]:	http://www.amazon.com/Mastery-Robert-Greene/dp/014312417X/
-[107]:	http://www.amazon.com/What-If-Scientific-Hypothetical-Questions/dp/0544272994/
+[95]:	http://digitalphotography.exposed/
+[96]:	http://www.informit.com/store/ruby-on-rails-3-tutorial-livelessons-bundle-learn-rails-9780132492546
+[97]:	http://www.amazon.com/Talent-Overrated-Separates-World-Class-Performers/dp/1591842948/
+[98]:	http://www.amazon.com/Steve-Jobs-Exclusive-Walter-Isaacson-ebook/dp/B005J3IEZQ/
+[99]:	http://www.amazon.com/Einstein-Life-Universe-Walter-Isaacson/dp/0743264746/
+[100]:	http://www.amazon.com/Good-They-Cant-Ignore-You/dp/1455509124/
+[101]:	http://www.amazon.com/Social-Animal-Sources-Character-Achievement/dp/0812979370
+[102]:	http://www.amazon.com/Quiet-Power-Introverts-World-Talking/dp/0307352153/
+[103]:	http://www.amazon.com/Mindless-Eating-More-Than-Think/dp/0553384481/
+[104]:	http://www.amazon.com/Art-Worldly-Wisdom-Baltasar-Gracian/dp/0385421311
+[105]:	http://www.amazon.com/Brief-History-Time-Stephen-Hawking/dp/0553380168/
+[106]:	http://www.amazon.com/4-Hour-Workweek-Anywhere-Expanded-Updated/dp/0307465357
+[107]:	http://www.amazon.com/Sparks-Genius-Thirteen-Thinking-Creative/dp/0618127453/
+[108]:	http://www.amazon.com/Mastery-Robert-Greene/dp/014312417X/
+[109]:	http://www.amazon.com/What-If-Scientific-Hypothetical-Questions/dp/0544272994/
