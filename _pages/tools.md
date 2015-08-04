@@ -130,7 +130,7 @@ _Last updated: August 4, 2015_
 - [Exposing Digital Photography][95] – Harvard Extension School
 - [Ruby on Rails 3 Tutorial][96] – LiveLessons
 
-</br>
+<br/>
 
 # Books
 
