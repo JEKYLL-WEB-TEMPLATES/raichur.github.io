@@ -99,9 +99,9 @@ _Last updated: August 4, 2015_
 - [Fantastical 2][68] (for OS X and iOS): A calendar application with natural language input.
 - [SelfControl][69] (for OS X): Avoid distracting websites. I have SelfControl set to open automatically every day.
 - [Tweetbot][70] (for OS X): A polished Twitter client for OS X.
-- [Cocktail][71] (for OS X): Optimize and clean your OS X.
+- [Cocktail][71] (for OS X): Optimize and clean your Mac.
 - [Moom][72] (for OS X): Window manager for OS X.
-- [Alfred][73] (for OS X): Search your OS X better.
+- [Alfred][73] (for OS X): Search your Mac better.
 - [iStat Menus][74] (for OS X): Menubar system monitor.
 - [Pocket][75] (for OS X, iOS, and Android): Save articles for later.
 - [Flickr][76] (for OS X, iOS, and Android): Image hosting service.
