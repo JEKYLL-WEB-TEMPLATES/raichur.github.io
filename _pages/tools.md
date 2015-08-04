@@ -95,58 +95,66 @@ _Last updated: August 4, 2015_
 - [f.lux][64] (for OS X and iOS): Screen color temperature filter for a healthy circadian rhythm.
 - [VSCO Cam][65] (for Lightroom, iOS, and Android): Good filters for photo editing.
 - [Twilight][66] (for Android): f.lux alternative for Android.
-- [Reporter app][67] (for iOS): Self quantifying tracking app.
-- [Fantastical 2][68] (for OS X and iOS): A calendar application with natural language input.
-- [SelfControl][69] (for OS X): Avoid distracting websites. I have SelfControl set to open automatically every day.
-- [Tweetbot][70] (for OS X): A polished Twitter client for OS X.
-- [Cocktail][71] (for OS X): Optimize and clean your Mac.
-- [Moom][72] (for OS X): Window manager for OS X.
-- [Alfred][73] (for OS X): Search your Mac better.
-- [iStat Menus][74] (for OS X): Menubar system monitor.
-- [Pocket][75] (for OS X, iOS, and Android): Save articles for later.
-- [Flickr][76] (for OS X, iOS, and Android): Image hosting service.
-- [Google Photos][77] (for OS X, iOS, and Android): Another image hosting service.
-- [Dropbox][78] (for OS X, iOS, and Android): File storage.
-- [Emmet][79] (for OS X): A plugin for code text-expansion.
-- [ZSH][80] (for OS X): A better shell.
-- [LastPass][81] (for OS X): Password manager.
-- [WhatFont][82] (for Chrome): Identifies fonts on the web.
-- [Clearly][83] (for Chrome): Makes articles easier to read – great for speed reading.
-- [Google Dictionary][84] (for Chrome): View definitions of words on webpages.
-- [uBlock Origin][85] (for Chrome): An efficient blocker.
-- [BuiltWith Technology Profiler][86] (for Chrome): A website profiler tool.
-- [WikiWand][87] (for Chrome): Wikipedia modernized.
+- [Tasker][67] (for Android): Powerful automation.
+- [Titanium Backup][68] (for Android): Don’t forget to backup!
+- [Nova Launcher Prime][69] (for Android): A better launcher.
+- [Moom+ Reader Pro][70] (for Android): A customizable, feature-filled ebook reader.
+- [Reporter app][71] (for iOS): Self quantifying tracking app.
+- [Fantastical 2][72] (for OS X and iOS): A calendar application with natural language input.
+- [SelfControl][73] (for OS X): Avoid distracting websites. I have SelfControl set to open automatically every day.
+- [Tweetbot][74] (for OS X): A polished Twitter client for OS X.
+- [Cocktail][75] (for OS X): Optimize and clean your Mac.
+- [Moom][76] (for OS X): Window manager for OS X.
+- [Alfred][77] (for OS X): Search your Mac better.
+- [Ulysses][78] (for OS X): Simple, yet powerful writing tool.
+- [iStat Menus][79] (for OS X): Menubar system monitor.
+- [Pocket][80] (for OS X, iOS, and Android): Save articles for later.
+- [Flickr][81] (for OS X, iOS, and Android): Image hosting service.
+- [Google Photos][82] (for OS X, iOS, and Android): Another image hosting service.
+- [Dropbox][83] (for OS X, iOS, and Android): File storage.
+- [Emmet][84] (for OS X): A plugin for code text-expansion.
+- [ZSH][85] (for OS X): A better shell.
+- [LastPass][86] (for OS X): Password manager.
+- [WhatFont][87] (for Chrome): Identifies fonts on the web.
+- [Clearly][88] (for Chrome): Makes articles easier to read – great for speed reading.
+- [Google Dictionary][89] (for Chrome): View definitions of words on webpages.
+- [uBlock Origin][90] (for Chrome): An efficient blocker.
+- [BuiltWith Technology Profiler][91] (for Chrome): A website profiler tool.
+- [WikiWand][92] (for Chrome): Wikipedia modernized.
+- [Jekyll][93]: Simple static sites.
+- [GitHub][94]: Social coding.
+
 
 <br/>
 
 # Courses
-- [Machine Learning][88] – Stanford University, Coursera
-- [The Nature of Code][89] – Daniel Shiffman
-- [Become a SuperLearner: Learn Speed Reading & Advanced Memory][90] – Udemy
-- [JavaScript Design Patterns][91] – Udacity
-- [How To Build A Startup][92] – Udacity
-- [Data Visualization and D3.js][93] – Udacity
-- [Intro to Data Science][94] – Udacity
-- [Exposing Digital Photography][95] – Harvard Extension School
-- [Ruby on Rails 3 Tutorial][96] – LiveLessons
+- [Machine Learning][95] – Stanford University, Coursera
+- [The Nature of Code][96] – Daniel Shiffman
+- [Become a SuperLearner: Learn Speed Reading & Advanced Memory][97] – Udemy
+- [JavaScript Design Patterns][98] – Udacity
+- [How To Build A Startup][99] – Udacity
+- [Data Visualization and D3.js][100] – Udacity
+- [Intro to Data Science][101] – Udacity
+- [Exposing Digital Photography][102] – Harvard Extension School
+- [Ruby on Rails 3 Tutorial][103] – LiveLessons
 
 <br/>
 
 # Books
 
-- [Talent Is Overrated][97] – Geoff Colvin
-- [Steve Jobs][98] – Walter Isaacson
-- [Einstein][99] – Walter Isaacson
-- [So Good They Can't Ignore You: Why Skills Trump Passion in the Quest for Work You Love][100] – Cal Newport
-- [The Social Animal][101] – David Brooks
-- [Quiet: The Power of Introverts in a World That Can’t Stop Talking][102] – Susan Cain
-- [Mindless Eating: Why We Eat More Than We Think][103] – Brian Wansink
-- [The Art of Worldly Wisdom][104] – Baltasar Gracián
-- [A Brief History of Time][105] – Stephen Hawking
-- [The 4-Hour Workweek][106] – Timothy Ferriss
-- [Sparks of Genius][107] – Robert S. Root-Bernstein, Michele M. Root-Bernstein
-- [Mastery][108] – Robert Greene
-- [What If?][109] – Randall Munroe
+- [Talent Is Overrated][104] – Geoff Colvin
+- [Steve Jobs][105] – Walter Isaacson
+- [Einstein][106] – Walter Isaacson
+- [So Good They Can't Ignore You: Why Skills Trump Passion in the Quest for Work You Love][107] – Cal Newport
+- [The Social Animal][108] – David Brooks
+- [Quiet: The Power of Introverts in a World That Can’t Stop Talking][109] – Susan Cain
+- [Mindless Eating: Why We Eat More Than We Think][110] – Brian Wansink
+- [The Art of Worldly Wisdom][111] – Baltasar Gracián
+- [A Brief History of Time][112] – Stephen Hawking
+- [The 4-Hour Workweek][113] – Timothy Ferriss
+- [Sparks of Genius][114] – Robert S. Root-Bernstein, Michele M. Root-Bernstein
+- [Mastery][115] – Robert Greene
+- [What If?][116] – Randall Munroe
 
 [1]:	http://www.brainpickings.org
 [2]:	http://www.farnamstreetblog.com
@@ -214,46 +222,53 @@ _Last updated: August 4, 2015_
 [64]:	https://justgetflux.com/
 [65]:	https://vsco.co/vscocam
 [66]:	https://play.google.com/store/apps/details?id=com.urbandroid.lux
-[67]:	https://itunes.apple.com/in/app/reporter-app/id779697486?mt=8
-[68]:	https://flexibits.com/fantastical
-[69]:	https://selfcontrolapp.com/
-[70]:	http://tapbots.com/tweetbot/
-[71]:	http://www.maintain.se/cocktail/
-[72]:	http://manytricks.com/moom/
-[73]:	http://alfredapp.com
-[74]:	http://bjango.com/OS%20X/istatmenus/
-[75]:	http://getpocket.com
-[76]:	http://flickr.com
-[77]:	https://photos.google.com/
-[78]:	http://dropbox.com
-[79]:	http://emmet.io/
-[80]:	http://zsh.sourceforge.net/
-[81]:	https://lastpass.com/
-[82]:	https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm?hl=en
-[83]:	https://chrome.google.com/webstore/detail/clearly/iooicodkiihhpojmmeghjclgihfjdjhj?hl=en
-[84]:	https://chrome.google.com/webstore/detail/google-dictionary-by-goog/mgijmajocgfcbeboacabfgobmjgjcoja?hl=en
-[85]:	https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=en
-[86]:	https://chrome.google.com/webstore/detail/builtwith-technology-prof/dapjbgnjinbpoindlpdmhochffioedbn?hl=en
-[87]:	https://chrome.google.com/webstore/detail/wikiwand-wikipedia-modern/emffkefkbkpkgpdeeooapgaicgmcbolj
-[88]:	https://www.coursera.org/learn/machine-learning
-[89]:	http://natureofcode.com/
-[90]:	https://www.udemy.com/superlearning-speed-reading-memory-techniques/
-[91]:	https://www.udacity.com/course/javascript-design-patterns--ud989
-[92]:	https://www.udacity.com/course/how-to-build-a-startup--ep245
-[93]:	https://www.udacity.com/course/data-visualization-and-d3js--ud507
-[94]:	https://www.udacity.com/course/intro-to-data-science--ud359
-[95]:	http://digitalphotography.exposed/
-[96]:	http://www.informit.com/store/ruby-on-rails-3-tutorial-livelessons-bundle-learn-rails-9780132492546
-[97]:	http://www.amazon.com/Talent-Overrated-Separates-World-Class-Performers/dp/1591842948/
-[98]:	http://www.amazon.com/Steve-Jobs-Exclusive-Walter-Isaacson-ebook/dp/B005J3IEZQ/
-[99]:	http://www.amazon.com/Einstein-Life-Universe-Walter-Isaacson/dp/0743264746/
-[100]:	http://www.amazon.com/Good-They-Cant-Ignore-You/dp/1455509124/
-[101]:	http://www.amazon.com/Social-Animal-Sources-Character-Achievement/dp/0812979370
-[102]:	http://www.amazon.com/Quiet-Power-Introverts-World-Talking/dp/0307352153/
-[103]:	http://www.amazon.com/Mindless-Eating-More-Than-Think/dp/0553384481/
-[104]:	http://www.amazon.com/Art-Worldly-Wisdom-Baltasar-Gracian/dp/0385421311
-[105]:	http://www.amazon.com/Brief-History-Time-Stephen-Hawking/dp/0553380168/
-[106]:	http://www.amazon.com/4-Hour-Workweek-Anywhere-Expanded-Updated/dp/0307465357
-[107]:	http://www.amazon.com/Sparks-Genius-Thirteen-Thinking-Creative/dp/0618127453/
-[108]:	http://www.amazon.com/Mastery-Robert-Greene/dp/014312417X/
-[109]:	http://www.amazon.com/What-If-Scientific-Hypothetical-Questions/dp/0544272994/
+[67]:	http://tasker.dinglisch.net/
+[68]:	http://matrixrewriter.com/android/
+[69]:	http://novalauncher.com/
+[70]:	http://www.moondownload.com/
+[71]:	https://itunes.apple.com/in/app/reporter-app/id779697486?mt=8
+[72]:	https://flexibits.com/fantastical
+[73]:	https://selfcontrolapp.com/
+[74]:	http://tapbots.com/tweetbot/
+[75]:	http://www.maintain.se/cocktail/
+[76]:	http://manytricks.com/moom/
+[77]:	http://alfredapp.com
+[78]:	http://www.ulyssesapp.com/
+[79]:	http://bjango.com/OS%20X/istatmenus/
+[80]:	http://getpocket.com
+[81]:	http://flickr.com
+[82]:	https://photos.google.com/
+[83]:	http://dropbox.com
+[84]:	http://emmet.io/
+[85]:	http://zsh.sourceforge.net/
+[86]:	https://lastpass.com/
+[87]:	https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm?hl=en
+[88]:	https://chrome.google.com/webstore/detail/clearly/iooicodkiihhpojmmeghjclgihfjdjhj?hl=en
+[89]:	https://chrome.google.com/webstore/detail/google-dictionary-by-goog/mgijmajocgfcbeboacabfgobmjgjcoja?hl=en
+[90]:	https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=en
+[91]:	https://chrome.google.com/webstore/detail/builtwith-technology-prof/dapjbgnjinbpoindlpdmhochffioedbn?hl=en
+[92]:	https://chrome.google.com/webstore/detail/wikiwand-wikipedia-modern/emffkefkbkpkgpdeeooapgaicgmcbolj
+[93]:	http://jekyllrb.com/
+[94]:	github.com
+[95]:	https://www.coursera.org/learn/machine-learning
+[96]:	http://natureofcode.com/
+[97]:	https://www.udemy.com/superlearning-speed-reading-memory-techniques/
+[98]:	https://www.udacity.com/course/javascript-design-patterns--ud989
+[99]:	https://www.udacity.com/course/how-to-build-a-startup--ep245
+[100]:	https://www.udacity.com/course/data-visualization-and-d3js--ud507
+[101]:	https://www.udacity.com/course/intro-to-data-science--ud359
+[102]:	http://digitalphotography.exposed/
+[103]:	http://www.informit.com/store/ruby-on-rails-3-tutorial-livelessons-bundle-learn-rails-9780132492546
+[104]:	http://www.amazon.com/Talent-Overrated-Separates-World-Class-Performers/dp/1591842948/
+[105]:	http://www.amazon.com/Steve-Jobs-Exclusive-Walter-Isaacson-ebook/dp/B005J3IEZQ/
+[106]:	http://www.amazon.com/Einstein-Life-Universe-Walter-Isaacson/dp/0743264746/
+[107]:	http://www.amazon.com/Good-They-Cant-Ignore-You/dp/1455509124/
+[108]:	http://www.amazon.com/Social-Animal-Sources-Character-Achievement/dp/0812979370
+[109]:	http://www.amazon.com/Quiet-Power-Introverts-World-Talking/dp/0307352153/
+[110]:	http://www.amazon.com/Mindless-Eating-More-Than-Think/dp/0553384481/
+[111]:	http://www.amazon.com/Art-Worldly-Wisdom-Baltasar-Gracian/dp/0385421311
+[112]:	http://www.amazon.com/Brief-History-Time-Stephen-Hawking/dp/0553380168/
+[113]:	http://www.amazon.com/4-Hour-Workweek-Anywhere-Expanded-Updated/dp/0307465357
+[114]:	http://www.amazon.com/Sparks-Genius-Thirteen-Thinking-Creative/dp/0618127453/
+[115]:	http://www.amazon.com/Mastery-Robert-Greene/dp/014312417X/
+[116]:	http://www.amazon.com/What-If-Scientific-Hypothetical-Questions/dp/0544272994/
