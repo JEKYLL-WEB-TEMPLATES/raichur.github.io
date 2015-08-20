@@ -155,6 +155,8 @@ _Last updated: August 4, 2015_
 - [Sparks of Genius][114] – Robert S. Root-Bernstein, Michele M. Root-Bernstein
 - [Mastery][115] – Robert Greene
 - [What If?][116] – Randall Munroe
+- [How to Win at College: Surprising Secrets for Success from the Country's Top Students][117] – Cal Newport
+- [The Power of Habit: Why We Do What We Do in Life and Business][118] – Charles Duhigg
 
 [1]:	http://www.brainpickings.org
 [2]:	http://www.farnamstreetblog.com
@@ -272,3 +274,5 @@ _Last updated: August 4, 2015_
 [114]:	http://www.amazon.com/Sparks-Genius-Thirteen-Thinking-Creative/dp/0618127453/
 [115]:	http://www.amazon.com/Mastery-Robert-Greene/dp/014312417X/
 [116]:	http://www.amazon.com/What-If-Scientific-Hypothetical-Questions/dp/0544272994/
+[117]:	http://www.amazon.com/How-Win-College-Surprising-Countrys/dp/0767917871
+[118]:	http://www.amazon.com/Power-Habit-What-Life-Business/dp/081298160X
